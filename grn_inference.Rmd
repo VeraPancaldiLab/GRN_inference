@@ -1,0 +1,104 @@
+---
+title: "GRN inference from scRNAseq data"
+author: "Malvina Marku"
+date: "10/6/2021"
+bibliography: [grn_references.bib]
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+This is an R Markdown performing GRN inference using different inference methods, as described in [@Kang2021]. Here different methods of GRN inference are used, including GINIE3 [@Huynh2010]. For each method used, a brief description will be given. 
+
+## Methods
+Following the comparison analysis of 
+
+
+## Data processed and results
+
+The data used in this example are taken from the sources described in [@Kang2021]. They consist in scRNAseq data on retina cells, T-cells and hematopoietic cells [@Hay2018] [@Setty2019]. 
+
+Load the necessary libraries for performing the analysis
+```{r}
+library(GENIE3)
+library(beepr) # For notifying when then simulation ends
+
+```
+
+As a first step, we upload the data (**Note:** in the table format, all the rows should correspond to the genes and the columns to the samples.)
+
+
+<!-- ```{r}  -->
+<!-- exprMatr <- matrix(sample(1:10, 100, replace = TRUE), nrow = 20) -->
+<!-- rownames(exprMatr) <- paste("Gene", 1:20, sep = "") -->
+<!-- colnames(exprMatr) <- paste("Sample", 1:5, sep = "") -->
+<!-- head(exprMatr) -->
+<!-- ``` -->
+
+```{r}
+expression_data <- t(read.csv("HEMATO/Hay_Mono.csv"))
+colnames(expression_data) <- paste("Sample", 1:ncol(expression_data), sep = "")
+expression_data <- expression_data[-c(1),]
+```
+
+We then calculate the weight matrix between the genes using GENIE3: 
+
+```{r}
+set.seed(123) # For reproducibility of results
+weightMat <- GENIE3(expression_data, nCores = 8, verbose = TRUE)
+beep(3) # For notifying when the simulation ends
+```
+
+For large datasets, several options can be used to calculate the weight matrix, particularly in restricting the number of regulators per gene, but also for changing the tree-based method settings. For example: 
+
+1. Declare the regulators and apply the weight matrix calculation for this list of regulators only: `regulators <- c("Gene1", "Gene2", "Gene3"), weightMat <- GENIE3(exprMatr, regulators=regulators)`.
+2. GENIE3 is based on regression trees. These trees can be learned using either the Random Forest method [@Breiman2001] (`tree.method = "RF"`, default) or the Extra-Trees method [@Geurts2006] (`tree.method = "ET"`). Each tree-based method has two parameters: `K` and `ntrees`. `K` is the number of candidate regulators that are randomly selected at each tree node for the best split determination. The parameter `ntrees` specifies the number of trees that are grown per ensemble. It can be set to any strictly positive integer (the default value is 1000).
+3. To decrease the computing times, GENIE3 can be run on multiple cores. The parameter `ncores` specifies the number of cores you want to use. For example:
+
+`set.seed(123) # For reproducibility of results, weightMat <- GENIE3(exprMatr, nCores = 4, verbose = TRUE)`
+Note that `seet.seed` allows to get the same results across different runs, but only within `nCores == ` or `nCores > 1`. e.g. A run with `set.seed(123)` and `nCores = 1` and another with the same seed but `nCores > 1` may provide different results.
+
+The list of all the regulatory links (from most likely to least likely) can be obtained with: 
+
+```{r}
+linkList <- getLinkList(weightMat)
+
+```
+
+This matrix contains the ranking of all the genes, in which each row correspond to a regulatory link. From here, we can select the top `n` links (e.g. `linkList <- getLinkList(weightMat, reportMax = 10)`), or apply a threshold rank to select the most likely ones (e.g. `linkList <- getLinkList(weightMat, threshold = 0.5)`). 
+**Note:** because of the intrinsic randomness of RT or ET methods, the rankings of the links can be different from one run to another. 
+
+Once the network links are obtained, we can apply *filtering*, in order to filter only the `k` most important links. 
+
+```{r}
+k = 100000
+
+setwd('../scNET/Results/')
+
+reg_net = read.table('Genie3_Network.tsv', quote = F)
+
+```
+
+
+## Algorithm reproducibility
+There are several metrics we can use to evaluate the reproducibility of the algorithm on 2 different datasets (on the same cells). Among these we mention: *Intersection Index (II)*, *Weighted Jaccard Similarity (WJS)* and *RcisTarget Score (RTS)*. 
+
+```{r}
+Rcis_GENIE3 = Custom.Rcis(input.dir = 'scNET/Results',
+                     pattern = 'GENIE3',
+                     chosenDb="hg19-tss-centered-5kb-7species.mc9nr.feather",
+                     output.dir = 'scNET/Results',
+                     MinGenesetSize = 0, 
+                     directed = T)
+Results= Reproducibility.stats('Genie3*.tsv'),
+                               Results.dir = 'scNET/Results')
+
+Results[,'RcisTarget_index'] = Rcis.percent(Rcis_GENIE3)
+
+Results
+```
+
