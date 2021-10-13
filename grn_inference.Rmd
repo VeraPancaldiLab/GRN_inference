@@ -47,7 +47,8 @@ expression_data <- expression_data[-c(1),]
 
 We then calculate the weight matrix between the genes using GENIE3: 
 
-```{r}
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(eval = FALSE)
 set.seed(123) # For reproducibility of results
 weightMat <- GENIE3(expression_data, nCores = 8, verbose = TRUE)
 beep(3) # For notifying when the simulation ends
@@ -55,7 +56,7 @@ beep(3) # For notifying when the simulation ends
 
 For large datasets, several options can be used to calculate the weight matrix, particularly in restricting the number of regulators per gene, but also for changing the tree-based method settings. For example: 
 
-1. Declare the regulators and apply the weight matrix calculation for this list of regulators only: `regulators <- c("Gene1", "Gene2", "Gene3"), weightMat <- GENIE3(exprMatr, regulators=regulators)`.
+1. Declare the regulators and apply the weight matrix calculation for this list of regulators only: `regulators <- c("Gene1", "Gene2", "Gene3"), weightMat <- GENIE3(exprMatr, regulators = regulators)`.
 2. GENIE3 is based on regression trees. These trees can be learned using either the Random Forest method [@Breiman2001] (`tree.method = "RF"`, default) or the Extra-Trees method [@Geurts2006] (`tree.method = "ET"`). Each tree-based method has two parameters: `K` and `ntrees`. `K` is the number of candidate regulators that are randomly selected at each tree node for the best split determination. The parameter `ntrees` specifies the number of trees that are grown per ensemble. It can be set to any strictly positive integer (the default value is 1000).
 3. To decrease the computing times, GENIE3 can be run on multiple cores. The parameter `ncores` specifies the number of cores you want to use. For example:
 
@@ -64,7 +65,8 @@ Note that `seet.seed` allows to get the same results across different runs, but 
 
 The list of all the regulatory links (from most likely to least likely) can be obtained with: 
 
-```{r}
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(eval = FALSE)
 linkList <- getLinkList(weightMat)
 
 ```
@@ -74,7 +76,8 @@ This matrix contains the ranking of all the genes, in which each row correspond 
 
 Once the network links are obtained, we can apply *filtering*, in order to filter only the `k` most important links. 
 
-```{r}
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(eval = FALSE)
 k = 100000
 
 setwd('../scNET/Results/')
@@ -87,15 +90,15 @@ reg_net = read.table('Genie3_Network.tsv', quote = F)
 ## Algorithm reproducibility
 There are several metrics we can use to evaluate the reproducibility of the algorithm on 2 different datasets (on the same cells). Among these we mention: *Intersection Index (II)*, *Weighted Jaccard Similarity (WJS)* and *RcisTarget Score (RTS)*. 
 
-```{r}
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(eval = FALSE)
 Rcis_GENIE3 = Custom.Rcis(input.dir = 'scNET/Results',
                      pattern = 'GENIE3',
                      chosenDb="hg19-tss-centered-5kb-7species.mc9nr.feather",
                      output.dir = 'scNET/Results',
                      MinGenesetSize = 0, 
                      directed = T)
-Results= Reproducibility.stats('Genie3*.tsv'),
-                               Results.dir = 'scNET/Results')
+Results <- Reproducibility.stats('Genie3*.tsv', Results.dir = 'scNET/Results')
 
 Results[,'RcisTarget_index'] = Rcis.percent(Rcis_GENIE3)
 
