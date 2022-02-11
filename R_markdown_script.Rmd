@@ -1,24 +1,26 @@
 ---
 title: "GRN Inference from CLL time-course bulk RNA-seq"
-author: "Malvina Marku, Flavien Raynal"
+author: "Malvina Marku, Hugo Chenel, Flavien Raynal"
 output:
+  pdf_document: default
+  html_notebook: default
   html_document:
     df_print: paged
-  html_notebook: default
-  pdf_document: default
 ---
 
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+This is the main code used for inferring the GRN for time-series of bulk RNAseq data of in-vitro monocyte-CLL experiment. Here we use the time-series of the CLL cells, in dataset of 11-13 time points. We use dynGENIE3 for inferring the regulatory network.
 
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+Work in progress. 
 
 **1. Load the libraries and `dynGENIE3` functions:**
 
-```{r}
+```{r include=FALSE}
 library(reshape2)
 library(doRNG)
 library(doParallel)
 library(tidyverse)
+library(clusterSim)
+library(igraph)
 
 source("dynGENIE3.R")
 ```
@@ -28,7 +30,7 @@ In our case, we have the time-course transcriptomics from 2 patients and 2 repli
 \item patient 1 and 2 taken separately. The average between replicates will be calculated per patient.
 \item ...
 
-```{r}
+```{r include=FALSE}
 Patient_1_rep_1_table <- read.expr.matrix("/mnt/SERVER-CRCT-STORAGE/CRCT21/Private/CLL_dec2020/RNAseqBulk_Eq21_Eq9/Gene_counts_tables/Gene_counts_Patient1_rep1_TPM.txt",form = "rows.are.genes")
 
 Patient_1_rep_2_table <- read.expr.matrix("/mnt/SERVER-CRCT-STORAGE/CRCT21/Private/CLL_dec2020/RNAseqBulk_Eq21_Eq9/Gene_counts_tables/Gene_counts_Patient1_rep2_TPM.txt", form = "rows.are.genes")
@@ -42,9 +44,9 @@ Patient_2_rep_2_table <- read.expr.matrix("/mnt/SERVER-CRCT-STORAGE/CRCT21/Priva
 
 _Firstly_, make sure there is no `NA, NaN, or Inf` value in the dataset: 
 
-```{r}
+```{r include=FALSE}
 #Identify the NA, NaN and Inf values
-impute.mean <- function(x) replace(x, is.na(x) | is.nan(x) | is.infinite(x), mean(x, na.rm = TRUE))
+impute.mean <- function(x) replace(x, is.na(x) | is.nan(x) | is.infinite(x) | is.factor(x), mean(x, na.rm = TRUE))
 
 Patient_1_rep_1_table <- apply(Patient_1_rep_1_table, 2, impute.mean)
 sum( apply( Patient_1_rep_1_table, 2, function(.) sum(is.infinite(.))) )
@@ -56,16 +58,31 @@ sum( apply( Patient_1_rep_2_table, 2, function(.) sum(is.infinite(.))) )
 ```
 _Secondly_, re-format the time-series:
 
-```{r}
+```{r include=FALSE}
 #Add a row in each of the datasets indicating the time point
 
 Patient_1_time_points <- c(1:ncol(Patient_1_rep_1_table))
 Patient_2_time_points <- c(1:ncol(Patient_2_rep_1_table))
 
 Patient_1_rep_1_table <- rbind(Patient_1_time_points, Patient_1_rep_1_table)
+#Remove the rows with 0 variance
+Patient_1_rep_1_table <- Patient_1_rep_1_table[rowSums(Patient_1_rep_1_table[]) > 0,] #removes all allways-zero lines
+#Patient_1_rep_1_table[sapply(Patient_1_rep_1_table, function(v) var(v, na.rm=TRUE)!=0), ]
+Patient_1_rep_1_table <- Patient_1_rep_1_table[apply(Patient_1_rep_1_table, 1, var, na.rm=TRUE) >= 0.2, ] #removes all variance_0 lines
+#Patient_1_rep_1_table <- Patient_1_rep_1_table[apply(Patient_1_rep_1_table, 1, var) >= 0.2, ]
+
 Patient_1_rep_2_table <- rbind(Patient_1_time_points, Patient_1_rep_2_table)
+Patient_1_rep_2_table <- Patient_1_rep_2_table[rowSums(Patient_1_rep_2_table[]) > 0,]
+Patient_1_rep_2_table <- Patient_1_rep_2_table[apply(Patient_1_rep_2_table, 1, var, na.rm=TRUE) >= 0.2, ] #removes all variance_0 lines#removes all allways-zero lines
+
 Patient_2_rep_1_table <- rbind(Patient_2_time_points, Patient_2_rep_1_table)
+Patient_2_rep_1_table <- Patient_2_rep_1_table[rowSums(Patient_2_rep_1_table[]) > 0,] #removes all allways-zero lines
+Patient_2_rep_1_table <- Patient_2_rep_1_table[apply(Patient_2_rep_1_table, 1, var, na.rm=TRUE) >= 0.2, ] #removes all variance_0 lines#removes all allways-zero lines
+
+
 Patient_2_rep_2_table <- rbind(Patient_2_time_points, Patient_2_rep_2_table)
+Patient_2_rep_2_table <- Patient_2_rep_2_table[rowSums(Patient_2_rep_2_table[]) > 0,] #removes all allways-zero lines
+Patient_2_rep_2_table <- Patient_2_rep_2_table[apply(Patient_2_rep_2_table, 1, var, na.rm=TRUE) >= 0.2, ] #removes all variance_0 lines#removes all allways-zero lines
 # write.table(Patient_1_rep_1_table, file = "Patient_1_rep_1_table.txt")
 # write.table(Patient_1_rep_2_table, file = "Patient_1_rep_2_table.txt")
 # write.table(Patient_2_rep_1_table, file = "Patient_2_rep_1_table.txt")
@@ -76,13 +93,48 @@ Patient_2_rep_2_table <- rbind(Patient_2_time_points, Patient_2_rep_2_table)
 # Patient_2_rep_1_table <- read.expr.matrix("Patient_2_rep_1_table.txt", form = "rows.are.genes")
 # Patient_2_rep_2_table <- read.expr.matrix("Patient_2_rep_2_table.txt", form = "rows.are.genes")
 
+### Normalize data in [0, 1] -- as in the example model
+### Normalization method: n4 (https://rdrr.io/cran/clusterSim/man/data.Normalization.html)
 
-time.points <- list(Patient_1_rep_1_table[1,], Patient_1_rep_2_table[1,], Patient_2_rep_1_table[1,], Patient_2_rep_2_table[1,])
+Patient_1_rep_1_unit <- as.data.frame(data.Normalization(Patient_1_rep_1_table, type = "n4", normalization = "column" ))
+Patient_1_rep_2_unit <- as.data.frame(data.Normalization(Patient_1_rep_2_table, type = "n4", normalization = "column" ))
+Patient_2_rep_1_unit <- as.data.frame(data.Normalization(Patient_2_rep_1_table, type = "n4", normalization = "column" ))
+Patient_2_rep_2_unit <- as.data.frame(data.Normalization(Patient_2_rep_2_table, type = "n4", normalization = "column" ))
 
-time_series_data <- list(Patient_1_rep_1_table[2:nrow(Patient_1_rep_1_table),], Patient_1_rep_2_table[2:nrow(Patient_1_rep_2_table),], Patient_2_rep_1_table[2:nrow(Patient_2_rep_1_table),], Patient_2_rep_2_table[2:nrow(Patient_2_rep_2_table),])
+# Find the genes that appear in both dataframes
+common_genes_1 <- intersect(rownames(Patient_1_rep_1_unit), rownames(Patient_1_rep_2_unit))
+common_genes_2 <- intersect(rownames(Patient_2_rep_1_unit), rownames(Patient_2_rep_2_unit))
+common_genes <- intersect(common_genes_1, common_genes_2)
+
+# Manipulate the data: keep only the genes that appear in common_genes
+Patient_1_rep_1_filter <- as.matrix(subset(Patient_1_rep_1_unit, rownames(Patient_1_rep_1_unit) %in% common_genes))
+Patient_1_rep_2_filter <- as.matrix(subset(Patient_1_rep_2_unit, rownames(Patient_1_rep_2_unit) %in% common_genes))
+Patient_2_rep_1_filter <- as.matrix(subset(Patient_2_rep_1_unit, rownames(Patient_2_rep_1_unit) %in% common_genes))
+Patient_2_rep_2_filter <- as.matrix(subset(Patient_2_rep_2_unit, rownames(Patient_2_rep_2_unit) %in% common_genes))
+
+
+# Create the time points
+time.points_1 <- c(1,2,3,4,5,6,7,8,9,11,13)
+time.points_2 <- c(1,2,3,4,5,6,7,8,9,10,11,12,13)
+
+time.points <- list(time.points_1, time.points_1, time.points_2, time.points_2)
+#time.points <- list(Patient_1_rep_1_filter[1,], Patient_1_rep_2_filter[1,], Patient_2_rep_1_filter[1,], Patient_2_rep_2_filter[1,])
+
+time_series_data <- list(Patient_1_rep_1_filter[1:nrow(Patient_1_rep_1_filter),], Patient_1_rep_2_filter[1:nrow(Patient_1_rep_2_filter),], Patient_2_rep_1_filter[1:nrow(Patient_2_rep_1_filter),], Patient_2_rep_2_filter[1:nrow(Patient_2_rep_2_filter),])
 ```
 **Run `dynGENIE3` with default parameters or by tuning the parameters:**
 
-```{r}
-#run_analysis <- dynGENIE3(time_series_data, time.points)
+```{r eval=FALSE, include=FALSE}
+run_analysis <- dynGENIE3(time_series_data, time.points, alpha = 0.2, tree.method = "RF", SS.data=NULL, K = "sqrt", ntrees = 1000, regulators = NULL, ncores = 12, verbose = FALSE, seed = NULL)
+
+```
+
+**Filter and visualize the results**
+```{r eval=FALSE, include=FALSE}
+link.list <- get.link.list(run_analysis$weight.matrix)
+grn <- graph.data.frame(link.list)
+class(grn)
+E(grn)$width <- E(grn)$weight
+plot(grn)
+
 ```
