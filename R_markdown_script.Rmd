@@ -126,6 +126,14 @@ time_series_data <- list(Patient_1_rep_1_filter[1:nrow(Patient_1_rep_1_filter),]
 
 ```{r eval=FALSE, include=FALSE}
 run_analysis <- dynGENIE3(time_series_data, time.points, alpha = 0.2, tree.method = "RF", SS.data=NULL, K = "sqrt", ntrees = 1000, regulators = NULL, ncores = 12, verbose = FALSE, seed = NULL)
+link.list <- get.link.list(run_analysis$weight.matrix)
+write.csv(
+ link.list,
+ "link_list.csv",
+ row.names = T,
+ col.names = T,
+ sep = " "
+ )
 
 ```
 
