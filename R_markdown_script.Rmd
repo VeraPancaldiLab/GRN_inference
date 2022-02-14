@@ -21,6 +21,7 @@ library(doParallel)
 library(tidyverse)
 library(clusterSim)
 library(igraph)
+library(qgraph)
 
 source("dynGENIE3.R")
 ```
@@ -141,11 +142,21 @@ write.csv(
 First, we plot the distribution of link.list, to help select a threshold.
 
 ```{r eval=FALSE, include=FALSE}
-hist(link.list$weight)
-links_filtered <- filter(link.list, link.list$weight >=0.005) #select the theshold
+links_filtered <- filter(link.list, link.list$weight >=0.01)
+hist(links_filtered$weight, main = " ")
+
+tab <- table(a <- links_filtered$regulatory.gene)
+frequency_gene <- as.data.frame(tab)
+
 grn <- graph.data.frame(links_filtered)
 class(grn)
 E(grn)$width <- E(grn)$weight
-plot(grn)
+
+net_edges <- get.edgelist(grn,names=FALSE)
+net_layout <- qgraph.layout.fruchtermanreingold(net_edges, vcount=vcount(grn))
+svg("cll_grn_filter_001.svg", width = 18, height = 12)
+plot(grn, layout = net_layout, vertex.size = 3, edge.arrow.size = .3)
+#plot(grn, vertex.size = 10, vertex.label.size = 6, edge.arrow.size = .4)
+dev.off()
 
 ```
