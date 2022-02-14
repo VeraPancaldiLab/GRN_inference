@@ -138,9 +138,12 @@ write.csv(
 ```
 
 **Filter and visualize the results**
+First, we plot the distribution of link.list, to help select a threshold.
+
 ```{r eval=FALSE, include=FALSE}
-link.list <- get.link.list(run_analysis$weight.matrix)
-grn <- graph.data.frame(link.list)
+hist(link.list$weight)
+links_filtered <- filter(link.list, link.list$weight >=0.005) #select the theshold
+grn <- graph.data.frame(links_filtered)
 class(grn)
 E(grn)$width <- E(grn)$weight
 plot(grn)
