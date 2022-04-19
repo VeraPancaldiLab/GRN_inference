@@ -14,6 +14,8 @@ This is the main code used for inferring the GRN for time-series of bulk RNAseq 
 
 Work in progress. 
 
+
+
 **1. Load the libraries and `dynGENIE3` functions:**
 
 ```{r include=FALSE}
@@ -31,6 +33,8 @@ library(qgraph)
 
 source("dynGENIE3.R")
 ```
+
+
 
 **2. Load the data**
 In our case, we have the time-course transcriptomics from 2 patients and 2 replicates per patient. the inference method will be applied in different ways:
@@ -77,7 +81,6 @@ sum( apply( Patient_1_rep_2_table, 2, function(.) sum(is.infinite(.))) )
 time.points = list(TS1[1,], TS2[1,], TS3[1,])
 TS.data = list(TS1[2:nrow(TS1),], TS2[2:nrow(TS2),], TS3[2:nrow(TS3),])
 ```
-
 
 
 _Secondly_, re-format the time-series:
@@ -195,6 +198,7 @@ write.csv(normalized_counts_list,"Results/normalized_counts_TF_list.csv", row.na
 ```
 
 
+
 **Run `dynGENIE3` with default parameters or by tuning the parameters:**
 
 ```{r eval=FALSE, include=FALSE}
@@ -222,6 +226,7 @@ ggplot(links_filtered_TF, aes(x=weight)) +
   theme(plot.title = element_text(hjust = 0.5, size = 12, face = "bold"), plot.subtitle = element_text(hjust = 0.5)) +
   xlab("Weight")+ylab("Count") + geom_vline(xintercept= min(links_filtered_TF$weight), size = 2, colour = "red")
 ```
+
 
 
 **Filter on link number**
@@ -266,6 +271,7 @@ links_filtered_TF_treshold = links_filtered_TF[ ! (links_filtered_TF$regulatory.
 write.csv(df_gene_degree,"/home/crct2112/Documents/GRN/Results/TF/Gene_degree.csv", row.names = TRUE)
 write.csv(links_filtered_TF_treshold,"/home/crct2112/Documents/GRN/Results/TF/Links_filtered_treshold.csv", row.names = TRUE, quote = FALSE) #ne plus utiliser celui là
 ```
+
 
 
 **CINNA**
@@ -456,7 +462,7 @@ write.csv(g1_df,"Results/Graph_data_info.csv", row.names = TRUE)
 
 
 
-#Graph optimization
+**Graph optimization**
 
 Remove zinc finger (with high gene degree) and look at the connectivity of the network
  
