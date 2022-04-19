@@ -1,0 +1,504 @@
+---
+title: "GRN Inference from CLL time-course bulk RNA-seq"
+author: "Malvina Marku, Hugo Chenel, Flavien Raynal"
+output:
+  pdf_document: default
+  html_notebook: default
+  html_document:
+    df_print: paged
+editor_options: 
+  chunk_output_type: console
+---
+
+This is the main code used for inferring the GRN for time-series of bulk RNAseq data of in-vitro monocyte-CLL experiment. Here we use the time-series of the CLL cells, in dataset of 11-13 time points. We use dynGENIE3 for inferring the regulatory network.
+
+Work in progress. 
+
+**1. Load the libraries and `dynGENIE3` functions:**
+
+```{r include=FALSE}
+library(reshape2)
+library(doRNG)
+library(doParallel)
+library(tidyverse)
+library(DESeq2)
+library(clusterSim)
+library(dplyr)
+library(ggplot2)
+library(CINNA)
+library(igraph)
+library(qgraph)
+
+source("dynGENIE3.R")
+```
+
+**2. Load the data**
+In our case, we have the time-course transcriptomics from 2 patients and 2 replicates per patient. the inference method will be applied in different ways:
+\item patient 1 and 2 taken separately. The average between replicates will be calculated per patient.
+\item ...
+
+```{r include=FALSE}
+Patient_1_rep_1_table <- read.expr.matrix("/mnt/SERVER-CRCT-STORAGE/CRCT21/Private/CLL_dec2020/RNAseqBulk_Eq21_Eq9/Gene_counts_tables/Gene_counts_Patient1_rep1_TPM.txt",form = "rows.are.genes")
+
+Patient_1_rep_2_table <- read.expr.matrix("/mnt/SERVER-CRCT-STORAGE/CRCT21/Private/CLL_dec2020/RNAseqBulk_Eq21_Eq9/Gene_counts_tables/Gene_counts_Patient1_rep2_TPM.txt", form = "rows.are.genes")
+
+Patient_2_rep_1_table <- read.expr.matrix("/mnt/SERVER-CRCT-STORAGE/CRCT21/Private/CLL_dec2020/RNAseqBulk_Eq21_Eq9/Gene_counts_tables/Gene_counts_Patient2_rep1_TPM.txt", form = "rows.are.genes")
+
+Patient_2_rep_2_table <- read.expr.matrix("/mnt/SERVER-CRCT-STORAGE/CRCT21/Private/CLL_dec2020/RNAseqBulk_Eq21_Eq9/Gene_counts_tables/Gene_counts_Patient2_rep2_TPM.txt", form = "rows.are.genes")
+```
+
+
+```{r}
+TS1 = read.expr.matrix("Data/time_series_1.txt", form="rows.are.samples")
+TS2 = read.expr.matrix("Data/time_series_2.txt", form="rows.are.samples")
+TS3 = read.expr.matrix("Data/time_series_3.txt", form="rows.are.samples")
+```
+
+
+**Re-format the data:**
+
+_Firstly_, make sure there is no `NA, NaN, or Inf` value in the dataset: 
+
+```{r include=FALSE}
+#Identify the NA, NaN and Inf values
+impute.mean <- function(x) replace(x, is.na(x) | is.nan(x) | is.infinite(x) | is.factor(x), mean(x, na.rm = TRUE))
+
+Patient_1_rep_1_table <- apply(Patient_1_rep_1_table, 2, impute.mean)
+sum( apply( Patient_1_rep_1_table, 2, function(.) sum(is.infinite(.))) )
+
+Patient_1_rep_2_table <- apply(Patient_1_rep_2_table, 2, impute.mean)
+sum( apply( Patient_1_rep_2_table, 2, function(.) sum(is.infinite(.))) )
+
+
+```
+
+
+```{r}
+time.points = list(TS1[1,], TS2[1,], TS3[1,])
+TS.data = list(TS1[2:nrow(TS1),], TS2[2:nrow(TS2),], TS3[2:nrow(TS3),])
+```
+
+
+
+_Secondly_, re-format the time-series:
+
+```{r include=FALSE}
+#Add a row in each of the datasets indicating the time point
+
+Patient_1_time_points <- c(1:ncol(Patient_1_rep_1_table))
+Patient_2_time_points <- c(1:ncol(Patient_2_rep_1_table))
+
+#Remove the rows with 0 variance
+Patient_1_rep_1_table <- rbind(Patient_1_time_points, Patient_1_rep_1_table)
+Patient_1_rep_1_table <- Patient_1_rep_1_table[rowSums(Patient_1_rep_1_table[]) > 0,]
+
+Patient_1_rep_2_table <- rbind(Patient_1_time_points, Patient_1_rep_2_table)
+Patient_1_rep_2_table <- Patient_1_rep_2_table[rowSums(Patient_1_rep_2_table[]) > 0,]
+
+Patient_2_rep_1_table <- rbind(Patient_2_time_points, Patient_2_rep_1_table)
+Patient_2_rep_1_table <- Patient_2_rep_1_table[rowSums(Patient_2_rep_1_table[]) > 0,]
+
+Patient_2_rep_2_table <- rbind(Patient_2_time_points, Patient_2_rep_2_table)
+Patient_2_rep_2_table <- Patient_2_rep_2_table[rowSums(Patient_2_rep_2_table[]) > 0,]
+
+# write.table(Patient_1_rep_1_table, file = "Patient_1_rep_1_table.txt")
+# write.table(Patient_1_rep_2_table, file = "Patient_1_rep_2_table.txt")
+# write.table(Patient_2_rep_1_table, file = "Patient_2_rep_1_table.txt")
+# write.table(Patient_2_rep_2_table, file = "Patient_2_rep_2_table.txt")
+
+# Patient_1_rep_1_table <- read.expr.matrix("Patient_1_rep_1_table.txt",form = "rows.are.genes")
+# Patient_1_rep_2_table <- read.expr.matrix("Patient_1_rep_2_table.txt", form = "rows.are.genes")
+# Patient_2_rep_1_table <- read.expr.matrix("Patient_2_rep_1_table.txt", form = "rows.are.genes")
+# Patient_2_rep_2_table <- read.expr.matrix("Patient_2_rep_2_table.txt", form = "rows.are.genes")
+
+### Normalize data in [0, 1] -- as in the example model
+### Normalization method: n4 (https://rdrr.io/cran/clusterSim/man/data.Normalization.html)
+#Patient_1_rep_1_unit = as.data.frame(data.Normalization(Patient_1_rep_1_table, type = "n4", normalization = "column" ))
+#Patient_1_rep_2_unit = as.data.frame(data.Normalization(Patient_1_rep_2_table, type = "n4", normalization = "column" ))
+#Patient_2_rep_1_unit = as.data.frame(data.Normalization(Patient_2_rep_1_table, type = "n4", normalization = "column" ))
+#Patient_2_rep_2_unit = as.data.frame(data.Normalization(Patient_2_rep_2_table, type = "n4", normalization = "column" ))
+
+#Find genes that appear in both df
+common_genes_1 <- intersect(rownames(Patient_1_rep_1_table), rownames(Patient_1_rep_2_table))
+common_genes_2 <- intersect(rownames(Patient_2_rep_1_table), rownames(Patient_2_rep_2_table))
+common_genes <- intersect(common_genes_1, common_genes_2)
+
+#Keep only the genes that appear in common_genes
+Patient_1_rep_1_filter <- as.matrix(subset(Patient_1_rep_1_table, rownames(Patient_1_rep_1_table) %in% common_genes))
+Patient_1_rep_2_filter <- as.matrix(subset(Patient_1_rep_2_table, rownames(Patient_1_rep_2_table) %in% common_genes))
+Patient_2_rep_1_filter <- as.matrix(subset(Patient_2_rep_1_table, rownames(Patient_2_rep_1_table) %in% common_genes))
+Patient_2_rep_2_filter <- as.matrix(subset(Patient_2_rep_2_table, rownames(Patient_2_rep_2_table) %in% common_genes))
+
+#p1_rep1 = do.call(rbind.data.frame, time_series_data[1])
+#p1_rep2 = do.call(rbind.data.frame, time_series_data[2])
+#p2_rep1 = do.call(rbind.data.frame, time_series_data[3])
+#p2_rep2 = do.call(rbind.data.frame, time_series_data[4])
+
+time_series_data <- list(Patient_1_rep_1_filter[1:nrow(Patient_1_rep_1_filter),], Patient_1_rep_2_filter[1:nrow(Patient_1_rep_2_filter),], Patient_2_rep_1_filter[1:nrow(Patient_2_rep_1_filter),], Patient_2_rep_2_filter[1:nrow(Patient_2_rep_2_filter),])
+
+df_time_series_data = as.data.frame(time_series_data)
+
+sample_info = as.data.frame(str_split_fixed(colnames(df_time_series_data),pattern = "_", n = 3))
+names(sample_info)[names(sample_info) == "V1"] <- "Day"
+names(sample_info)[names(sample_info) == "V2"] <- "Patient"
+names(sample_info)[names(sample_info) == "V3"] <- "Replicate"
+
+#Create DESeq2 object
+dds <- DESeqDataSetFromMatrix(countData = round(df_time_series_data), colData = sample_info, design = ~ Day + Patient + Replicate)
+nrow(dds) #16432
+#Remove rows having low counts
+firstcondition <- rowSums(counts(dds) > 1) >= 2 #at least 2 samples with a count of 2 or higher
+dds <- dds[firstcondition,]
+nrow(dds) #12247
+
+#Generate normalized counts
+dds <- estimateSizeFactors(dds)
+sizeFactors(dds)
+normalized_counts <- counts(dds, normalized=TRUE)
+
+#Remove all genes with zero variance (i.e constant expression)
+variances = rowVars(normalized_counts)
+range(variances)
+normalized_counts = normalized_counts[!rowVars(normalized_counts) == 0 ,]
+
+#Keep only rows corresponding to TF
+normalized_counts = as.data.frame(normalized_counts)
+TFs_df = read.csv("Data/TF_names_v_1.01.txt", header = FALSE)
+TFs_vector = TFs_df[['V1']]
+TFs_vector = TFs_vector[TFs_vector %in% rownames(normalized_counts)] 
+normalized_counts_TF <- normalized_counts[rownames(normalized_counts) %in% TFs_vector, ]
+
+
+#List of matrices corresponding to the different patients/replicates 
+df_conditions = sapply(c("p1_rep1", "p1_rep2", "p2_rep1", "p2_rep2"),
+                function(x) normalized_counts_TF[endsWith(names(normalized_counts_TF),x)],
+                simplify = FALSE)
+
+df_conditions$p1_rep1 = as.matrix(df_conditions$p1_rep1)
+df_conditions$p1_rep2 = as.matrix(df_conditions$p1_rep2)
+df_conditions$p2_rep1 = as.matrix(df_conditions$p2_rep1)
+df_conditions$p2_rep2 = as.matrix(df_conditions$p2_rep2)
+normalized_counts_list <- list(df_conditions$p1_rep1[1:nrow(df_conditions$p1_rep1),], df_conditions$p1_rep2[1:nrow(df_conditions$p1_rep2),], df_conditions$p2_rep1[1:nrow(df_conditions$p2_rep1),], df_conditions$p2_rep2[1:nrow(df_conditions$p2_rep2),])
+
+
+# Create the time points
+time.points_1 <- c(1,2,3,4,5,6,7,8,9,11,13)
+time.points_2 <- c(1,2,3,4,5,6,7,8,9,10,11,12,13)
+
+time.points <- list(time.points_1, time.points_1, time.points_2, time.points_2)
+#time.points <- list(Patient_1_rep_1_filter[1,], Patient_1_rep_2_filter[1,], Patient_2_rep_1_filter[1,], Patient_2_rep_2_filter[1,])
+
+decay_rates = 0.2
+
+write.table(normalized_counts, file="Results/normalized_counts.txt", sep="\t", quote=F, col.names=NA)
+write.csv(normalized_counts_list,"Results/normalized_counts_TF_list.csv", row.names = TRUE)
+```
+
+
+**Run `dynGENIE3` with default parameters or by tuning the parameters:**
+
+```{r eval=FALSE, include=FALSE}
+run_analysis <- dynGENIE3(normalized_counts_list, time.points, alpha = decay_rates, tree.method = "RF", SS.data=NULL, K = "sqrt", ntrees = 1000, regulators = TFs_vector, ncores = 12, verbose = FALSE, seed = NULL)
+```
+
+**Filter and visualize the results**
+First, we plot the distribution of link.list, to help select a threshold.
+
+```{r eval=FALSE, include=FALSE}
+link.list <- get.link.list(run_analysis$weight.matrix)
+links_filtered_TF <- filter(link.list, link.list$weight >= 0.01) #3749 links
+write.csv(links_filtered_TF, "Results/links_filtered_TF.csv", row.names = T, col.names = T, sep = " ")
+
+ggplot(link.list, aes(x=weight)) + 
+  geom_histogram(color="black", fill="white") +
+  labs(title="Links weight distribution", subtitle="Edges weight histogram plot") +
+  theme(plot.title = element_text(hjust = 0.5, size = 12, face = "bold"), plot.subtitle = element_text(hjust = 0.5)) +
+  xlab("Weight")+ylab("Count")
+
+ggplot(links_filtered_TF, aes(x=weight)) + 
+  geom_histogram(color="black", fill="white") +
+  xlim(min(links_filtered_TF$weight), max(links_filtered_TF$weight)) +
+  labs(title="Links filtered weight distribution", subtitle="Edges weight histogram plot") +
+  theme(plot.title = element_text(hjust = 0.5, size = 12, face = "bold"), plot.subtitle = element_text(hjust = 0.5)) +
+  xlab("Weight")+ylab("Count") + geom_vline(xintercept= min(links_filtered_TF$weight), size = 2, colour = "red")
+```
+
+
+**Filter on link number**
+
+```{r}
+reg_gene = table(links_filtered_TF$regulatory.gene) 
+tar_gene = table(links_filtered_TF$target.gene)
+frequency_reg_gene = as.data.frame(reg_gene) #correspond to the outdegree of a node
+frequency_tar_gene = as.data.frame(tar_gene) #correspond to the indegree of a node
+
+df_gene_degree = frequency_reg_gene %>% full_join(frequency_tar_gene,by="Var1")
+
+df_gene_degree = df_gene_degree %>%
+  rowwise() %>% 
+  mutate(f_new=sum(Freq.x, Freq.y, na.rm = T)) #sum of frequencies for regulatory genes, target genes and both of them (=gene degree)
+
+df_gene_degree = df_gene_degree[,-(2:3),drop=FALSE]
+df_gene_degree = df_gene_degree[order(df_gene_degree$Var1), ]
+
+names(df_gene_degree)[names(df_gene_degree) == "Var1"] <- "Gene"
+names(df_gene_degree)[names(df_gene_degree) == "f_new"] <- "Gene.degree"
+
+df_gene_degree = df_gene_degree %>%
+                   arrange(desc(Gene.degree))
+
+#Gene degree distribution
+ggplot(df_gene_degree, aes(x=Gene.degree)) + 
+    geom_histogram(color="black", fill="white", bins=100) +       
+    ggtitle("Gene degree distribution") + xlab('Gene degree') + ylab('Frequency') +
+    theme(plot.title = element_text(hjust = 0.5, size = 12, face = "bold"))
+ggplot(df_gene_degree, aes(x=Gene.degree)) + 
+    geom_histogram(color="black", fill="white", bins=100) +         
+    xlim(-10, 100) + ggtitle("Gene degree distribution for genes with the lowest gene degree") + xlab('Gene degree') + ylab('Frequency') + theme(plot.title = element_text(hjust = 0.5, size = 12, face = "bold"))
+  
+#filter on genes according to their gene degree
+df_gene_degree_filtered = filter(df_gene_degree, Gene.degree >= 3)
+df_gene_degree_removed = filter(df_gene_degree, Gene.degree < 3)
+
+#remove all the links where gene degree < 3
+links_filtered_TF_treshold = links_filtered_TF[ ! (links_filtered_TF$regulatory.gene %in% df_gene_degree_removed$Gene) & ! (links_filtered_TF$target.gene %in% df_gene_degree_removed$Gene), ]
+
+write.csv(df_gene_degree,"/home/crct2112/Documents/GRN/Results/TF/Gene_degree.csv", row.names = TRUE)
+write.csv(links_filtered_TF_treshold,"/home/crct2112/Documents/GRN/Results/TF/Links_filtered_treshold.csv", row.names = TRUE, quote = FALSE) #ne plus utiliser celui là
+```
+
+
+**CINNA**
+
+```{r}
+g1 <- graph.data.frame(links_filtered_TF, directed = TRUE) #create graph from datatable
+```
+
+```{r}
+vcount(g1) #1004
+ecount(g1) #3749
+plot(g1)
+g1
+```
+
+```{r}
+#Make sure there is no multiple edges or loops
+g1s <- simplify(g1, remove.multiple = T, remove.loops = T, 
+                 edge.attr.comb=c(weight="sum", type="ignore"))
+vcount(g1s)
+ecount(g1s)
+```
+
+
+
+##Network components analysis
+
+###Giant component extraction
+```{r}
+g2 = giant_component_extract(g1, directed = TRUE) #extract the largest connected component of the Graph
+giant_comp = g2[[1]]
+
+vcount(g1) #1004
+ecount(g1) #3749
+plot(g1)
+
+vcount(giant_comp) #1002
+ecount(giant_comp) #3748
+plot(giant_comp)
+
+g = as_data_frame(giant_comp)
+names(g)[names(g) == "from"] <- "Regulatory Gene"
+names(g)[names(g) == "to"] <- "Target Gene"
+write.csv(g,"Results/Giant_comp_0.01.csv", row.names = TRUE, quote = FALSE)
+```
+
+
+
+**Graph creation from datatable and exploration**
+
+```{r}
+g0 = graph.data.frame(links_filtered_TF, directed = TRUE) 
+g1 = graph.data.frame(g, directed = TRUE)
+
+#Size distribution of connected components
+clu0 = components(g0)
+clu0$no #Number of distinct cluster
+clu0$csize #Size of clusters
+
+ggplot() + aes(clu0$csize) + 
+  geom_histogram(binwidth=100, colour="black", fill="white") + 
+  labs(title="Cluster size distribution", subtitle="Histogram of size of connected components", caption="Node list : 1004 \n Edge list : 3749") +
+  theme(plot.title = element_text(hjust = 0.5, size = 12, face = "bold"), plot.subtitle = element_text(hjust = 0.5), plot.caption = element_text(face = "italic", color = "gray40")) +
+  xlab("Cluster size") + ylab("Frequency")
+
+clu1 = components(g1)
+clu1$no
+clu1$csize #one connected component of 1002 nodes
+```
+
+
+**Centrality measure analysis**
+
+###Suggestion of proper centralities based on network topology
+```{r}
+proper_centralities(zachary) #Undirected and unweighted network
+proper_centralities(rhesus) #Directed and weighted network
+proper_centralities(g1)
+```
+
+###Centrality computations
+```{r}
+calculate_centralities(giant_comp, include = "Degree Centrality")
+pr_cent = proper_centralities(g1)
+```
+
+###Best centrality measures
+```{r}
+calc_cent = calculate_centralities(g1, include = pr_cent[1:3])
+calc_cent
+```
+
+###Recognition of most informative measures
+```{r}
+pca_centralities(calc_cent) #Page.Rank, Burt.s.Constraint and Alpha.Centrality
+pca_centralities(calc_cent, scale.unit = FALSE)
+
+tsne_centralities(calc_cent, dims = 2, perplexity = 0.5, scale=TRUE) #Page.Rank, Burt.s.Constraint and Alpha.Centrality
+```
+
+
+##Visualization on centrality analysis
+
+###Graph visualization regarding to the centrality type
+```{r}
+#Correlation between computed centrality measures
+visualize_correlations(calc_cent, "pearson")
+
+#Regression across centrality measures
+Alpha_centrality = calc_cent[[1]] 
+Burt_constraint = calc_cent[[2]]
+visualize_association(Alpha_centrality, Burt_constraint)
+
+PageRank = calc_cent[[3]]
+visualize_association(PageRank, Alpha_centrality )
+
+#Pairwize correlation between centrality types
+visualize_pair_correlation(Alpha_centrality, Burt_constraint) #negative correlation between Alpha_centrality and Burt_constraint
+visualize_pair_correlation(PageRank, Alpha_centrality) #positive correlation between PageRank and Alpha_centrality
+
+```
+
+
+**Graph exploration**
+
+## 1 - Degree centrality (Local Centrality Measures)
+```{r}
+g1_deg = degree(g1) #Degree centrality (gene degree)
+g1_in_deg = degree(g1, mode="in")
+g1_out_deg = degree(g1, mode="out")
+g1_deg_distr = degree_distribution(g1)
+V(g1)$Degree = g1_deg
+which.max(g1_deg) #ZNF718
+```
+
+## 2 - Closeness centrality (Global Centrality Measures)
+```{r}
+g1_closeness = closeness(g1, mode="all")
+V(g1)$Closeness = g1_closeness
+which.max(g1_closeness) #ETS1
+```
+
+
+## 3 - Eigenvector centrality
+```{r}
+g1_evcent = eigen_centrality(g1)$vector
+V(g1)$Eigen = g1_evcent
+which.max(g1_evcent) #ZNF718
+```
+
+
+## 4 - Betweenness centrality
+```{r}
+g1_bw = betweenness(g1)
+g1_ebw = edge_betweenness(g1) #might give false values for graphs with multiple edges. 
+V(g1)$Betweeness = g1_bw
+which.max(g1_bw) #BHLHE40
+```
+
+## 5 - PageRank
+```{r}
+g1_pr = page_rank(g1)$vector
+V(g1)$PageRank = g1_pr
+which.max(g1_pr) #ZNF667
+```
+
+## 6 - Burt's constraint
+```{r}
+g1_ct = constraint(g1)
+V(g1)$Constraint = g1_ct
+#V(g1)$Constraint
+which.max(g1_ct) #ZNF519
+```
+
+## 7 - Alpha centrality
+```{r}
+g1_ac = alpha_centrality(g1)
+V(g1)$Alpha = g1_ac
+which.max(g1_ac) #VENTX
+```
+
+
+##Convert iGraph object into dataframe 
+```{r}
+g1_df = as_long_data_frame(g1)
+write.csv(g1_df,"Results/Graph_data_info.csv", row.names = TRUE)
+```
+
+
+
+#Graph optimization
+
+Remove zinc finger (with high gene degree) and look at the connectivity of the network
+ 
+```{r}
+
+which.max(g1_deg) #ZNF718
+log_degree_g1 = as.data.frame(log(degree(g1)))
+
+ggplot((log_degree_g1), aes(x=log(degree(g1)))) + 
+  geom_histogram(color="black", fill="white") +
+  labs(title="Gene degree distribution") +
+  theme(plot.title = element_text(hjust = 0.5, size = 12, face = "bold")) +
+  xlab("Gene degree (log)") + ylab("Frequency")
+
+sort(degree(g1), decreasing = TRUE)[1:30]
+g1_selected = delete_vertices(g1,c("ZNF718","ZNF675", "ZNF706")) #remove zinc fingers with the highest gene degree
+g1_selected #999 nodes and 3606 edges
+sort(degree(g1_selected), decreasing = TRUE)[1:20]
+
+clug1 <- components(g1_selected)
+groups(clug1)
+clug1$no #single cluster for the whole network
+clug1$csize #cluster of 999 already connected
+
+# Identify vertices with gene degree <= threshold
+degree(g1_selected, mode = "out")
+table(degree(g1_selected, mode = "out")) #distribution of nodes according to gene degree
+#remove leafs : 165 (nodes with zero outdegree)
+remove <- which(degree(g1_selected, mode = "out") < 1)
+# Delete vertices and associated edges
+giant_comp_selected_leaffree <- delete.vertices(g1_selected, remove)
+
+table(degree(giant_comp_selected_leaffree, mode = "out"))
+vcount(giant_comp_selected_leaffree) #834
+ecount(giant_comp_selected_leaffree) #3054
+
+g = igraph::as_data_frame(giant_comp_selected_leaffree)
+names(g)[names(g) == "from"] <- "Regulatory Gene"
+names(g)[names(g) == "to"] <- "Target Gene"
+write.csv(g,"Results/Giant_comp_0.01_selected.csv", row.names = TRUE, quote = FALSE)
+
+```
+
+
+
