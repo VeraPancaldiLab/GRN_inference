@@ -184,14 +184,20 @@ decay_rates = 0.2
 ```
 
 
+
+
 **Run `dynGENIE3` with default parameters or by tuning the parameters:**
 
 ```{r eval=FALSE, include=FALSE}
 run_analysis <- dynGENIE3(normalized_counts_list, time.points, alpha = decay_rates, tree.method = "RF", SS.data=NULL, K = "sqrt", ntrees = 1000, regulators = NULL, ncores = 12, verbose = FALSE, seed = NULL)
 ```
 
+
+
+
 **Filter and visualize the results**
 First, we plot the distribution of link.list, to help select a threshold.
+
 
 ```{r eval=FALSE, include=FALSE}
 link.list <- get.link.list(run_analysis$weight.matrix)
@@ -214,6 +220,8 @@ ggplot(links_filtered_TF, aes(x=weight)) +
 
 
 #Giant component extraction
+
+
 ```{r}
 g1 <- graph.data.frame(links_filtered_TF, directed = TRUE) #create graph from datatable
 g2 = giant_component_extract(g1, directed = TRUE) #extract the largest connected component of the Graph
@@ -231,7 +239,10 @@ names(g)[names(g) == "to"] <- "Target.Gene"
 
 
 
+
 #TFs
+
+
 ```{r}
 TFs = read.csv("Data/TF_names_v_1.01.txt", header = FALSE)
 names(TFs)[names(TFs) == "V1"] <- "TF_name"
@@ -272,7 +283,9 @@ TFs_inter = g[(g$Regulatory.Gene %in% TFs$TF_name) & (g$Target.Gene %in% TFs$TF_
 ```
 
 
+
 #Study of the proportion of TF in the network
+
 
 ```{r}
 #Doughnut chart links with vs without TF
