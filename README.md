@@ -8,4 +8,4 @@ Our analysis aims to identify the intercellular molecular interactions that esta
 2. Perform network analysis to indetify the most important genes in the GRN.
 3. Perform GO and GSEA to indetify the pathways involved in the CLL cell time-series transcriptomics. 
 
-
+The same analysis will be perfomed on macrophage time-series transcriptomics. The ultimate goal is to build a mathematical model of macrophage-CLL system, by incorporating both intracellular and intercellular interactions between the 2 cell types, at different states. 
