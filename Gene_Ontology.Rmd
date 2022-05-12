@@ -103,7 +103,7 @@ dotplot(compKEGG, showCategory = 15, title = "KEGG Pathway Enrichment Analysis")
 
 
 
-### keep only "BP" ontology and pvalue < 0.05 then sort by pvalue ###
+### Keep only "BP" ontology and pvalue < 0.05 then sort by pvalue ###
 ```{r}
 goana = goana[which(goana$Ont == "BP" & goana$P.DE < 0.05),]
 goana = goana[order(goana$P.DE),]
