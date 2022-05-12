@@ -1,0 +1,4958 @@
+{
+  "format_version" : "1.0",
+  "generated_by" : "cytoscape-3.9.1",
+  "target_cytoscapejs_version" : "~2.1",
+  "data" : {
+    "shared_name" : "Giant_comp_0.02.csv",
+    "name" : "Giant_comp_0.02.csv",
+    "SUID" : 155,
+    "__Annotations" : [ ],
+    "selected" : true
+  },
+  "elements" : {
+    "nodes" : [ {
+      "data" : {
+        "id" : "916",
+        "shared_name" : "ZNF266",
+        "Eigen" : 0.00506663556585076,
+        "Closeness" : 0.0404790781578688,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "ZNF266",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 916,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 47.34936646435949,
+        "y" : 848.5489334608828
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "911",
+        "shared_name" : "ZNF792",
+        "Eigen" : 1.23361519917589E-5,
+        "Closeness" : 0.0307793582560694,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "ZNF792",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 911,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -1453.3673884489706,
+        "y" : -168.25702814800388
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "906",
+        "shared_name" : "ZBTB32",
+        "Eigen" : 0.00384460540127654,
+        "Closeness" : 0.0470931888234684,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "ZBTB32",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 906,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -746.7072932341268,
+        "y" : -88.27716974956638
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "901",
+        "shared_name" : "AEBP1",
+        "Eigen" : 0.0155045353388746,
+        "Closeness" : 0.0530259850323725,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "AEBP1",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 901,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -555.4523493864706,
+        "y" : -194.07158963424808
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "893",
+        "shared_name" : "MBD1",
+        "Eigen" : 0.00387034367617006,
+        "Closeness" : 0.0470518932072068,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "MBD1",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 893,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -784.9115168669393,
+        "y" : -252.40190653545505
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "888",
+        "shared_name" : "TEF",
+        "Eigen" : 4.96611967595931E-5,
+        "Closeness" : 0.0344741459857452,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "TEF",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 888,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -1257.3515193083456,
+        "y" : 52.57803197162502
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "877",
+        "shared_name" : "DRAP1",
+        "Eigen" : 0.0523009762832323,
+        "Closeness" : 0.0493042458950624,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "DRAP1",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 877,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 29.153394021732538,
+        "y" : 341.56150670307034
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "872",
+        "shared_name" : "E2F5",
+        "Eigen" : 4.25168279216963E-5,
+        "Closeness" : 0.0347454656252016,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.02039272203587,
+        "name" : "E2F5",
+        "PageRank" : 0.00576571552763247,
+        "SUID" : 872,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -1221.3690974333456,
+        "y" : -305.9566436265195
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "867",
+        "shared_name" : "RARA",
+        "Eigen" : 2.14639595054419E-4,
+        "Closeness" : 0.0385111018826055,
+        "Betweeness" : 0,
+        "Degree" : 2,
+        "Constraint" : 0.500006824871081,
+        "Alpha" : 1.0,
+        "name" : "RARA",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 867,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -1146.0419489958456,
+        "y" : -216.0062098954404
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "862",
+        "shared_name" : "ZNF429",
+        "Eigen" : 0.00622844185081848,
+        "Closeness" : 0.0395138309771599,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "ZNF429",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 862,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 185.88781479809973,
+        "y" : 639.6255936171328
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "857",
+        "shared_name" : "ZNF814",
+        "Eigen" : 0.00624259102996067,
+        "Closeness" : 0.03950374754662,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "ZNF814",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 857,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 180.44295243237707,
+        "y" : 547.2319168593203
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "852",
+        "shared_name" : "TOPORS",
+        "Eigen" : 0.0134837692058552,
+        "Closeness" : 0.042987181233267,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "TOPORS",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 852,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -528.2771784880331,
+        "y" : 4.198011830023461
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "844",
+        "shared_name" : "ZNF577",
+        "Eigen" : 8.98952572139847E-4,
+        "Closeness" : 0.0424029252249449,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "ZNF577",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 844,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -934.1416804411581,
+        "y" : -51.777116343804664
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "836",
+        "shared_name" : "DBP",
+        "Eigen" : 0.00106022378378063,
+        "Closeness" : 0.0407159576632288,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.02134594301458,
+        "name" : "DBP",
+        "PageRank" : 0.00823367832025288,
+        "SUID" : 836,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 388.74958542798254,
+        "y" : -528.3046126816953
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "831",
+        "shared_name" : "KLF6",
+        "Eigen" : 0.0196187392491284,
+        "Closeness" : 0.0508838692358682,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "KLF6",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 831,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -208.45634718920496,
+        "y" : 53.3811020399844
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "826",
+        "shared_name" : "MXI1",
+        "Eigen" : 0.203641206331899,
+        "Closeness" : 0.0594646186557689,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "MXI1",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 826,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 258.8638127229044,
+        "y" : 322.7294144179141
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "821",
+        "shared_name" : "CXXC5",
+        "Eigen" : 0.00615524298910415,
+        "Closeness" : 0.0404010614549699,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "CXXC5",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 821,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 126.41754273389074,
+        "y" : 839.5829910780703
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "816",
+        "shared_name" : "MYBL1",
+        "Eigen" : 0.00489672169851411,
+        "Closeness" : 0.0461798849092778,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.02042399761271,
+        "name" : "MYBL1",
+        "PageRank" : 0.0049024959699119,
+        "SUID" : 816,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 327.90269211743566,
+        "y" : -356.68451075298435
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "808",
+        "shared_name" : "CTCF",
+        "Eigen" : 0.0263584885073766,
+        "Closeness" : 0.053090002345319,
+        "Betweeness" : 1,
+        "Degree" : 2,
+        "Constraint" : 0.500193364280265,
+        "Alpha" : 1.02007854958984,
+        "name" : "CTCF",
+        "PageRank" : 0.00488808679845427,
+        "SUID" : 808,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 309.9359257600138,
+        "y" : -150.08490137798435
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "803",
+        "shared_name" : "ATF4",
+        "Eigen" : 0.0052200996685032,
+        "Closeness" : 0.046136338442215,
+        "Betweeness" : 1,
+        "Degree" : 2,
+        "Constraint" : 0.500000347403477,
+        "Alpha" : 1.02087463635338,
+        "name" : "ATF4",
+        "PageRank" : 0.00492129280894331,
+        "SUID" : 803,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 298.17641953442785,
+        "y" : -441.19635157329685
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "801",
+        "shared_name" : "ZNF280D",
+        "Eigen" : 0.0246824835024268,
+        "Closeness" : 0.053090002345319,
+        "Betweeness" : 0,
+        "Degree" : 4,
+        "Constraint" : 0.250101749656897,
+        "Alpha" : 1.0,
+        "name" : "ZNF280D",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 801,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 211.67425278638098,
+        "y" : -318.2554183457578
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "796",
+        "shared_name" : "HOXB2",
+        "Eigen" : 0.00445135582901981,
+        "Closeness" : 0.0482761432607966,
+        "Betweeness" : 9,
+        "Degree" : 4,
+        "Constraint" : 0.250076469797754,
+        "Alpha" : 1.0427065833162,
+        "name" : "HOXB2",
+        "PageRank" : 0.0138631081082483,
+        "SUID" : 796,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -893.5960261442831,
+        "y" : -160.05397562725193
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "788",
+        "shared_name" : "SATB1",
+        "Eigen" : 0.0164001942081757,
+        "Closeness" : 0.0525771424099649,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "SATB1",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 788,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -548.4286067106893,
+        "y" : -305.70008997661716
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "783",
+        "shared_name" : "PBX2",
+        "Eigen" : 0.00104308816028937,
+        "Closeness" : 0.0371521164213918,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "PBX2",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 783,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 1077.6113102814982,
+        "y" : -14.245545909234352
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "778",
+        "shared_name" : "ZNF143",
+        "Eigen" : 0.0681381508248498,
+        "Closeness" : 0.0470412621888211,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "ZNF143",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 778,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 507.43244675610754,
+        "y" : 117.73457188861721
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "773",
+        "shared_name" : "ZNF436",
+        "Eigen" : 7.45988578021211E-4,
+        "Closeness" : 0.0330302115106571,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.02209328801191,
+        "name" : "ZNF436",
+        "PageRank" : 0.0072717985813602,
+        "SUID" : 773,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -616.4472834685018,
+        "y" : -1010.2936568711484
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "768",
+        "shared_name" : "ADNP",
+        "Eigen" : 0.0156122595903129,
+        "Closeness" : 0.0408514014786244,
+        "Betweeness" : 4,
+        "Degree" : 2,
+        "Constraint" : 0.500305357084814,
+        "Alpha" : 1.02159327609346,
+        "name" : "ADNP",
+        "PageRank" : 0.00719889644178574,
+        "SUID" : 768,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -498.7686335661581,
+        "y" : -778.3828902695859
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "760",
+        "shared_name" : "CENPBD1",
+        "Eigen" : 0.00379904469785078,
+        "Closeness" : 0.0438793080175349,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "CENPBD1",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 760,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 103.12471894238683,
+        "y" : -570.8180098984922
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "755",
+        "shared_name" : "ZNF510",
+        "Eigen" : 0.00643717715398735,
+        "Closeness" : 0.0401846468326354,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "ZNF510",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 755,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 343.8862431428263,
+        "y" : 843.0163406874453
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "747",
+        "shared_name" : "MGA",
+        "Eigen" : 0.0145185653027716,
+        "Closeness" : 0.0425863991476955,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "MGA",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 747,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -558.7917048552206,
+        "y" : -71.20370630962498
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "742",
+        "shared_name" : "ARID5A",
+        "Eigen" : 0.00467890860204699,
+        "Closeness" : 0.0417870722790085,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.02067010178724,
+        "name" : "ARID5A",
+        "PageRank" : 0.00472426797724006,
+        "SUID" : 742,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 994.5631535432169,
+        "y" : 278.83555455463284
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "737",
+        "shared_name" : "RREB1",
+        "Eigen" : 0.00502308824577526,
+        "Closeness" : 0.0417255113470659,
+        "Betweeness" : 0,
+        "Degree" : 2,
+        "Constraint" : 0.500005763634386,
+        "Alpha" : 1.04261204493495,
+        "name" : "RREB1",
+        "PageRank" : 0.00818562902076444,
+        "SUID" : 737,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 1006.7872746369669,
+        "y" : 85.80082555072659
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "732",
+        "shared_name" : "ZBTB38",
+        "Eigen" : 0.00506232404841569,
+        "Closeness" : 0.0413828602868734,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0223639233549,
+        "name" : "ZBTB38",
+        "PageRank" : 0.00477947371345044,
+        "SUID" : 732,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 908.8422062775919,
+        "y" : 73.10285802142971
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "724",
+        "shared_name" : "SP110",
+        "Eigen" : 0.0233037670866383,
+        "Closeness" : 0.0474419937442116,
+        "Betweeness" : 0,
+        "Degree" : 5,
+        "Constraint" : 0.200203819834214,
+        "Alpha" : 1.0,
+        "name" : "SP110",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 724,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 914.5093205354044,
+        "y" : 189.56287999408596
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "719",
+        "shared_name" : "ATF5",
+        "Eigen" : 0.0196206755296213,
+        "Closeness" : 0.0541985630824091,
+        "Betweeness" : 6,
+        "Degree" : 4,
+        "Constraint" : 0.250532686913516,
+        "Alpha" : 1.06155309377212,
+        "name" : "ATF5",
+        "PageRank" : 0.0167883012872395,
+        "SUID" : 719,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -687.7644831755331,
+        "y" : -190.83377008182651
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "714",
+        "shared_name" : "EPAS1",
+        "Eigen" : 0.0242139072860076,
+        "Closeness" : 0.0433252720101807,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "EPAS1",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 714,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 196.61115769360754,
+        "y" : 1.7041153456484608
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "709",
+        "shared_name" : "CPEB1",
+        "Eigen" : 0.00659852267134612,
+        "Closeness" : 0.0400618367906295,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.02459912256102,
+        "name" : "CPEB1",
+        "PageRank" : 0.0118300196263307,
+        "SUID" : 709,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 226.19689682934973,
+        "y" : 931.2645096327578
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "701",
+        "shared_name" : "DDIT3",
+        "Eigen" : 0.0311181407000108,
+        "Closeness" : 0.0445156879913403,
+        "Betweeness" : 2,
+        "Degree" : 3,
+        "Constraint" : 0.333993515748513,
+        "Alpha" : 1.04125845573167,
+        "name" : "DDIT3",
+        "PageRank" : 0.0109365644681579,
+        "SUID" : 701,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 301.3195927522013,
+        "y" : 564.3693069960391
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "696",
+        "shared_name" : "NFXL1",
+        "Eigen" : 0.0212044122551171,
+        "Closeness" : 0.0502859124085554,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "NFXL1",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 696,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -207.03248854662684,
+        "y" : 158.97416539447659
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "691",
+        "shared_name" : "ZBED4",
+        "Eigen" : 9.15123311554773E-5,
+        "Closeness" : 0.0293059086773606,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "ZBED4",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 691,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 615.9570134064982,
+        "y" : 1170.4023270155703
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "683",
+        "shared_name" : "KLF8",
+        "Eigen" : 0.0659653417191555,
+        "Closeness" : 0.0501004257155265,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "KLF8",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 683,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 94.94945076916906,
+        "y" : 466.63828892963284
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "678",
+        "shared_name" : "ZNF595",
+        "Eigen" : 2.50624677609983E-4,
+        "Closeness" : 0.0381794118085672,
+        "Betweeness" : 3,
+        "Degree" : 3,
+        "Constraint" : 0.334231250762229,
+        "Alpha" : 1.04173444799496,
+        "name" : "ZNF595",
+        "PageRank" : 0.0138631081082483,
+        "SUID" : 678,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -1145.137530050533,
+        "y" : 15.72419591205471
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "667",
+        "shared_name" : "ZFP3",
+        "Eigen" : 0.00580388546010614,
+        "Closeness" : 0.0398298929233262,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "ZFP3",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 667,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 146.7483036897013,
+        "y" : 898.8349442030703
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "662",
+        "shared_name" : "ZNF331",
+        "Eigen" : 0.0010523140353753,
+        "Closeness" : 0.037383270375509,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.02119646803198,
+        "name" : "ZNF331",
+        "PageRank" : 0.00595061892172032,
+        "SUID" : 662,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 1175.810467996342,
+        "y" : 120.12541051166409
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "657",
+        "shared_name" : "ZFY",
+        "Eigen" : 0.00117589092388466,
+        "Closeness" : 0.0369189060948264,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0236856428208,
+        "name" : "ZFY",
+        "PageRank" : 0.00617374715170763,
+        "SUID" : 657,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 1184.8408635041544,
+        "y" : 226.21665807025784
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "655",
+        "shared_name" : "FOXP1",
+        "Eigen" : 0.00521804520555078,
+        "Closeness" : 0.0418675841157254,
+        "Betweeness" : 2,
+        "Degree" : 3,
+        "Constraint" : 0.334209052326088,
+        "Alpha" : 1.02094369223386,
+        "name" : "FOXP1",
+        "PageRank" : 0.00473318495073626,
+        "SUID" : 655,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 1069.7154362580607,
+        "y" : 183.84361119525784
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "641",
+        "shared_name" : "YBX1",
+        "Eigen" : 0.00240051168682024,
+        "Closeness" : 0.0338311387449112,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.02093668190559,
+        "name" : "YBX1",
+        "PageRank" : 0.0056637452585267,
+        "SUID" : 641,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -693.1371028044393,
+        "y" : -792.9605269883359
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "636",
+        "shared_name" : "MYBL2",
+        "Eigen" : 0.0118037541229949,
+        "Closeness" : 0.0374962895774936,
+        "Betweeness" : 0,
+        "Degree" : 2,
+        "Constraint" : 0.501979970847739,
+        "Alpha" : 1.0,
+        "name" : "MYBL2",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 636,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -576.8761775114706,
+        "y" : -753.3555465195859
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "631",
+        "shared_name" : "EGR3",
+        "Eigen" : 0.0260129202171116,
+        "Closeness" : 0.0455851620509835,
+        "Betweeness" : 0,
+        "Degree" : 4,
+        "Constraint" : 0.251050058068302,
+        "Alpha" : 1.09007342246832,
+        "name" : "EGR3",
+        "PageRank" : 0.0176191845820713,
+        "SUID" : 631,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 167.17781571362707,
+        "y" : 760.2479080702578
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "626",
+        "shared_name" : "EGR2",
+        "Eigen" : 0.0300481202181073,
+        "Closeness" : 0.0457842563710964,
+        "Betweeness" : 20,
+        "Degree" : 6,
+        "Constraint" : 0.167045207257954,
+        "Alpha" : 1.08809302593844,
+        "name" : "EGR2",
+        "PageRank" : 0.0176450084903563,
+        "SUID" : 626,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 234.52293137524816,
+        "y" : 802.1639847304141
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "624",
+        "shared_name" : "POU2AF1",
+        "Eigen" : 0.0120169067129618,
+        "Closeness" : 0.0407536855056988,
+        "Betweeness" : 0,
+        "Degree" : 2,
+        "Constraint" : 0.503180289187906,
+        "Alpha" : 1.0,
+        "name" : "POU2AF1",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 624,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 85.51228741620275,
+        "y" : 765.6966995741641
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "619",
+        "shared_name" : "SKIL",
+        "Eigen" : 0.233622487005085,
+        "Closeness" : 0.0579956665591678,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "SKIL",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 619,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 140.4822895905802,
+        "y" : 207.84892125385159
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "611",
+        "shared_name" : "SREBF1",
+        "Eigen" : 0.0392557945545639,
+        "Closeness" : 0.0432909118495321,
+        "Betweeness" : 1,
+        "Degree" : 2,
+        "Constraint" : 0.500002954309415,
+        "Alpha" : 1.02224367469643,
+        "name" : "SREBF1",
+        "PageRank" : 0.00519371930557425,
+        "SUID" : 611,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 438.3959172150919,
+        "y" : -176.97718958599216
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "606",
+        "shared_name" : "ZNF101",
+        "Eigen" : 0.134258790085857,
+        "Closeness" : 0.0493860593746828,
+        "Betweeness" : 0,
+        "Degree" : 3,
+        "Constraint" : 0.335711778125096,
+        "Alpha" : 1.0,
+        "name" : "ZNF101",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 606,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 376.8275273225138,
+        "y" : -59.53587488872654
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "601",
+        "shared_name" : "HSF1",
+        "Eigen" : 0.0168424375607193,
+        "Closeness" : 0.0388397048851118,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.02483466286796,
+        "name" : "HSF1",
+        "PageRank" : 0.00531286408714701,
+        "SUID" : 601,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 555.2254765412638,
+        "y" : 696.8812088515078
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "593",
+        "shared_name" : "NCOA3",
+        "Eigen" : 0.0698185558865183,
+        "Closeness" : 0.044803539658265,
+        "Betweeness" : 0,
+        "Degree" : 3,
+        "Constraint" : 0.335001087363031,
+        "Alpha" : 1.0,
+        "name" : "NCOA3",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 593,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 498.55024460767004,
+        "y" : 590.7229446913516
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "588",
+        "shared_name" : "HIF1A",
+        "Eigen" : 0.0177633898477759,
+        "Closeness" : 0.0506294840518555,
+        "Betweeness" : 0,
+        "Degree" : 3,
+        "Constraint" : 0.33449091483211,
+        "Alpha" : 1.069310295274,
+        "name" : "HIF1A",
+        "PageRank" : 0.0146023823760182,
+        "SUID" : 588,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 46.103377618534296,
+        "y" : -457.9138656113828
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "586",
+        "shared_name" : "ZNF292",
+        "Eigen" : 0.00429019126465309,
+        "Closeness" : 0.0431357991463547,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "ZNF292",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 586,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 160.049138345463,
+        "y" : -504.34547571880466
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "581",
+        "shared_name" : "SOX6",
+        "Eigen" : 0.00343798628372824,
+        "Closeness" : 0.0362890609999422,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.02067880561532,
+        "name" : "SOX6",
+        "PageRank" : 0.00484875272002458,
+        "SUID" : 581,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -228.8279597380331,
+        "y" : -921.6807418320859
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "576",
+        "shared_name" : "ZNF281",
+        "Eigen" : 0.00415182427856536,
+        "Closeness" : 0.0355252034732061,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.02497239957348,
+        "name" : "ZNF281",
+        "PageRank" : 0.00501447950657051,
+        "SUID" : 576,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -318.27430983568934,
+        "y" : -900.7234054063047
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "568",
+        "shared_name" : "SNAPC5",
+        "Eigen" : 0.0171160234735665,
+        "Closeness" : 0.0404811781590414,
+        "Betweeness" : 0,
+        "Degree" : 4,
+        "Constraint" : 0.251577517442357,
+        "Alpha" : 1.0,
+        "name" : "SNAPC5",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 568,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -254.32985182787684,
+        "y" : -800.8694625352109
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "563",
+        "shared_name" : "ZNF251",
+        "Eigen" : 0.0185182818728186,
+        "Closeness" : 0.0435750950656526,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.02229640679726,
+        "name" : "ZNF251",
+        "PageRank" : 0.00514491863286021,
+        "SUID" : 563,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 746.9144108674357,
+        "y" : 343.4900345351016
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "555",
+        "shared_name" : "BCL6",
+        "Eigen" : 0.308160337577163,
+        "Closeness" : 0.060115127338266,
+        "Betweeness" : 9,
+        "Degree" : 3,
+        "Constraint" : 0.399225790682119,
+        "Alpha" : 1.02499264388875,
+        "name" : "BCL6",
+        "PageRank" : 0.00527725376511274,
+        "SUID" : 555,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 442.6395390412638,
+        "y" : 276.4406265761172
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "553",
+        "shared_name" : "CEBPD",
+        "Eigen" : 0.0855047015421714,
+        "Closeness" : 0.0503221006779882,
+        "Betweeness" : 0,
+        "Degree" : 3,
+        "Constraint" : 0.334155479827713,
+        "Alpha" : 1.0,
+        "name" : "CEBPD",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 553,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 622.3132145783732,
+        "y" : 341.25803990619534
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "548",
+        "shared_name" : "ZNF623",
+        "Eigen" : 0.00356370198391843,
+        "Closeness" : 0.036628211318993,
+        "Betweeness" : 4,
+        "Degree" : 3,
+        "Constraint" : 0.335548752090553,
+        "Alpha" : 1.02519238226489,
+        "name" : "ZNF623",
+        "PageRank" : 0.00749357195040448,
+        "SUID" : 548,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -534.7810847380331,
+        "y" : -920.5796065781797
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "546",
+        "shared_name" : "HIC2",
+        "Eigen" : 8.72060131202356E-4,
+        "Closeness" : 0.032490835985427,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "HIC2",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 546,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -505.3269831755331,
+        "y" : -1037.9594283555234
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "541",
+        "shared_name" : "PURA",
+        "Eigen" : 0.0237322802275665,
+        "Closeness" : 0.0453808319323771,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "PURA",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 541,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 786.2631657502482,
+        "y" : 156.43852086322659
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "536",
+        "shared_name" : "ZBTB48",
+        "Eigen" : 4.123896909214E-4,
+        "Closeness" : 0.0322891387064168,
+        "Betweeness" : 0,
+        "Degree" : 2,
+        "Constraint" : 0.500029153217741,
+        "Alpha" : 1.04534426655859,
+        "name" : "ZBTB48",
+        "PageRank" : 0.008586883956181,
+        "SUID" : 536,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 509.11799363110754,
+        "y" : 1123.9589676405703
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "531",
+        "shared_name" : "ZNF480",
+        "Eigen" : 4.01488759798057E-4,
+        "Closeness" : 0.0321650428653372,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.02303877909239,
+        "name" : "ZNF480",
+        "PageRank" : 0.00517012076451603,
+        "SUID" : 531,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 383.74876145337316,
+        "y" : 1186.7795242811953
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "526",
+        "shared_name" : "PATZ1",
+        "Eigen" : 0.00656415323631961,
+        "Closeness" : 0.0407021042921039,
+        "Betweeness" : 0,
+        "Degree" : 2,
+        "Constraint" : 0.504387286637331,
+        "Alpha" : 1.04814114004034,
+        "name" : "PATZ1",
+        "PageRank" : 0.0124995356358862,
+        "SUID" : 526,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 319.1380284211466,
+        "y" : 946.0718826796328
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "524",
+        "shared_name" : "NCOA1",
+        "Eigen" : 0.00179406475790967,
+        "Closeness" : 0.0358290656366141,
+        "Betweeness" : 0,
+        "Degree" : 3,
+        "Constraint" : 0.334223075476882,
+        "Alpha" : 1.0,
+        "name" : "NCOA1",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 524,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 395.6934941193888,
+        "y" : 1068.3513016249453
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "519",
+        "shared_name" : "E2F1",
+        "Eigen" : 8.94554785403378E-4,
+        "Closeness" : 0.0389142210803331,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.02001398679211,
+        "name" : "E2F1",
+        "PageRank" : 0.00556532051064201,
+        "SUID" : 519,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 139.04922989819738,
+        "y" : -768.6895919297422
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "514",
+        "shared_name" : "ZNF367",
+        "Eigen" : 0.0178908531783289,
+        "Closeness" : 0.0513593279962353,
+        "Betweeness" : 0,
+        "Degree" : 2,
+        "Constraint" : 0.506541574229975,
+        "Alpha" : 1.04660779159107,
+        "name" : "ZNF367",
+        "PageRank" : 0.0104133673816828,
+        "SUID" : 514,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 19.876538552982538,
+        "y" : -525.067491099664
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "512",
+        "shared_name" : "FOXO3",
+        "Eigen" : 0.00460147979067806,
+        "Closeness" : 0.0436003110770159,
+        "Betweeness" : 0,
+        "Degree" : 2,
+        "Constraint" : 0.507212247797448,
+        "Alpha" : 1.0,
+        "name" : "FOXO3",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 512,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 70.24177334521505,
+        "y" : -664.2462325547422
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "507",
+        "shared_name" : "SPIB",
+        "Eigen" : 0.00809045263371748,
+        "Closeness" : 0.0368311029656001,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0229666297755,
+        "name" : "SPIB",
+        "PageRank" : 0.00567927655951789,
+        "SUID" : 507,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 80.5144932648966,
+        "y" : -244.98859934551365
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "502",
+        "shared_name" : "RXRA",
+        "Eigen" : 0.0362660064578921,
+        "Closeness" : 0.0416986870371131,
+        "Betweeness" : 0,
+        "Degree" : 2,
+        "Constraint" : 0.501452933261534,
+        "Alpha" : 1.0,
+        "name" : "RXRA",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 502,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 151.86357621167394,
+        "y" : -162.92906908733494
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "494",
+        "shared_name" : "NR4A3",
+        "Eigen" : 0.262130555148859,
+        "Closeness" : 0.0573144561529446,
+        "Betweeness" : 1,
+        "Degree" : 2,
+        "Constraint" : 0.506684731015674,
+        "Alpha" : 1.02054075171018,
+        "name" : "NR4A3",
+        "PageRank" : 0.00749357195040448,
+        "SUID" : 494,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 141.76946763013098,
+        "y" : 292.1814713026797
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "489",
+        "shared_name" : "NFATC1",
+        "Eigen" : 0.00316412106309717,
+        "Closeness" : 0.0324002581901236,
+        "Betweeness" : 2,
+        "Degree" : 2,
+        "Constraint" : 0.504796180531574,
+        "Alpha" : 1.02597947707975,
+        "name" : "NFATC1",
+        "PageRank" : 0.00749357195040448,
+        "SUID" : 489,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 706.5032780549357,
+        "y" : -236.29389719707615
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "487",
+        "shared_name" : "CC2D1A",
+        "Eigen" : 7.98471303493913E-4,
+        "Closeness" : 0.0290283181946893,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "CC2D1A",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 487,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 797.7830632111857,
+        "y" : -309.484468028375
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "482",
+        "shared_name" : "SAFB",
+        "Eigen" : 0.00764305971776074,
+        "Closeness" : 0.038185133338146,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "SAFB",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 482,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 850.5207341096232,
+        "y" : 507.34910435932034
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "477",
+        "shared_name" : "NFYB",
+        "Eigen" : 9.63393301561292E-4,
+        "Closeness" : 0.0320266337100241,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.02739254419811,
+        "name" : "NFYB",
+        "PageRank" : 0.00817332564906828,
+        "SUID" : 477,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -68.2290370085409,
+        "y" : -971.9935470078672
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "475",
+        "shared_name" : "LYL1",
+        "Eigen" : 0.00369574054851879,
+        "Closeness" : 0.0363364550454389,
+        "Betweeness" : 1,
+        "Degree" : 2,
+        "Constraint" : 0.508275231538465,
+        "Alpha" : 1.02071862430543,
+        "name" : "LYL1",
+        "PageRank" : 0.00485028966637319,
+        "SUID" : 475,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -144.51678725268152,
+        "y" : -878.3321090195859
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "470",
+        "shared_name" : "ZNF667",
+        "Eigen" : 0.00103339361819059,
+        "Closeness" : 0.043154491444907,
+        "Betweeness" : 0,
+        "Degree" : 4,
+        "Constraint" : 0.250518625106437,
+        "Alpha" : 1.08736169151198,
+        "name" : "ZNF667",
+        "PageRank" : 0.0250303228694476,
+        "SUID" : 470,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -1072.669268331783,
+        "y" : -113.08039240581638
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "465",
+        "shared_name" : "TCF7L2",
+        "Eigen" : 6.32978923708311E-5,
+        "Closeness" : 0.0336468177331439,
+        "Betweeness" : 0,
+        "Degree" : 2,
+        "Constraint" : 0.510431927711305,
+        "Alpha" : 1.04690248199119,
+        "name" : "TCF7L2",
+        "PageRank" : 0.00940022441907389,
+        "SUID" : 465,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -1340.495928488033,
+        "y" : -139.51366953594334
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "463",
+        "shared_name" : "ZNF236",
+        "Eigen" : 2.33580408901037E-4,
+        "Closeness" : 0.0383576172367037,
+        "Betweeness" : 0,
+        "Degree" : 2,
+        "Constraint" : 0.505784081476698,
+        "Alpha" : 1.0,
+        "name" : "ZNF236",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 463,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -1213.598467550533,
+        "y" : -119.95523981792576
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "455",
+        "shared_name" : "ZNF860",
+        "Eigen" : 0.0976876594172773,
+        "Closeness" : 0.052541269716165,
+        "Betweeness" : 24,
+        "Degree" : 4,
+        "Constraint" : 0.250237232999006,
+        "Alpha" : 1.04648043624839,
+        "name" : "ZNF860",
+        "PageRank" : 0.011703613668657,
+        "SUID" : 455,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 239.07893113110754,
+        "y" : 608.5181107069766
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "453",
+        "shared_name" : "ELF2",
+        "Eigen" : 0.297070560010796,
+        "Closeness" : 0.059505391131947,
+        "Betweeness" : 6,
+        "Degree" : 3,
+        "Constraint" : 0.336021357669842,
+        "Alpha" : 1.0228602189761,
+        "name" : "ELF2",
+        "PageRank" : 0.00749357195040448,
+        "SUID" : 453,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 212.65456894849035,
+        "y" : 419.5944046522891
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "448",
+        "shared_name" : "ZNF484",
+        "Eigen" : 0.00162349193417938,
+        "Closeness" : 0.0311402570531857,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "ZNF484",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 448,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -596.6775691130331,
+        "y" : 312.08982701557034
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "443",
+        "shared_name" : "TFDP1",
+        "Eigen" : 0.0259515418009897,
+        "Closeness" : 0.0485769314304172,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "TFDP1",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 443,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -131.30351515795496,
+        "y" : 210.96354527728909
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "438",
+        "shared_name" : "ZNF649",
+        "Eigen" : 0.0186308418393498,
+        "Closeness" : 0.0410649137880227,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "ZNF649",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 438,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -396.0830866911581,
+        "y" : 27.27349705951565
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "433",
+        "shared_name" : "MEF2A",
+        "Eigen" : 0.0394248801452711,
+        "Closeness" : 0.0470236205136857,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.02122699781362,
+        "name" : "MEF2A",
+        "PageRank" : 0.00442148036156863,
+        "SUID" : 433,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -472.6311823942831,
+        "y" : -470.3112044785703
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "410",
+        "shared_name" : "ETS1",
+        "Eigen" : 0.191207970141321,
+        "Closeness" : 0.0545357891261754,
+        "Betweeness" : 0,
+        "Degree" : 8,
+        "Constraint" : 0.127034909267576,
+        "Alpha" : 1.0,
+        "name" : "ETS1",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 410,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -356.5955683806112,
+        "y" : -467.8293014023984
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "405",
+        "shared_name" : "RBPJ",
+        "Eigen" : 0.0142894081373194,
+        "Closeness" : 0.0357639787070843,
+        "Betweeness" : 2,
+        "Degree" : 2,
+        "Constraint" : 0.512732577590774,
+        "Alpha" : 1.02189905481857,
+        "name" : "RBPJ",
+        "PageRank" : 0.0104201155904949,
+        "SUID" : 405,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 601.9044621369669,
+        "y" : -164.13192896587498
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "397",
+        "shared_name" : "TCFL5",
+        "Eigen" : 0.334977628609644,
+        "Closeness" : 0.0585781973118408,
+        "Betweeness" : 0,
+        "Degree" : 2,
+        "Constraint" : 0.723368788983078,
+        "Alpha" : 1.02232845161597,
+        "name" : "TCFL5",
+        "PageRank" : 0.00660305026081424,
+        "SUID" : 397,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 199.29311875317785,
+        "y" : 131.6099380995547
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "392",
+        "shared_name" : "ZNF300",
+        "Eigen" : 0.0219596875372911,
+        "Closeness" : 0.0385882622986111,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.03192549301985,
+        "name" : "ZNF300",
+        "PageRank" : 0.0148465915600466,
+        "SUID" : 392,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -596.6176325895956,
+        "y" : -609.1191878770078
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "387",
+        "shared_name" : "GLMP",
+        "Eigen" : 0.096399223887123,
+        "Closeness" : 0.0596614482566362,
+        "Betweeness" : 0,
+        "Degree" : 4,
+        "Constraint" : 0.253282693120377,
+        "Alpha" : 1.09339164839895,
+        "name" : "GLMP",
+        "PageRank" : 0.0159342077939567,
+        "SUID" : 387,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -103.70126601244715,
+        "y" : 94.06831212299221
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "379",
+        "shared_name" : "THAP4",
+        "Eigen" : 0.0493427210823182,
+        "Closeness" : 0.0474231145925738,
+        "Betweeness" : 0,
+        "Degree" : 2,
+        "Constraint" : 0.500012865744529,
+        "Alpha" : 1.042919306521,
+        "name" : "THAP4",
+        "PageRank" : 0.00588061517950978,
+        "SUID" : 379,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -390.66908522631434,
+        "y" : -588.2494369004453
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "374",
+        "shared_name" : "FEZF2",
+        "Eigen" : 0.0661732983563788,
+        "Closeness" : 0.0460088900598254,
+        "Betweeness" : 0,
+        "Degree" : 3,
+        "Constraint" : 0.337334354942173,
+        "Alpha" : 1.07323995381777,
+        "name" : "FEZF2",
+        "PageRank" : 0.00692390805265942,
+        "SUID" : 374,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -324.36757155443934,
+        "y" : -651.1473556016172
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "369",
+        "shared_name" : "ZFHX3",
+        "Eigen" : 0.0764320462266219,
+        "Closeness" : 0.0458026557295229,
+        "Betweeness" : 6,
+        "Degree" : 4,
+        "Constraint" : 0.255536163080053,
+        "Alpha" : 1.07935114985965,
+        "name" : "ZFHX3",
+        "PageRank" : 0.0127011907381123,
+        "SUID" : 369,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -473.52699538256434,
+        "y" : -611.1889205430234
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "367",
+        "shared_name" : "IKZF3",
+        "Eigen" : 0.0490525573485474,
+        "Closeness" : 0.0426630442994298,
+        "Betweeness" : 4,
+        "Degree" : 4,
+        "Constraint" : 0.254652419786884,
+        "Alpha" : 1.02374864305683,
+        "name" : "IKZF3",
+        "PageRank" : 0.00588040612452885,
+        "SUID" : 367,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -442.88112135912684,
+        "y" : -702.2025619004453
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "359",
+        "shared_name" : "ZNF215",
+        "Eigen" : 5.55634240042062E-5,
+        "Closeness" : 0.0344768141011434,
+        "Betweeness" : 2,
+        "Degree" : 2,
+        "Constraint" : 0.521582307165511,
+        "Alpha" : 1.03153087346606,
+        "name" : "ZNF215",
+        "PageRank" : 0.00749357195040448,
+        "SUID" : 359,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -1174.736895284908,
+        "y" : 141.24085850971096
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "357",
+        "shared_name" : "ZNF12",
+        "Eigen" : 1.70176982139934E-5,
+        "Closeness" : 0.0299793795161073,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "ZNF12",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 357,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -1218.6798884489706,
+        "y" : 250.40763707416409
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "352",
+        "shared_name" : "MYCN",
+        "Eigen" : 0.106205424206835,
+        "Closeness" : 0.0533122051427539,
+        "Betweeness" : 0,
+        "Degree" : 2,
+        "Constraint" : 0.521464230948418,
+        "Alpha" : 1.05376829344778,
+        "name" : "MYCN",
+        "PageRank" : 0.0103767916956336,
+        "SUID" : 352,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 362.4731877229044,
+        "y" : 46.4969467665469
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "344",
+        "shared_name" : "HIVEP1",
+        "Eigen" : 0.095783248610874,
+        "Closeness" : 0.0536235556819482,
+        "Betweeness" : 15,
+        "Degree" : 2,
+        "Constraint" : 0.500012438839466,
+        "Alpha" : 1.023676722578,
+        "name" : "HIVEP1",
+        "PageRank" : 0.00563414260569293,
+        "SUID" : 344,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 304.507504739506,
+        "y" : 436.2889847304141
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "342",
+        "shared_name" : "NR3C1",
+        "Eigen" : 0.326521945877248,
+        "Closeness" : 0.0619184097455062,
+        "Betweeness" : 14,
+        "Degree" : 4,
+        "Constraint" : 0.30200321469941,
+        "Alpha" : 1.02091558156473,
+        "name" : "NR3C1",
+        "PageRank" : 0.00616300109931506,
+        "SUID" : 342,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 346.21931199048254,
+        "y" : 250.44962926166409
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "337",
+        "shared_name" : "REPIN1",
+        "Eigen" : 0.325987091112669,
+        "Closeness" : 0.0546795722985444,
+        "Betweeness" : 1,
+        "Degree" : 2,
+        "Constraint" : 0.51945481285583,
+        "Alpha" : 1.02151860557064,
+        "name" : "REPIN1",
+        "PageRank" : 0.00749357195040448,
+        "SUID" : 337,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 393.1851017854044,
+        "y" : 165.24378819721096
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "332",
+        "shared_name" : "CSRNP1",
+        "Eigen" : 0.0300982494534378,
+        "Closeness" : 0.0442859758932381,
+        "Betweeness" : 0,
+        "Degree" : 3,
+        "Constraint" : 0.340391445981616,
+        "Alpha" : 1.08213452569477,
+        "name" : "CSRNP1",
+        "PageRank" : 0.015268286741052,
+        "SUID" : 332,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 742.2472966096232,
+        "y" : 439.52940221088284
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "330",
+        "shared_name" : "SP140",
+        "Eigen" : 0.0291623411952142,
+        "Closeness" : 0.0462570616605266,
+        "Betweeness" : 2,
+        "Degree" : 2,
+        "Constraint" : 0.514893903564564,
+        "Alpha" : 1.02332669339196,
+        "name" : "SP140",
+        "PageRank" : 0.00782674800654698,
+        "SUID" : 330,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 705.7314274689982,
+        "y" : 541.3835892226016
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "325",
+        "shared_name" : "CENPX",
+        "Eigen" : 0.0215153751870301,
+        "Closeness" : 0.043985806076813,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0204768300016,
+        "name" : "CENPX",
+        "PageRank" : 0.00576921655704968,
+        "SUID" : 325,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 188.65298203442785,
+        "y" : -71.4703383897031
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "320",
+        "shared_name" : "IRF4",
+        "Eigen" : 0.0476583228632623,
+        "Closeness" : 0.0416410600589469,
+        "Betweeness" : 0,
+        "Degree" : 3,
+        "Constraint" : 0.341572787851463,
+        "Alpha" : 1.0861576542691,
+        "name" : "IRF4",
+        "PageRank" : 0.0201285047577275,
+        "SUID" : 320,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 478.90208176587316,
+        "y" : -90.43338923198826
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "315",
+        "shared_name" : "MAFB",
+        "Eigen" : 0.411832201207042,
+        "Closeness" : 0.0578826512352126,
+        "Betweeness" : 6,
+        "Degree" : 4,
+        "Constraint" : 0.35378758501583,
+        "Alpha" : 1.04666401700238,
+        "name" : "MAFB",
+        "PageRank" : 0.00716390641274972,
+        "SUID" : 315,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 306.01479844067785,
+        "y" : 75.89610142963284
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "313",
+        "shared_name" : "MAF",
+        "Eigen" : 0.11060875182315,
+        "Closeness" : 0.0500723894410864,
+        "Betweeness" : 5,
+        "Degree" : 4,
+        "Constraint" : 0.260651522412253,
+        "Alpha" : 1.02253717973351,
+        "name" : "MAF",
+        "PageRank" : 0.00749357195040448,
+        "SUID" : 313,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 319.193051614506,
+        "y" : -40.094071910210914
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "308",
+        "shared_name" : "SP1",
+        "Eigen" : 0.0790382896763021,
+        "Closeness" : 0.062220944929867,
+        "Betweeness" : 0,
+        "Degree" : 4,
+        "Constraint" : 0.250544997804905,
+        "Alpha" : 1.08538765774078,
+        "name" : "SP1",
+        "PageRank" : 0.0254596664684049,
+        "SUID" : 308,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -454.3808161833456,
+        "y" : -231.91346125347263
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "303",
+        "shared_name" : "ZNF511",
+        "Eigen" : 0.118833904001576,
+        "Closeness" : 0.0614305223058159,
+        "Betweeness" : 0,
+        "Degree" : 2,
+        "Constraint" : 0.501403670483638,
+        "Alpha" : 1.04579836450269,
+        "name" : "ZNF511",
+        "PageRank" : 0.0047461803765488,
+        "SUID" : 303,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -238.02727004076746,
+        "y" : -406.8618483994687
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "298",
+        "shared_name" : "NR2C2",
+        "Eigen" : 0.0851491606004111,
+        "Closeness" : 0.0571027516869188,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.02493638501763,
+        "name" : "NR2C2",
+        "PageRank" : 0.00436597333362868,
+        "SUID" : 298,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -157.31584425951746,
+        "y" : -360.0351119492734
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "293",
+        "shared_name" : "ELF1",
+        "Eigen" : 0.0861602685605149,
+        "Closeness" : 0.0569698190510309,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.02523249336691,
+        "name" : "ELF1",
+        "PageRank" : 0.00436971849425737,
+        "SUID" : 293,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -217.66115065600184,
+        "y" : -146.91577677471287
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "288",
+        "shared_name" : "VEZF1",
+        "Eigen" : 0.136530706590067,
+        "Closeness" : 0.0592344619262286,
+        "Betweeness" : 0,
+        "Degree" : 2,
+        "Constraint" : 0.501253220282158,
+        "Alpha" : 1.05104025742727,
+        "name" : "VEZF1",
+        "PageRank" : 0.00481310678753252,
+        "SUID" : 288,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -318.8376338102987,
+        "y" : -338.2467818711484
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "283",
+        "shared_name" : "SMYD3",
+        "Eigen" : 0.13486050257307,
+        "Closeness" : 0.0590682663651801,
+        "Betweeness" : 0,
+        "Degree" : 2,
+        "Constraint" : 0.509496690013125,
+        "Alpha" : 1.0491601008235,
+        "name" : "SMYD3",
+        "PageRank" : 0.00477461018555986,
+        "SUID" : 283,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -271.47624465014246,
+        "y" : -363.6821303818906
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "278",
+        "shared_name" : "MBNL2",
+        "Eigen" : 0.111824287148418,
+        "Closeness" : 0.0537913764788012,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.03274833784612,
+        "name" : "MBNL2",
+        "PageRank" : 0.00446477844411626,
+        "SUID" : 278,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -94.80424757982996,
+        "y" : -206.12219767315037
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "273",
+        "shared_name" : "BAZ2A",
+        "Eigen" : 0.0851768722564478,
+        "Closeness" : 0.0596747949580593,
+        "Betweeness" : 2,
+        "Degree" : 3,
+        "Constraint" : 0.333921414642173,
+        "Alpha" : 1.04359365687547,
+        "name" : "BAZ2A",
+        "PageRank" : 0.00521710177561093,
+        "SUID" : 273,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 12.210946359379022,
+        "y" : -354.8206801865781
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "268",
+        "shared_name" : "NFAT5",
+        "Eigen" : 0.0745651600963664,
+        "Closeness" : 0.059499132671253,
+        "Betweeness" : 1,
+        "Degree" : 2,
+        "Constraint" : 0.500426035090437,
+        "Alpha" : 1.02072649919462,
+        "name" : "NFAT5",
+        "PageRank" : 0.00431272695042393,
+        "SUID" : 268,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -74.6678797819784,
+        "y" : -368.2645278428281
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "263",
+        "shared_name" : "ZXDC",
+        "Eigen" : 0.385057100971125,
+        "Closeness" : 0.0718843854860075,
+        "Betweeness" : 2,
+        "Degree" : 3,
+        "Constraint" : 0.340300354614257,
+        "Alpha" : 1.02263129114267,
+        "name" : "ZXDC",
+        "PageRank" : 0.00433681864465392,
+        "SUID" : 263,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 6.73009613965246,
+        "y" : 1.0091995741640858
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "258",
+        "shared_name" : "THYN1",
+        "Eigen" : 0.165291372933929,
+        "Closeness" : 0.0601492671290358,
+        "Betweeness" : 2,
+        "Degree" : 3,
+        "Constraint" : 0.333939173120997,
+        "Alpha" : 1.05575924221151,
+        "name" : "THYN1",
+        "PageRank" : 0.0048943132048488,
+        "SUID" : 258,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -350.21107741381434,
+        "y" : -260.59180598003513
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "256",
+        "shared_name" : "MEF2C",
+        "Eigen" : 0.351537015044188,
+        "Closeness" : 0.0710678018757754,
+        "Betweeness" : 0,
+        "Degree" : 11,
+        "Constraint" : 0.0928262049435365,
+        "Alpha" : 1.0,
+        "name" : "MEF2C",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 256,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -191.80372878100184,
+        "y" : -256.96494059307224
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "251",
+        "shared_name" : "E2F3",
+        "Eigen" : 0.00613371663166833,
+        "Closeness" : 0.0352703697646566,
+        "Betweeness" : 0,
+        "Degree" : 2,
+        "Constraint" : 0.501223455376461,
+        "Alpha" : 1.05192925916986,
+        "name" : "E2F3",
+        "PageRank" : 0.00893618150032031,
+        "SUID" : 251,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -549.1092097380331,
+        "y" : 200.79078526752346
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "246",
+        "shared_name" : "ZMAT1",
+        "Eigen" : 0.0671521064980419,
+        "Closeness" : 0.0489954548594487,
+        "Betweeness" : 0,
+        "Degree" : 5,
+        "Constraint" : 0.206851020183592,
+        "Alpha" : 1.13742760232786,
+        "name" : "ZMAT1",
+        "PageRank" : 0.0205401061778703,
+        "SUID" : 246,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -440.6651484587362,
+        "y" : -79.34175257427341
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "244",
+        "shared_name" : "ZBTB7A",
+        "Eigen" : 0.0237932876096499,
+        "Closeness" : 0.0400065681859429,
+        "Betweeness" : 0,
+        "Degree" : 2,
+        "Constraint" : 0.513122406064843,
+        "Alpha" : 1.0,
+        "name" : "ZBTB7A",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 244,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -493.06007643725184,
+        "y" : 75.86225743549221
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "239",
+        "shared_name" : "ZNF202",
+        "Eigen" : 0.00103271212880259,
+        "Closeness" : 0.0423818976404529,
+        "Betweeness" : 4,
+        "Degree" : 2,
+        "Constraint" : 0.529010758500612,
+        "Alpha" : 1.03462521943234,
+        "name" : "ZNF202",
+        "PageRank" : 0.00749357195040448,
+        "SUID" : 239,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -959.1618220427206,
+        "y" : -266.63409571392185
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "237",
+        "shared_name" : "MBD2",
+        "Eigen" : 3.47334263674105E-4,
+        "Closeness" : 0.035244452441584,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "MBD2",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 237,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -1010.1466853239706,
+        "y" : -371.6283431504453
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "232",
+        "shared_name" : "AHR",
+        "Eigen" : 0.369630463470428,
+        "Closeness" : 0.0547284002077685,
+        "Betweeness" : 3,
+        "Degree" : 2,
+        "Constraint" : 0.537890718754571,
+        "Alpha" : 1.02194410936805,
+        "name" : "AHR",
+        "PageRank" : 0.0128388368522937,
+        "SUID" : 232,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 239.57070664380285,
+        "y" : 64.42719884174221
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "227",
+        "shared_name" : "ZNF580",
+        "Eigen" : 0.0880808504643634,
+        "Closeness" : 0.0526033860033268,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.02252162849696,
+        "name" : "ZNF580",
+        "PageRank" : 0.00447015536204023,
+        "SUID" : 227,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 560.6109745881388,
+        "y" : 421.5935501601016
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "222",
+        "shared_name" : "JUND",
+        "Eigen" : 0.096602239635404,
+        "Closeness" : 0.053921456030667,
+        "Betweeness" : 0,
+        "Degree" : 3,
+        "Constraint" : 0.336012502848466,
+        "Alpha" : 1.06774550897247,
+        "name" : "JUND",
+        "PageRank" : 0.00856968862157751,
+        "SUID" : 222,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 716.9984562775919,
+        "y" : 247.45838780658596
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "217",
+        "shared_name" : "ZNF777",
+        "Eigen" : 0.104490036372504,
+        "Closeness" : 0.0510485606485755,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.02671733717838,
+        "name" : "ZNF777",
+        "PageRank" : 0.00454832104040993,
+        "SUID" : 217,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 579.943555154545,
+        "y" : 244.93791051166409
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "212",
+        "shared_name" : "ZNF581",
+        "Eigen" : 0.130140469527742,
+        "Closeness" : 0.0514660517945875,
+        "Betweeness" : 0,
+        "Degree" : 3,
+        "Constraint" : 0.337604316896489,
+        "Alpha" : 1.0729233541448,
+        "name" : "ZNF581",
+        "PageRank" : 0.0149603020154564,
+        "SUID" : 212,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 424.89460495923254,
+        "y" : 486.0189651991641
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "207",
+        "shared_name" : "VENTX",
+        "Eigen" : 1.0,
+        "Closeness" : 0.071820577841313,
+        "Betweeness" : 0,
+        "Degree" : 12,
+        "Constraint" : 0.103472917860751,
+        "Alpha" : 1.3219353957807,
+        "name" : "VENTX",
+        "PageRank" : 0.053622119746479,
+        "SUID" : 207,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 262.8033421418497,
+        "y" : 212.53101964252346
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "202",
+        "shared_name" : "ZNF787",
+        "Eigen" : 0.185710683938196,
+        "Closeness" : 0.0461123763545603,
+        "Betweeness" : 0,
+        "Degree" : 2,
+        "Constraint" : 0.559376142434814,
+        "Alpha" : 1.06512562762583,
+        "name" : "ZNF787",
+        "PageRank" : 0.0059510102871647,
+        "SUID" : 202,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 506.4011662385294,
+        "y" : 473.98850865619534
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "197",
+        "shared_name" : "ZNF579",
+        "Eigen" : 0.0887575249150338,
+        "Closeness" : 0.0536024806340115,
+        "Betweeness" : 2,
+        "Degree" : 2,
+        "Constraint" : 0.500846838404259,
+        "Alpha" : 1.02103991991726,
+        "name" : "ZNF579",
+        "PageRank" : 0.00444255126340695,
+        "SUID" : 197,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 621.7366154572794,
+        "y" : 447.6730179335391
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "195",
+        "shared_name" : "JUNB",
+        "Eigen" : 0.402629779735002,
+        "Closeness" : 0.0628843872036241,
+        "Betweeness" : 0,
+        "Degree" : 7,
+        "Constraint" : 0.154481265773452,
+        "Alpha" : 1.0,
+        "name" : "JUNB",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 195,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 503.36106614087316,
+        "y" : 337.0920853163516
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "185",
+        "shared_name" : "MYCL",
+        "Eigen" : 0.138672020857422,
+        "Closeness" : 0.0487753139366269,
+        "Betweeness" : 5,
+        "Degree" : 4,
+        "Constraint" : 0.293614777233201,
+        "Alpha" : 1.09473243695904,
+        "name" : "MYCL",
+        "PageRank" : 0.0103391263760501,
+        "SUID" : 185,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 253.83108262036535,
+        "y" : -84.85748438579685
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "183",
+        "shared_name" : "ZNF14",
+        "Eigen" : 0.0661129953733252,
+        "Closeness" : 0.0366629535860025,
+        "Betweeness" : 0,
+        "Degree" : 1,
+        "Constraint" : 1.0,
+        "Alpha" : 1.0,
+        "name" : "ZNF14",
+        "PageRank" : 0.00405057943265107,
+        "SUID" : 183,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 253.4984257600138,
+        "y" : -208.5674949143613
+      },
+      "selected" : false
+    } ],
+    "edges" : [ {
+      "data" : {
+        "id" : "918",
+        "source" : "916",
+        "target" : "631",
+        "shared_name" : "ZNF266 (interacts with) EGR3",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF266 (interacts with) EGR3",
+        "interaction" : "interacts with",
+        "weight" : 0.0200518636569125,
+        "SUID" : 918,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "913",
+        "source" : "911",
+        "target" : "465",
+        "shared_name" : "ZNF792 (interacts with) TCF7L2",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF792 (interacts with) TCF7L2",
+        "interaction" : "interacts with",
+        "weight" : 0.0200638672900159,
+        "SUID" : 913,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "908",
+        "source" : "906",
+        "target" : "719",
+        "shared_name" : "ZBTB32 (interacts with) ATF5",
+        "shared_interaction" : "interacts with",
+        "name" : "ZBTB32 (interacts with) ATF5",
+        "interaction" : "interacts with",
+        "weight" : 0.0201726057316477,
+        "SUID" : 908,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "903",
+        "source" : "901",
+        "target" : "308",
+        "shared_name" : "AEBP1 (interacts with) SP1",
+        "shared_interaction" : "interacts with",
+        "name" : "AEBP1 (interacts with) SP1",
+        "interaction" : "interacts with",
+        "weight" : 0.0201950719993166,
+        "SUID" : 903,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "895",
+        "source" : "893",
+        "target" : "719",
+        "shared_name" : "MBD1 (interacts with) ATF5",
+        "shared_interaction" : "interacts with",
+        "name" : "MBD1 (interacts with) ATF5",
+        "interaction" : "interacts with",
+        "weight" : 0.0203076542002025,
+        "SUID" : 895,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "890",
+        "source" : "888",
+        "target" : "678",
+        "shared_name" : "TEF (interacts with) ZNF595",
+        "shared_interaction" : "interacts with",
+        "name" : "TEF (interacts with) ZNF595",
+        "interaction" : "interacts with",
+        "weight" : 0.0203994066004697,
+        "SUID" : 890,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "879",
+        "source" : "877",
+        "target" : "494",
+        "shared_name" : "DRAP1 (interacts with) NR4A3",
+        "shared_interaction" : "interacts with",
+        "name" : "DRAP1 (interacts with) NR4A3",
+        "interaction" : "interacts with",
+        "weight" : 0.0205407517101844,
+        "SUID" : 879,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "874",
+        "source" : "867",
+        "target" : "872",
+        "shared_name" : "RARA (interacts with) E2F5",
+        "shared_interaction" : "interacts with",
+        "name" : "RARA (interacts with) E2F5",
+        "interaction" : "interacts with",
+        "weight" : 0.0203927220358695,
+        "SUID" : 874,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "869",
+        "source" : "867",
+        "target" : "470",
+        "shared_name" : "RARA (interacts with) ZNF667",
+        "shared_interaction" : "interacts with",
+        "name" : "RARA (interacts with) ZNF667",
+        "interaction" : "interacts with",
+        "weight" : 0.020543964907848,
+        "SUID" : 869,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "864",
+        "source" : "862",
+        "target" : "701",
+        "shared_name" : "ZNF429 (interacts with) DDIT3",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF429 (interacts with) DDIT3",
+        "interaction" : "interacts with",
+        "weight" : 0.0206058226961551,
+        "SUID" : 864,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "859",
+        "source" : "857",
+        "target" : "701",
+        "shared_name" : "ZNF814 (interacts with) DDIT3",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF814 (interacts with) DDIT3",
+        "interaction" : "interacts with",
+        "weight" : 0.0206526330355118,
+        "SUID" : 859,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "854",
+        "source" : "852",
+        "target" : "246",
+        "shared_name" : "TOPORS (interacts with) ZMAT1",
+        "shared_interaction" : "interacts with",
+        "name" : "TOPORS (interacts with) ZMAT1",
+        "interaction" : "interacts with",
+        "weight" : 0.0206716838456156,
+        "SUID" : 854,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "846",
+        "source" : "844",
+        "target" : "796",
+        "shared_name" : "ZNF577 (interacts with) HOXB2",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF577 (interacts with) HOXB2",
+        "interaction" : "interacts with",
+        "weight" : 0.0207906779856744,
+        "SUID" : 846,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "833",
+        "source" : "831",
+        "target" : "387",
+        "shared_name" : "KLF6 (interacts with) GLMP",
+        "shared_interaction" : "interacts with",
+        "name" : "KLF6 (interacts with) GLMP",
+        "interaction" : "interacts with",
+        "weight" : 0.0209518194127175,
+        "SUID" : 833,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "828",
+        "source" : "826",
+        "target" : "207",
+        "shared_name" : "MXI1 (interacts with) VENTX",
+        "shared_interaction" : "interacts with",
+        "name" : "MXI1 (interacts with) VENTX",
+        "interaction" : "interacts with",
+        "weight" : 0.0209647576110442,
+        "SUID" : 828,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "823",
+        "source" : "821",
+        "target" : "626",
+        "shared_name" : "CXXC5 (interacts with) EGR2",
+        "shared_interaction" : "interacts with",
+        "name" : "CXXC5 (interacts with) EGR2",
+        "interaction" : "interacts with",
+        "weight" : 0.0210888102176414,
+        "SUID" : 823,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "841",
+        "source" : "808",
+        "target" : "352",
+        "shared_name" : "CTCF (interacts with) MYCN",
+        "shared_interaction" : "interacts with",
+        "name" : "CTCF (interacts with) MYCN",
+        "interaction" : "interacts with",
+        "weight" : 0.0208840970494593,
+        "SUID" : 841,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "838",
+        "source" : "803",
+        "target" : "836",
+        "shared_name" : "ATF4 (interacts with) DBP",
+        "shared_interaction" : "interacts with",
+        "name" : "ATF4 (interacts with) DBP",
+        "interaction" : "interacts with",
+        "weight" : 0.0209094655253946,
+        "SUID" : 838,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "818",
+        "source" : "801",
+        "target" : "816",
+        "shared_name" : "ZNF280D (interacts with) MYBL1",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF280D (interacts with) MYBL1",
+        "interaction" : "interacts with",
+        "weight" : 0.0204239976127115,
+        "SUID" : 818,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "813",
+        "source" : "801",
+        "target" : "273",
+        "shared_name" : "ZNF280D (interacts with) BAZ2A",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF280D (interacts with) BAZ2A",
+        "interaction" : "interacts with",
+        "weight" : 0.0211657275011581,
+        "SUID" : 813,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "810",
+        "source" : "801",
+        "target" : "808",
+        "shared_name" : "ZNF280D (interacts with) CTCF",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF280D (interacts with) CTCF",
+        "interaction" : "interacts with",
+        "weight" : 0.020078549589836,
+        "SUID" : 810,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "805",
+        "source" : "801",
+        "target" : "803",
+        "shared_name" : "ZNF280D (interacts with) ATF4",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF280D (interacts with) ATF4",
+        "interaction" : "interacts with",
+        "weight" : 0.0208746363533778,
+        "SUID" : 805,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "885",
+        "source" : "796",
+        "target" : "470",
+        "shared_name" : "HOXB2 (interacts with) ZNF667",
+        "shared_interaction" : "interacts with",
+        "name" : "HOXB2 (interacts with) ZNF667",
+        "interaction" : "interacts with",
+        "weight" : 0.0204866163300386,
+        "SUID" : 885,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "882",
+        "source" : "796",
+        "target" : "719",
+        "shared_name" : "HOXB2 (interacts with) ATF5",
+        "shared_interaction" : "interacts with",
+        "name" : "HOXB2 (interacts with) ATF5",
+        "interaction" : "interacts with",
+        "weight" : 0.0202097446946638,
+        "SUID" : 882,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "790",
+        "source" : "788",
+        "target" : "308",
+        "shared_name" : "SATB1 (interacts with) SP1",
+        "shared_interaction" : "interacts with",
+        "name" : "SATB1 (interacts with) SP1",
+        "interaction" : "interacts with",
+        "weight" : 0.0213616916339605,
+        "SUID" : 790,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "785",
+        "source" : "783",
+        "target" : "737",
+        "shared_name" : "PBX2 (interacts with) RREB1",
+        "shared_interaction" : "interacts with",
+        "name" : "PBX2 (interacts with) RREB1",
+        "interaction" : "interacts with",
+        "weight" : 0.0213783603164165,
+        "SUID" : 785,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "780",
+        "source" : "778",
+        "target" : "337",
+        "shared_name" : "ZNF143 (interacts with) REPIN1",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF143 (interacts with) REPIN1",
+        "interaction" : "interacts with",
+        "weight" : 0.0215186055706448,
+        "SUID" : 780,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "921",
+        "source" : "768",
+        "target" : "369",
+        "shared_name" : "ADNP (interacts with) ZFHX3",
+        "shared_interaction" : "interacts with",
+        "name" : "ADNP (interacts with) ZFHX3",
+        "interaction" : "interacts with",
+        "weight" : 0.020046736259798,
+        "SUID" : 921,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "762",
+        "source" : "760",
+        "target" : "588",
+        "shared_name" : "CENPBD1 (interacts with) HIF1A",
+        "shared_interaction" : "interacts with",
+        "name" : "CENPBD1 (interacts with) HIF1A",
+        "interaction" : "interacts with",
+        "weight" : 0.0220177400811153,
+        "SUID" : 762,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "757",
+        "source" : "755",
+        "target" : "626",
+        "shared_name" : "ZNF510 (interacts with) EGR2",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF510 (interacts with) EGR2",
+        "interaction" : "interacts with",
+        "weight" : 0.0220547600765853,
+        "SUID" : 757,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "749",
+        "source" : "747",
+        "target" : "246",
+        "shared_name" : "MGA (interacts with) ZMAT1",
+        "shared_interaction" : "interacts with",
+        "name" : "MGA (interacts with) ZMAT1",
+        "interaction" : "interacts with",
+        "weight" : 0.0222581080444845,
+        "SUID" : 749,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "744",
+        "source" : "724",
+        "target" : "742",
+        "shared_name" : "SP110 (interacts with) ARID5A",
+        "shared_interaction" : "interacts with",
+        "name" : "SP110 (interacts with) ARID5A",
+        "interaction" : "interacts with",
+        "weight" : 0.0206701017872393,
+        "SUID" : 744,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "739",
+        "source" : "724",
+        "target" : "737",
+        "shared_name" : "SP110 (interacts with) RREB1",
+        "shared_interaction" : "interacts with",
+        "name" : "SP110 (interacts with) RREB1",
+        "interaction" : "interacts with",
+        "weight" : 0.0212336846185298,
+        "SUID" : 739,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "734",
+        "source" : "724",
+        "target" : "732",
+        "shared_name" : "SP110 (interacts with) ZBTB38",
+        "shared_interaction" : "interacts with",
+        "name" : "SP110 (interacts with) ZBTB38",
+        "interaction" : "interacts with",
+        "weight" : 0.0223639233548958,
+        "SUID" : 734,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "729",
+        "source" : "724",
+        "target" : "222",
+        "shared_name" : "SP110 (interacts with) JUND",
+        "shared_interaction" : "interacts with",
+        "name" : "SP110 (interacts with) JUND",
+        "interaction" : "interacts with",
+        "weight" : 0.0204264426241351,
+        "SUID" : 729,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "726",
+        "source" : "724",
+        "target" : "655",
+        "shared_name" : "SP110 (interacts with) FOXP1",
+        "shared_interaction" : "interacts with",
+        "name" : "SP110 (interacts with) FOXP1",
+        "interaction" : "interacts with",
+        "weight" : 0.0209436922338647,
+        "SUID" : 726,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "721",
+        "source" : "719",
+        "target" : "308",
+        "shared_name" : "ATF5 (interacts with) SP1",
+        "shared_interaction" : "interacts with",
+        "name" : "ATF5 (interacts with) SP1",
+        "interaction" : "interacts with",
+        "weight" : 0.0224425958853765,
+        "SUID" : 721,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "716",
+        "source" : "714",
+        "target" : "313",
+        "shared_name" : "EPAS1 (interacts with) MAF",
+        "shared_interaction" : "interacts with",
+        "name" : "EPAS1 (interacts with) MAF",
+        "interaction" : "interacts with",
+        "weight" : 0.0225371797335085,
+        "SUID" : 716,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "703",
+        "source" : "701",
+        "target" : "212",
+        "shared_name" : "DDIT3 (interacts with) ZNF581",
+        "shared_interaction" : "interacts with",
+        "name" : "DDIT3 (interacts with) ZNF581",
+        "interaction" : "interacts with",
+        "weight" : 0.0226396024596951,
+        "SUID" : 703,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "698",
+        "source" : "696",
+        "target" : "387",
+        "shared_name" : "NFXL1 (interacts with) GLMP",
+        "shared_interaction" : "interacts with",
+        "name" : "NFXL1 (interacts with) GLMP",
+        "interaction" : "interacts with",
+        "weight" : 0.0226452378351359,
+        "SUID" : 698,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "693",
+        "source" : "691",
+        "target" : "536",
+        "shared_name" : "ZBED4 (interacts with) ZBTB48",
+        "shared_interaction" : "interacts with",
+        "name" : "ZBED4 (interacts with) ZBTB48",
+        "interaction" : "interacts with",
+        "weight" : 0.0228452546300342,
+        "SUID" : 693,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "685",
+        "source" : "683",
+        "target" : "453",
+        "shared_name" : "KLF8 (interacts with) ELF2",
+        "shared_interaction" : "interacts with",
+        "name" : "KLF8 (interacts with) ELF2",
+        "interaction" : "interacts with",
+        "weight" : 0.0228602189761007,
+        "SUID" : 685,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "680",
+        "source" : "678",
+        "target" : "470",
+        "shared_name" : "ZNF595 (interacts with) ZNF667",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF595 (interacts with) ZNF667",
+        "interaction" : "interacts with",
+        "weight" : 0.0228755144268701,
+        "SUID" : 680,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "669",
+        "source" : "667",
+        "target" : "631",
+        "shared_name" : "ZFP3 (interacts with) EGR3",
+        "shared_interaction" : "interacts with",
+        "name" : "ZFP3 (interacts with) EGR3",
+        "interaction" : "interacts with",
+        "weight" : 0.0229696251908822,
+        "SUID" : 669,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "664",
+        "source" : "655",
+        "target" : "662",
+        "shared_name" : "FOXP1 (interacts with) ZNF331",
+        "shared_interaction" : "interacts with",
+        "name" : "FOXP1 (interacts with) ZNF331",
+        "interaction" : "interacts with",
+        "weight" : 0.0207616425795248,
+        "SUID" : 664,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "659",
+        "source" : "655",
+        "target" : "657",
+        "shared_name" : "FOXP1 (interacts with) ZFY",
+        "shared_interaction" : "interacts with",
+        "name" : "FOXP1 (interacts with) ZFY",
+        "interaction" : "interacts with",
+        "weight" : 0.0231997543067015,
+        "SUID" : 659,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "643",
+        "source" : "636",
+        "target" : "641",
+        "shared_name" : "MYBL2 (interacts with) YBX1",
+        "shared_interaction" : "interacts with",
+        "name" : "MYBL2 (interacts with) YBX1",
+        "interaction" : "interacts with",
+        "weight" : 0.020936681905591,
+        "SUID" : 643,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "638",
+        "source" : "636",
+        "target" : "367",
+        "shared_name" : "MYBL2 (interacts with) IKZF3",
+        "shared_interaction" : "interacts with",
+        "name" : "MYBL2 (interacts with) IKZF3",
+        "interaction" : "interacts with",
+        "weight" : 0.0237486430568351,
+        "SUID" : 638,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "711",
+        "source" : "626",
+        "target" : "709",
+        "shared_name" : "EGR2 (interacts with) CPEB1",
+        "shared_interaction" : "interacts with",
+        "name" : "EGR2 (interacts with) CPEB1",
+        "interaction" : "interacts with",
+        "weight" : 0.0226075546617982,
+        "SUID" : 711,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "706",
+        "source" : "626",
+        "target" : "526",
+        "shared_name" : "EGR2 (interacts with) PATZ1",
+        "shared_interaction" : "interacts with",
+        "name" : "EGR2 (interacts with) PATZ1",
+        "interaction" : "interacts with",
+        "weight" : 0.0209783475906621,
+        "SUID" : 706,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "633",
+        "source" : "624",
+        "target" : "631",
+        "shared_name" : "POU2AF1 (interacts with) EGR3",
+        "shared_interaction" : "interacts with",
+        "name" : "POU2AF1 (interacts with) EGR3",
+        "interaction" : "interacts with",
+        "weight" : 0.0239651691925054,
+        "SUID" : 633,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "628",
+        "source" : "624",
+        "target" : "626",
+        "shared_name" : "POU2AF1 (interacts with) EGR2",
+        "shared_interaction" : "interacts with",
+        "name" : "POU2AF1 (interacts with) EGR2",
+        "interaction" : "interacts with",
+        "weight" : 0.0204249163047739,
+        "SUID" : 628,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "621",
+        "source" : "619",
+        "target" : "207",
+        "shared_name" : "SKIL (interacts with) VENTX",
+        "shared_interaction" : "interacts with",
+        "name" : "SKIL (interacts with) VENTX",
+        "interaction" : "interacts with",
+        "weight" : 0.0240513150593319,
+        "SUID" : 621,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "752",
+        "source" : "611",
+        "target" : "320",
+        "shared_name" : "SREBF1 (interacts with) IRF4",
+        "shared_interaction" : "interacts with",
+        "name" : "SREBF1 (interacts with) IRF4",
+        "interaction" : "interacts with",
+        "weight" : 0.0221357986228214,
+        "SUID" : 752,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "616",
+        "source" : "606",
+        "target" : "185",
+        "shared_name" : "ZNF101 (interacts with) MYCL",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF101 (interacts with) MYCL",
+        "interaction" : "interacts with",
+        "weight" : 0.0200666524196008,
+        "SUID" : 616,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "613",
+        "source" : "606",
+        "target" : "611",
+        "shared_name" : "ZNF101 (interacts with) SREBF1",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF101 (interacts with) SREBF1",
+        "interaction" : "interacts with",
+        "weight" : 0.0222436746964309,
+        "SUID" : 613,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "608",
+        "source" : "606",
+        "target" : "315",
+        "shared_name" : "ZNF101 (interacts with) MAFB",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF101 (interacts with) MAFB",
+        "interaction" : "interacts with",
+        "weight" : 0.024684803892139,
+        "SUID" : 608,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "603",
+        "source" : "593",
+        "target" : "601",
+        "shared_name" : "NCOA3 (interacts with) HSF1",
+        "shared_interaction" : "interacts with",
+        "name" : "NCOA3 (interacts with) HSF1",
+        "interaction" : "interacts with",
+        "weight" : 0.0248346628679554,
+        "SUID" : 603,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "598",
+        "source" : "593",
+        "target" : "212",
+        "shared_name" : "NCOA3 (interacts with) ZNF581",
+        "shared_interaction" : "interacts with",
+        "name" : "NCOA3 (interacts with) ZNF581",
+        "interaction" : "interacts with",
+        "weight" : 0.0215625458400951,
+        "SUID" : 598,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "595",
+        "source" : "593",
+        "target" : "202",
+        "shared_name" : "NCOA3 (interacts with) ZNF787",
+        "shared_interaction" : "interacts with",
+        "name" : "NCOA3 (interacts with) ZNF787",
+        "interaction" : "interacts with",
+        "weight" : 0.0213415205324177,
+        "SUID" : 595,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "590",
+        "source" : "586",
+        "target" : "588",
+        "shared_name" : "ZNF292 (interacts with) HIF1A",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF292 (interacts with) HIF1A",
+        "interaction" : "interacts with",
+        "weight" : 0.0248642286880283,
+        "SUID" : 590,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "583",
+        "source" : "568",
+        "target" : "581",
+        "shared_name" : "SNAPC5 (interacts with) SOX6",
+        "shared_interaction" : "interacts with",
+        "name" : "SNAPC5 (interacts with) SOX6",
+        "interaction" : "interacts with",
+        "weight" : 0.0206788056153151,
+        "SUID" : 583,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "578",
+        "source" : "568",
+        "target" : "576",
+        "shared_name" : "SNAPC5 (interacts with) ZNF281",
+        "shared_interaction" : "interacts with",
+        "name" : "SNAPC5 (interacts with) ZNF281",
+        "interaction" : "interacts with",
+        "weight" : 0.0249723995734783,
+        "SUID" : 578,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "573",
+        "source" : "568",
+        "target" : "374",
+        "shared_name" : "SNAPC5 (interacts with) FEZF2",
+        "shared_interaction" : "interacts with",
+        "name" : "SNAPC5 (interacts with) FEZF2",
+        "interaction" : "interacts with",
+        "weight" : 0.0228300649846981,
+        "SUID" : 573,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "570",
+        "source" : "568",
+        "target" : "475",
+        "shared_name" : "SNAPC5 (interacts with) LYL1",
+        "shared_interaction" : "interacts with",
+        "name" : "SNAPC5 (interacts with) LYL1",
+        "interaction" : "interacts with",
+        "weight" : 0.0207186243054252,
+        "SUID" : 570,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "675",
+        "source" : "555",
+        "target" : "207",
+        "shared_name" : "BCL6 (interacts with) VENTX",
+        "shared_interaction" : "interacts with",
+        "name" : "BCL6 (interacts with) VENTX",
+        "interaction" : "interacts with",
+        "weight" : 0.0229250863746602,
+        "SUID" : 675,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "672",
+        "source" : "555",
+        "target" : "342",
+        "shared_name" : "BCL6 (interacts with) NR3C1",
+        "shared_interaction" : "interacts with",
+        "name" : "BCL6 (interacts with) NR3C1",
+        "interaction" : "interacts with",
+        "weight" : 0.0204055918736876,
+        "SUID" : 672,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "565",
+        "source" : "553",
+        "target" : "563",
+        "shared_name" : "CEBPD (interacts with) ZNF251",
+        "shared_interaction" : "interacts with",
+        "name" : "CEBPD (interacts with) ZNF251",
+        "interaction" : "interacts with",
+        "weight" : 0.0222964067972616,
+        "SUID" : 565,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "560",
+        "source" : "553",
+        "target" : "332",
+        "shared_name" : "CEBPD (interacts with) CSRNP1",
+        "shared_interaction" : "interacts with",
+        "name" : "CEBPD (interacts with) CSRNP1",
+        "interaction" : "interacts with",
+        "weight" : 0.0228595483599594,
+        "SUID" : 560,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "557",
+        "source" : "553",
+        "target" : "555",
+        "shared_name" : "CEBPD (interacts with) BCL6",
+        "shared_interaction" : "interacts with",
+        "name" : "CEBPD (interacts with) BCL6",
+        "interaction" : "interacts with",
+        "weight" : 0.0249926438887482,
+        "SUID" : 557,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "775",
+        "source" : "548",
+        "target" : "773",
+        "shared_name" : "ZNF623 (interacts with) ZNF436",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF623 (interacts with) ZNF436",
+        "interaction" : "interacts with",
+        "weight" : 0.0215503825370852,
+        "SUID" : 775,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "770",
+        "source" : "548",
+        "target" : "768",
+        "shared_name" : "ZNF623 (interacts with) ADNP",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF623 (interacts with) ADNP",
+        "interaction" : "interacts with",
+        "weight" : 0.0210626575723832,
+        "SUID" : 770,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "550",
+        "source" : "546",
+        "target" : "548",
+        "shared_name" : "HIC2 (interacts with) ZNF623",
+        "shared_interaction" : "interacts with",
+        "name" : "HIC2 (interacts with) ZNF623",
+        "interaction" : "interacts with",
+        "weight" : 0.0251923822648894,
+        "SUID" : 550,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "543",
+        "source" : "541",
+        "target" : "222",
+        "shared_name" : "PURA (interacts with) JUND",
+        "shared_interaction" : "interacts with",
+        "name" : "PURA (interacts with) JUND",
+        "interaction" : "interacts with",
+        "weight" : 0.0252916088781557,
+        "SUID" : 543,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "538",
+        "source" : "524",
+        "target" : "536",
+        "shared_name" : "NCOA1 (interacts with) ZBTB48",
+        "shared_interaction" : "interacts with",
+        "name" : "NCOA1 (interacts with) ZBTB48",
+        "interaction" : "interacts with",
+        "weight" : 0.0224990119285538,
+        "SUID" : 538,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "533",
+        "source" : "524",
+        "target" : "531",
+        "shared_name" : "NCOA1 (interacts with) ZNF480",
+        "shared_interaction" : "interacts with",
+        "name" : "NCOA1 (interacts with) ZNF480",
+        "interaction" : "interacts with",
+        "weight" : 0.023038779092386,
+        "SUID" : 533,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "528",
+        "source" : "524",
+        "target" : "526",
+        "shared_name" : "NCOA1 (interacts with) PATZ1",
+        "shared_interaction" : "interacts with",
+        "name" : "NCOA1 (interacts with) PATZ1",
+        "interaction" : "interacts with",
+        "weight" : 0.0253147463312285,
+        "SUID" : 528,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "521",
+        "source" : "512",
+        "target" : "519",
+        "shared_name" : "FOXO3 (interacts with) E2F1",
+        "shared_interaction" : "interacts with",
+        "name" : "FOXO3 (interacts with) E2F1",
+        "interaction" : "interacts with",
+        "weight" : 0.0200139867921085,
+        "SUID" : 521,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "516",
+        "source" : "512",
+        "target" : "514",
+        "shared_name" : "FOXO3 (interacts with) ZNF367",
+        "shared_interaction" : "interacts with",
+        "name" : "FOXO3 (interacts with) ZNF367",
+        "interaction" : "interacts with",
+        "weight" : 0.0254776208343516,
+        "SUID" : 516,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "509",
+        "source" : "502",
+        "target" : "507",
+        "shared_name" : "RXRA (interacts with) SPIB",
+        "shared_interaction" : "interacts with",
+        "name" : "RXRA (interacts with) SPIB",
+        "interaction" : "interacts with",
+        "weight" : 0.0229666297754964,
+        "SUID" : 509,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "504",
+        "source" : "502",
+        "target" : "185",
+        "shared_name" : "RXRA (interacts with) MYCL",
+        "shared_interaction" : "interacts with",
+        "name" : "RXRA (interacts with) MYCL",
+        "interaction" : "interacts with",
+        "weight" : 0.0255837932409449,
+        "SUID" : 504,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "496",
+        "source" : "494",
+        "target" : "207",
+        "shared_name" : "NR4A3 (interacts with) VENTX",
+        "shared_interaction" : "interacts with",
+        "name" : "NR4A3 (interacts with) VENTX",
+        "interaction" : "interacts with",
+        "weight" : 0.0259119046662573,
+        "SUID" : 496,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "793",
+        "source" : "489",
+        "target" : "405",
+        "shared_name" : "NFATC1 (interacts with) RBPJ",
+        "shared_interaction" : "interacts with",
+        "name" : "NFATC1 (interacts with) RBPJ",
+        "interaction" : "interacts with",
+        "weight" : 0.0213445349617546,
+        "SUID" : 793,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "491",
+        "source" : "487",
+        "target" : "489",
+        "shared_name" : "CC2D1A (interacts with) NFATC1",
+        "shared_interaction" : "interacts with",
+        "name" : "CC2D1A (interacts with) NFATC1",
+        "interaction" : "interacts with",
+        "weight" : 0.025979477079752,
+        "SUID" : 491,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "484",
+        "source" : "482",
+        "target" : "332",
+        "shared_name" : "SAFB (interacts with) CSRNP1",
+        "shared_interaction" : "interacts with",
+        "name" : "SAFB (interacts with) CSRNP1",
+        "interaction" : "interacts with",
+        "weight" : 0.0261426856081532,
+        "SUID" : 484,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "479",
+        "source" : "475",
+        "target" : "477",
+        "shared_name" : "LYL1 (interacts with) NFYB",
+        "shared_interaction" : "interacts with",
+        "name" : "LYL1 (interacts with) NFYB",
+        "interaction" : "interacts with",
+        "weight" : 0.0268365282516044,
+        "SUID" : 479,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "472",
+        "source" : "463",
+        "target" : "470",
+        "shared_name" : "ZNF236 (interacts with) ZNF667",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF236 (interacts with) ZNF667",
+        "interaction" : "interacts with",
+        "weight" : 0.0216259854928471,
+        "SUID" : 472,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "467",
+        "source" : "463",
+        "target" : "465",
+        "shared_name" : "ZNF236 (interacts with) TCF7L2",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF236 (interacts with) TCF7L2",
+        "interaction" : "interacts with",
+        "weight" : 0.0268386147011725,
+        "SUID" : 467,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "649",
+        "source" : "455",
+        "target" : "631",
+        "shared_name" : "ZNF860 (interacts with) EGR3",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF860 (interacts with) EGR3",
+        "interaction" : "interacts with",
+        "weight" : 0.0220613435553419,
+        "SUID" : 649,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "646",
+        "source" : "455",
+        "target" : "626",
+        "shared_name" : "ZNF860 (interacts with) EGR2",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF860 (interacts with) EGR2",
+        "interaction" : "interacts with",
+        "weight" : 0.0234352583096125,
+        "SUID" : 646,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "460",
+        "source" : "453",
+        "target" : "207",
+        "shared_name" : "ELF2 (interacts with) VENTX",
+        "shared_interaction" : "interacts with",
+        "name" : "ELF2 (interacts with) VENTX",
+        "interaction" : "interacts with",
+        "weight" : 0.0269262712438457,
+        "SUID" : 460,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "457",
+        "source" : "453",
+        "target" : "455",
+        "shared_name" : "ELF2 (interacts with) ZNF860",
+        "shared_interaction" : "interacts with",
+        "name" : "ELF2 (interacts with) ZNF860",
+        "interaction" : "interacts with",
+        "weight" : 0.0219987683569968,
+        "SUID" : 457,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "450",
+        "source" : "448",
+        "target" : "251",
+        "shared_name" : "ZNF484 (interacts with) E2F3",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF484 (interacts with) E2F3",
+        "interaction" : "interacts with",
+        "weight" : 0.0272490026698512,
+        "SUID" : 450,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "445",
+        "source" : "443",
+        "target" : "387",
+        "shared_name" : "TFDP1 (interacts with) GLMP",
+        "shared_interaction" : "interacts with",
+        "name" : "TFDP1 (interacts with) GLMP",
+        "interaction" : "interacts with",
+        "weight" : 0.0277149316473066,
+        "SUID" : 445,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "440",
+        "source" : "438",
+        "target" : "246",
+        "shared_name" : "ZNF649 (interacts with) ZMAT1",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF649 (interacts with) ZMAT1",
+        "interaction" : "interacts with",
+        "weight" : 0.0285625529776546,
+        "SUID" : 440,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "435",
+        "source" : "410",
+        "target" : "433",
+        "shared_name" : "ETS1 (interacts with) MEF2A",
+        "shared_interaction" : "interacts with",
+        "name" : "ETS1 (interacts with) MEF2A",
+        "interaction" : "interacts with",
+        "weight" : 0.0212269978136247,
+        "SUID" : 435,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "430",
+        "source" : "410",
+        "target" : "379",
+        "shared_name" : "ETS1 (interacts with) THAP4",
+        "shared_interaction" : "interacts with",
+        "name" : "ETS1 (interacts with) THAP4",
+        "interaction" : "interacts with",
+        "weight" : 0.0210989895011097,
+        "SUID" : 430,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "427",
+        "source" : "410",
+        "target" : "303",
+        "shared_name" : "ETS1 (interacts with) ZNF511",
+        "shared_interaction" : "interacts with",
+        "name" : "ETS1 (interacts with) ZNF511",
+        "interaction" : "interacts with",
+        "weight" : 0.0241124804568587,
+        "SUID" : 427,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "424",
+        "source" : "410",
+        "target" : "288",
+        "shared_name" : "ETS1 (interacts with) VEZF1",
+        "shared_interaction" : "interacts with",
+        "name" : "ETS1 (interacts with) VEZF1",
+        "interaction" : "interacts with",
+        "weight" : 0.0242424796948848,
+        "SUID" : 424,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "421",
+        "source" : "410",
+        "target" : "374",
+        "shared_name" : "ETS1 (interacts with) FEZF2",
+        "shared_interaction" : "interacts with",
+        "name" : "ETS1 (interacts with) FEZF2",
+        "interaction" : "interacts with",
+        "weight" : 0.0279592585518263,
+        "SUID" : 421,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "418",
+        "source" : "410",
+        "target" : "283",
+        "shared_name" : "ETS1 (interacts with) SMYD3",
+        "shared_interaction" : "interacts with",
+        "name" : "ETS1 (interacts with) SMYD3",
+        "interaction" : "interacts with",
+        "weight" : 0.021192514576026,
+        "SUID" : 418,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "415",
+        "source" : "410",
+        "target" : "369",
+        "shared_name" : "ETS1 (interacts with) ZFHX3",
+        "shared_interaction" : "interacts with",
+        "name" : "ETS1 (interacts with) ZFHX3",
+        "interaction" : "interacts with",
+        "weight" : 0.0285102138953784,
+        "SUID" : 415,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "412",
+        "source" : "410",
+        "target" : "258",
+        "shared_name" : "ETS1 (interacts with) THYN1",
+        "shared_interaction" : "interacts with",
+        "name" : "ETS1 (interacts with) THYN1",
+        "interaction" : "interacts with",
+        "weight" : 0.0287026616482345,
+        "SUID" : 412,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "407",
+        "source" : "405",
+        "target" : "320",
+        "shared_name" : "RBPJ (interacts with) IRF4",
+        "shared_interaction" : "interacts with",
+        "name" : "RBPJ (interacts with) IRF4",
+        "interaction" : "interacts with",
+        "weight" : 0.0294502712720706,
+        "SUID" : 407,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "499",
+        "source" : "397",
+        "target" : "207",
+        "shared_name" : "TCFL5 (interacts with) VENTX",
+        "shared_interaction" : "interacts with",
+        "name" : "TCFL5 (interacts with) VENTX",
+        "interaction" : "interacts with",
+        "weight" : 0.0257001710232967,
+        "SUID" : 499,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "394",
+        "source" : "369",
+        "target" : "392",
+        "shared_name" : "ZFHX3 (interacts with) ZNF300",
+        "shared_interaction" : "interacts with",
+        "name" : "ZFHX3 (interacts with) ZNF300",
+        "interaction" : "interacts with",
+        "weight" : 0.0295784120154027,
+        "SUID" : 394,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "381",
+        "source" : "367",
+        "target" : "379",
+        "shared_name" : "IKZF3 (interacts with) THAP4",
+        "shared_interaction" : "interacts with",
+        "name" : "IKZF3 (interacts with) THAP4",
+        "interaction" : "interacts with",
+        "weight" : 0.0213141352302389,
+        "SUID" : 381,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "376",
+        "source" : "367",
+        "target" : "374",
+        "shared_name" : "IKZF3 (interacts with) FEZF2",
+        "shared_interaction" : "interacts with",
+        "name" : "IKZF3 (interacts with) FEZF2",
+        "interaction" : "interacts with",
+        "weight" : 0.0219298266557026,
+        "SUID" : 376,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "371",
+        "source" : "367",
+        "target" : "369",
+        "shared_name" : "IKZF3 (interacts with) ZFHX3",
+        "shared_interaction" : "interacts with",
+        "name" : "IKZF3 (interacts with) ZFHX3",
+        "interaction" : "interacts with",
+        "weight" : 0.0296570112200425,
+        "SUID" : 371,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "849",
+        "source" : "359",
+        "target" : "678",
+        "shared_name" : "ZNF215 (interacts with) ZNF595",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF215 (interacts with) ZNF595",
+        "interaction" : "interacts with",
+        "weight" : 0.0206828917517551,
+        "SUID" : 849,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "361",
+        "source" : "357",
+        "target" : "359",
+        "shared_name" : "ZNF12 (interacts with) ZNF215",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF12 (interacts with) ZNF215",
+        "interaction" : "interacts with",
+        "weight" : 0.0315308734660571,
+        "SUID" : 361,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "652",
+        "source" : "344",
+        "target" : "455",
+        "shared_name" : "HIVEP1 (interacts with) ZNF860",
+        "shared_interaction" : "interacts with",
+        "name" : "HIVEP1 (interacts with) ZNF860",
+        "interaction" : "interacts with",
+        "weight" : 0.0234241638015908,
+        "SUID" : 652,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "354",
+        "source" : "342",
+        "target" : "352",
+        "shared_name" : "NR3C1 (interacts with) MYCN",
+        "shared_interaction" : "interacts with",
+        "name" : "NR3C1 (interacts with) MYCN",
+        "interaction" : "interacts with",
+        "weight" : 0.0317997634734043,
+        "SUID" : 354,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "349",
+        "source" : "342",
+        "target" : "207",
+        "shared_name" : "NR3C1 (interacts with) VENTX",
+        "shared_interaction" : "interacts with",
+        "name" : "NR3C1 (interacts with) VENTX",
+        "interaction" : "interacts with",
+        "weight" : 0.0217283930763577,
+        "SUID" : 349,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "346",
+        "source" : "342",
+        "target" : "344",
+        "shared_name" : "NR3C1 (interacts with) HIVEP1",
+        "shared_interaction" : "interacts with",
+        "name" : "NR3C1 (interacts with) HIVEP1",
+        "interaction" : "interacts with",
+        "weight" : 0.0231916556133999,
+        "SUID" : 346,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "339",
+        "source" : "337",
+        "target" : "207",
+        "shared_name" : "REPIN1 (interacts with) VENTX",
+        "shared_interaction" : "interacts with",
+        "name" : "REPIN1 (interacts with) VENTX",
+        "interaction" : "interacts with",
+        "weight" : 0.0320939656260515,
+        "SUID" : 339,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "334",
+        "source" : "330",
+        "target" : "332",
+        "shared_name" : "SP140 (interacts with) CSRNP1",
+        "shared_interaction" : "interacts with",
+        "name" : "SP140 (interacts with) CSRNP1",
+        "interaction" : "interacts with",
+        "weight" : 0.0323770423859827,
+        "SUID" : 334,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "402",
+        "source" : "315",
+        "target" : "207",
+        "shared_name" : "MAFB (interacts with) VENTX",
+        "shared_interaction" : "interacts with",
+        "name" : "MAFB (interacts with) VENTX",
+        "interaction" : "interacts with",
+        "weight" : 0.0295601832201515,
+        "SUID" : 402,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "399",
+        "source" : "315",
+        "target" : "397",
+        "shared_name" : "MAFB (interacts with) TCFL5",
+        "shared_interaction" : "interacts with",
+        "name" : "MAFB (interacts with) TCFL5",
+        "interaction" : "interacts with",
+        "weight" : 0.0213329695616374,
+        "SUID" : 399,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "327",
+        "source" : "313",
+        "target" : "325",
+        "shared_name" : "MAF (interacts with) CENPX",
+        "shared_interaction" : "interacts with",
+        "name" : "MAF (interacts with) CENPX",
+        "interaction" : "interacts with",
+        "weight" : 0.0200255114507757,
+        "SUID" : 327,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "322",
+        "source" : "313",
+        "target" : "320",
+        "shared_name" : "MAF (interacts with) IRF4",
+        "shared_interaction" : "interacts with",
+        "name" : "MAF (interacts with) IRF4",
+        "interaction" : "interacts with",
+        "weight" : 0.0326973634095147,
+        "SUID" : 322,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "317",
+        "source" : "313",
+        "target" : "315",
+        "shared_name" : "MAF (interacts with) MAFB",
+        "shared_interaction" : "interacts with",
+        "name" : "MAF (interacts with) MAFB",
+        "interaction" : "interacts with",
+        "weight" : 0.0214947813594103,
+        "SUID" : 317,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "898",
+        "source" : "273",
+        "target" : "514",
+        "shared_name" : "BAZ2A (interacts with) ZNF367",
+        "shared_interaction" : "interacts with",
+        "name" : "BAZ2A (interacts with) ZNF367",
+        "interaction" : "interacts with",
+        "weight" : 0.0202475078470532,
+        "SUID" : 898,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "765",
+        "source" : "268",
+        "target" : "588",
+        "shared_name" : "NFAT5 (interacts with) HIF1A",
+        "shared_interaction" : "interacts with",
+        "name" : "NFAT5 (interacts with) HIF1A",
+        "interaction" : "interacts with",
+        "weight" : 0.0219729051048993,
+        "SUID" : 765,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "389",
+        "source" : "263",
+        "target" : "387",
+        "shared_name" : "ZXDC (interacts with) GLMP",
+        "shared_interaction" : "interacts with",
+        "name" : "ZXDC (interacts with) GLMP",
+        "interaction" : "interacts with",
+        "weight" : 0.0215910266926416,
+        "SUID" : 389,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "384",
+        "source" : "263",
+        "target" : "207",
+        "shared_name" : "ZXDC (interacts with) VENTX",
+        "shared_interaction" : "interacts with",
+        "name" : "ZXDC (interacts with) VENTX",
+        "interaction" : "interacts with",
+        "weight" : 0.0296043360462455,
+        "SUID" : 384,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "364",
+        "source" : "258",
+        "target" : "246",
+        "shared_name" : "THYN1 (interacts with) ZMAT1",
+        "shared_interaction" : "interacts with",
+        "name" : "THYN1 (interacts with) ZMAT1",
+        "interaction" : "interacts with",
+        "weight" : 0.0300376983345759,
+        "SUID" : 364,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "310",
+        "source" : "256",
+        "target" : "308",
+        "shared_name" : "MEF2C (interacts with) SP1",
+        "shared_interaction" : "interacts with",
+        "name" : "MEF2C (interacts with) SP1",
+        "interaction" : "interacts with",
+        "weight" : 0.0200068870131036,
+        "SUID" : 310,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "305",
+        "source" : "256",
+        "target" : "303",
+        "shared_name" : "MEF2C (interacts with) ZNF511",
+        "shared_interaction" : "interacts with",
+        "name" : "MEF2C (interacts with) ZNF511",
+        "interaction" : "interacts with",
+        "weight" : 0.0216858840458349,
+        "SUID" : 305,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "300",
+        "source" : "256",
+        "target" : "298",
+        "shared_name" : "MEF2C (interacts with) NR2C2",
+        "shared_interaction" : "interacts with",
+        "name" : "MEF2C (interacts with) NR2C2",
+        "interaction" : "interacts with",
+        "weight" : 0.0249363850176337,
+        "SUID" : 300,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "295",
+        "source" : "256",
+        "target" : "293",
+        "shared_name" : "MEF2C (interacts with) ELF1",
+        "shared_interaction" : "interacts with",
+        "name" : "MEF2C (interacts with) ELF1",
+        "interaction" : "interacts with",
+        "weight" : 0.0252324933669087,
+        "SUID" : 295,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "290",
+        "source" : "256",
+        "target" : "288",
+        "shared_name" : "MEF2C (interacts with) VEZF1",
+        "shared_interaction" : "interacts with",
+        "name" : "MEF2C (interacts with) VEZF1",
+        "interaction" : "interacts with",
+        "weight" : 0.0267977777323835,
+        "SUID" : 290,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "285",
+        "source" : "256",
+        "target" : "283",
+        "shared_name" : "MEF2C (interacts with) SMYD3",
+        "shared_interaction" : "interacts with",
+        "name" : "MEF2C (interacts with) SMYD3",
+        "interaction" : "interacts with",
+        "weight" : 0.0279675862474776,
+        "SUID" : 285,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "280",
+        "source" : "256",
+        "target" : "278",
+        "shared_name" : "MEF2C (interacts with) MBNL2",
+        "shared_interaction" : "interacts with",
+        "name" : "MEF2C (interacts with) MBNL2",
+        "interaction" : "interacts with",
+        "weight" : 0.0327483378461152,
+        "SUID" : 280,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "275",
+        "source" : "256",
+        "target" : "273",
+        "shared_name" : "MEF2C (interacts with) BAZ2A",
+        "shared_interaction" : "interacts with",
+        "name" : "MEF2C (interacts with) BAZ2A",
+        "interaction" : "interacts with",
+        "weight" : 0.0224279293743083,
+        "SUID" : 275,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "270",
+        "source" : "256",
+        "target" : "268",
+        "shared_name" : "MEF2C (interacts with) NFAT5",
+        "shared_interaction" : "interacts with",
+        "name" : "MEF2C (interacts with) NFAT5",
+        "interaction" : "interacts with",
+        "weight" : 0.0207264991946215,
+        "SUID" : 270,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "265",
+        "source" : "256",
+        "target" : "263",
+        "shared_name" : "MEF2C (interacts with) ZXDC",
+        "shared_interaction" : "interacts with",
+        "name" : "MEF2C (interacts with) ZXDC",
+        "interaction" : "interacts with",
+        "weight" : 0.022631291142671,
+        "SUID" : 265,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "260",
+        "source" : "256",
+        "target" : "258",
+        "shared_name" : "MEF2C (interacts with) THYN1",
+        "shared_interaction" : "interacts with",
+        "name" : "MEF2C (interacts with) THYN1",
+        "interaction" : "interacts with",
+        "weight" : 0.0270565805632709,
+        "SUID" : 260,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "253",
+        "source" : "244",
+        "target" : "251",
+        "shared_name" : "ZBTB7A (interacts with) E2F3",
+        "shared_interaction" : "interacts with",
+        "name" : "ZBTB7A (interacts with) E2F3",
+        "interaction" : "interacts with",
+        "weight" : 0.0246802565000042,
+        "SUID" : 253,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "248",
+        "source" : "244",
+        "target" : "246",
+        "shared_name" : "ZBTB7A (interacts with) ZMAT1",
+        "shared_interaction" : "interacts with",
+        "name" : "ZBTB7A (interacts with) ZMAT1",
+        "interaction" : "interacts with",
+        "weight" : 0.0342226798286142,
+        "SUID" : 248,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "798",
+        "source" : "239",
+        "target" : "796",
+        "shared_name" : "ZNF202 (interacts with) HOXB2",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF202 (interacts with) HOXB2",
+        "interaction" : "interacts with",
+        "weight" : 0.0211824580716808,
+        "SUID" : 798,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "241",
+        "source" : "237",
+        "target" : "239",
+        "shared_name" : "MBD2 (interacts with) ZNF202",
+        "shared_interaction" : "interacts with",
+        "name" : "MBD2 (interacts with) ZNF202",
+        "interaction" : "interacts with",
+        "weight" : 0.034625219432344,
+        "SUID" : 241,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "234",
+        "source" : "232",
+        "target" : "207",
+        "shared_name" : "AHR (interacts with) VENTX",
+        "shared_interaction" : "interacts with",
+        "name" : "AHR (interacts with) VENTX",
+        "interaction" : "interacts with",
+        "weight" : 0.0352735606916982,
+        "SUID" : 234,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "688",
+        "source" : "197",
+        "target" : "330",
+        "shared_name" : "ZNF579 (interacts with) SP140",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF579 (interacts with) SP140",
+        "interaction" : "interacts with",
+        "weight" : 0.0228460150645681,
+        "SUID" : 688,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "229",
+        "source" : "195",
+        "target" : "227",
+        "shared_name" : "JUNB (interacts with) ZNF580",
+        "shared_interaction" : "interacts with",
+        "name" : "JUNB (interacts with) ZNF580",
+        "interaction" : "interacts with",
+        "weight" : 0.0225216284969571,
+        "SUID" : 229,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "224",
+        "source" : "195",
+        "target" : "222",
+        "shared_name" : "JUNB (interacts with) JUND",
+        "shared_interaction" : "interacts with",
+        "name" : "JUNB (interacts with) JUND",
+        "interaction" : "interacts with",
+        "weight" : 0.0220274574701828,
+        "SUID" : 224,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "219",
+        "source" : "195",
+        "target" : "217",
+        "shared_name" : "JUNB (interacts with) ZNF777",
+        "shared_interaction" : "interacts with",
+        "name" : "JUNB (interacts with) ZNF777",
+        "interaction" : "interacts with",
+        "weight" : 0.0267173371783824,
+        "SUID" : 219,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "214",
+        "source" : "195",
+        "target" : "212",
+        "shared_name" : "JUNB (interacts with) ZNF581",
+        "shared_interaction" : "interacts with",
+        "name" : "JUNB (interacts with) ZNF581",
+        "interaction" : "interacts with",
+        "weight" : 0.0277871308091431,
+        "SUID" : 214,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "209",
+        "source" : "195",
+        "target" : "207",
+        "shared_name" : "JUNB (interacts with) VENTX",
+        "shared_interaction" : "interacts with",
+        "name" : "JUNB (interacts with) VENTX",
+        "interaction" : "interacts with",
+        "weight" : 0.0209323496604177,
+        "SUID" : 209,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "204",
+        "source" : "195",
+        "target" : "202",
+        "shared_name" : "JUNB (interacts with) ZNF787",
+        "shared_interaction" : "interacts with",
+        "name" : "JUNB (interacts with) ZNF787",
+        "interaction" : "interacts with",
+        "weight" : 0.0437841070934117,
+        "SUID" : 204,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "199",
+        "source" : "195",
+        "target" : "197",
+        "shared_name" : "JUNB (interacts with) ZNF579",
+        "shared_interaction" : "interacts with",
+        "name" : "JUNB (interacts with) ZNF579",
+        "interaction" : "interacts with",
+        "weight" : 0.021039919917256,
+        "SUID" : 199,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "924",
+        "source" : "185",
+        "target" : "232",
+        "shared_name" : "MYCL (interacts with) AHR",
+        "shared_interaction" : "interacts with",
+        "name" : "MYCL (interacts with) AHR",
+        "interaction" : "interacts with",
+        "weight" : 0.0200451805639477,
+        "SUID" : 924,
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "187",
+        "source" : "183",
+        "target" : "185",
+        "shared_name" : "ZNF14 (interacts with) MYCL",
+        "shared_interaction" : "interacts with",
+        "name" : "ZNF14 (interacts with) MYCL",
+        "interaction" : "interacts with",
+        "weight" : 0.049081991298492,
+        "SUID" : 187,
+        "selected" : false
+      },
+      "selected" : false
+    } ]
+  }
+}

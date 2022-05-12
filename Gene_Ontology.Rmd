@@ -1,0 +1,128 @@
+---
+title: "Gene Ontology"
+output: html_notebook
+editor_options: 
+  chunk_output_type: console
+---
+
+
+############################# GENE ONTOLOGY #############################
+
+
+### Libraries loading ###
+
+```{r}
+library(biomaRt)
+library(limma)
+library(stringr)
+library(GO.db)
+library(org.Hs.eg.db)
+library(clusterProfiler)
+```
+
+
+### Gene list ###
+
+```{r}
+TF_list = read.csv("Results/TF_list.csv")
+mygenes = as.character(TF_list$x)
+length(mygenes)
+```
+
+
+### Remove version from ensembl id ###
+
+```{r}
+#mygenes=str_split_fixed(mygenes,"\\.",2)[,1]
+```
+
+### ID conversion Ensembl to Entrez ###
+
+```{r}
+# library("TxDb.Hsapiens.UCSC.hg38.knownGene")
+# geneHg38.gr <- genes(TxDb.Hsapiens.UCSC.hg38.knownGene,columns="gene_id")
+# gene_id <- geneHg38.gr$gene_id
+# orgDBgenes <- select(org.Hs.eg.db,keys = gene_id,columns = "SYMBOL",keytype = "ENTREZID")
+# geneHg38.gr$SYMBOL <- orgDBgenes[match(gene_id,orgDBgenes[,1]),2]
+# myentrez=geneHg38.gr$gene_id[which(geneHg38.gr$SYMBOL %in% mygenes)]
+```
+
+
+
+### Biomart ###
+
+```{r}
+ensembl = useMart(biomart="ensembl", dataset="hsapiens_gene_ensembl")
+genes.with.id=getBM(attributes=c("hgnc_symbol", "entrezgene_id"), values=mygenes, mart= ensembl)
+
+id = genes.with.id[which(genes.with.id$hgnc_symbol %in% mygenes),]
+nrow(id)
+myentrez = unique(id$entrezgene)
+
+length(mygenes) #140 genes
+length(myentrez) #133 genes
+```
+
+
+
+### Gene Ontology ###
+```{r}
+goana = goana(de=myentrez, geneid=myentrez, FDR=0.95, species="Hs")
+View(goana)
+```
+
+
+#GO Plot
+```{r}
+compGO <- compareCluster(geneCluster     = list(genes=myentrez),
+                         fun           = "enrichGO",
+                         OrgDb         = 'org.Hs.eg.db',
+                         ont           = 'BP',
+                         pvalueCutoff  = 0.05,
+                         pAdjustMethod = "BH")
+dotplot(compGO, showCategory = 10, title = "Gene Ontology Enrichment Analysis")
+```
+
+
+
+### KEGG Ontology ###
+```{r}
+kegga = kegga(de=myentrez, geneid=myentrez, FDR=0.95, species="Hs")
+View(kegga)
+```
+
+
+#KEGG Plot
+```{r}
+compKEGG <- compareCluster(geneCluster   = list(genes=myentrez),
+                           fun           = "enrichKEGG",
+                           pvalueCutoff  = 0.05,
+                           pAdjustMethod = "BH")
+dotplot(compKEGG, showCategory = 15, title = "KEGG Pathway Enrichment Analysis")
+```
+
+
+
+### keep only "BP" ontology and pvalue < 0.05 then sort by pvalue ###
+```{r}
+goana = goana[which(goana$Ont == "BP" & goana$P.DE < 0.05),]
+goana = goana[order(goana$P.DE),]
+```
+
+
+
+## Which genes are concerned by a GO ID
+```{r}
+genes.with.id2 = getBM(attributes=c("ensembl_gene_id","hgnc_symbol","go_id", "description"), values=mygenes, mart=ensembl)
+id2 = genes.with.id2[which(genes.with.id2$hgnc_symbol %in% mygenes),]
+
+id2[which(id2$go_id=="GO:0016779"),c(2,4)]
+```
+
+
+### Export to csv file ###
+```{r}
+write.csv(goana, "Results/Gene_Ontology.csv", quote=F)
+write.csv(kegga, "Results/KEGG_Pathway.csv", quote=F)
+```
+
