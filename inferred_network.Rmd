@@ -195,7 +195,7 @@ run_analysis <- dynGENIE3(normalized_counts_list, time.points, alpha = decay_rat
 
 
 
-**Filter and visualize the results**
+#Filter and visualize the results
 First, we plot the distribution of link.list, to help select a threshold.
 
 
@@ -367,6 +367,6 @@ p2 = p2 + labs(title="Non TFs organization",
 grid.arrange(p1, p2, nrow=1, ncol=2)
 ```
 
-This network contains too many non TF nodes and links, more particulary non TFs target nodes.
+This network contains too many non TF nodes and links, more particularly non TFs target nodes.
 
 This script highlights TF proportion in the network but the high quantity of nodes makes manipulation of the data difficult in order to extract information from it. The script *TF_inferred_network.Rmd* pursues the analysis of the network by using the list of human TFs as regulators, but also as targets (all the nodes of the network correspond to TFs).
