@@ -18,6 +18,7 @@ library(stringr)
 library(GO.db)
 library(org.Hs.eg.db)
 library(clusterProfiler)
+library(MOMA)
 ```
 
 
@@ -27,8 +28,20 @@ library(clusterProfiler)
 TF_list = read.csv("Results/TF_list.csv")
 mygenes = as.character(TF_list$x)
 length(mygenes)
+
+TF_total = read.csv("/home/crct2112/Documents/GRN/git2/GRN_inference/Data/TF_names_v_1.01.txt")
+TF_total = as.character(TF_total$AC008770.3) #format :
 ```
 
+
+### Format conversion ###
+
+```{r}
+#Convert from hugo gene names to entrez ids
+
+#mapHugo(c("ADNP","ADNP2","AEBP1"))
+TF_total_ID = mapHugo(TF_total)
+```
 
 ### Remove version from ensembl id ###
 
@@ -49,11 +62,16 @@ length(mygenes)
 
 
 
-### Biomart ###
+### BioMart ###
 
 ```{r}
-ensembl = useMart(biomart="ensembl", dataset="hsapiens_gene_ensembl")
-genes.with.id=getBM(attributes=c("hgnc_symbol", "entrezgene_id"), values=mygenes, mart= ensembl)
+ensembl = useEnsembl(biomart="genes")
+datasets <- listDatasets(ensembl)
+datasets
+ensembl = useEnsembl(biomart="genes", dataset="hsapiens_gene_ensembl")
+
+listAttributes(ensembl)
+genes.with.id=getBM(attributes=c("hgnc_symbol", "entrezgene_id"), values=mygenes, mart=ensembl)
 
 id = genes.with.id[which(genes.with.id$hgnc_symbol %in% mygenes),]
 nrow(id)
@@ -61,13 +79,15 @@ myentrez = unique(id$entrezgene)
 
 length(mygenes) #140 genes
 length(myentrez) #133 genes
+
+
 ```
 
 
 
 ### Gene Ontology ###
 ```{r}
-goana = goana(de=myentrez, geneid=myentrez, FDR=0.95, species="Hs")
+goana = goana(de=myentrez, geneid=myentrez, FDR=0.95, species="Hs", universe = TF_total_ID)
 View(goana)
 ```
 
@@ -79,7 +99,8 @@ compGO <- compareCluster(geneCluster     = list(genes=myentrez),
                          OrgDb         = 'org.Hs.eg.db',
                          ont           = 'BP',
                          pvalueCutoff  = 0.05,
-                         pAdjustMethod = "BH")
+                         pAdjustMethod = "BH",
+                         universe = TF_total_ID)
 dotplot(compGO, showCategory = 10, title = "Gene Ontology Enrichment Analysis")
 ```
 
@@ -87,7 +108,7 @@ dotplot(compGO, showCategory = 10, title = "Gene Ontology Enrichment Analysis")
 
 ### KEGG Ontology ###
 ```{r}
-kegga = kegga(de=myentrez, geneid=myentrez, FDR=0.95, species="Hs")
+kegga = kegga(de=myentrez, geneid=myentrez, FDR=0.95, species="Hs", universe = TF_total_ID)
 View(kegga)
 ```
 
@@ -96,8 +117,9 @@ View(kegga)
 ```{r}
 compKEGG <- compareCluster(geneCluster   = list(genes=myentrez),
                            fun           = "enrichKEGG",
-                           pvalueCutoff  = 0.05,
-                           pAdjustMethod = "BH")
+                           pvalueCutoff  = 0.25,
+                           pAdjustMethod = "BH",
+                           universe = TF_total_ID) 
 dotplot(compKEGG, showCategory = 15, title = "KEGG Pathway Enrichment Analysis")
 ```
 
@@ -107,6 +129,7 @@ dotplot(compKEGG, showCategory = 15, title = "KEGG Pathway Enrichment Analysis")
 ```{r}
 goana = goana[which(goana$Ont == "BP" & goana$P.DE < 0.05),]
 goana = goana[order(goana$P.DE),]
+kegga = kegga[order(kegga$P.DE),]
 ```
 
 
