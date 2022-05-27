@@ -36,9 +36,7 @@ source("dynGENIE3.R")
 
 
 **2. Load the data**
-In our case, we have the time-course transcriptomics from 2 patients and 2 replicates per patient. the inference method will be applied in different ways:
-\item patient 1 and 2 taken separately. The average between replicates will be calculated per patient.
-\item ...
+In our case, we have the time-course transcriptomics from 2 patients and 2 replicates per patient.
 
 ```{r include=FALSE}
 Patient_1_rep_1_table <- read.expr.matrix("/mnt/SERVER-CRCT-STORAGE/CRCT21/Private/CLL_dec2020/RNAseqBulk_Eq21_Eq9/Gene_counts_tables/Gene_counts_Patient1_rep1_TPM.txt",form = "rows.are.genes")
@@ -188,7 +186,7 @@ time.points_2 <- c(1,2,3,4,5,6,7,8,9,10,11,12,13)
 time.points <- list(time.points_1, time.points_1, time.points_2, time.points_2)
 #time.points <- list(Patient_1_rep_1_filter[1,], Patient_1_rep_2_filter[1,], Patient_2_rep_1_filter[1,], Patient_2_rep_2_filter[1,])
 
-decay_rates = 0.2
+decay_rates = 0.01 #0.001 / 0.1 / 0.2
 
 write.table(normalized_counts, file="Results/normalized_counts.txt", sep="\t", quote=F, col.names=NA)
 write.csv(normalized_counts_list,"Results/normalized_counts_TF_list.csv", row.names = TRUE)
@@ -370,6 +368,7 @@ tsne_centralities(calc_cent, dims = 2, perplexity = 0.5, scale=TRUE) #Page.Rank,
 ```
 
 
+
 ##Visualization on centrality analysis
 
 ###Graph visualization regarding to the centrality type
@@ -392,6 +391,7 @@ visualize_pair_correlation(PageRank, Alpha_centrality) #positive correlation bet
 ```
 
 
+
 **Graph exploration**
 
 ## 1 - Degree centrality (Local Centrality Measures)
@@ -411,14 +411,12 @@ V(g1)$Closeness = g1_closeness
 which.max(g1_closeness) #ETS1
 ```
 
-
 ## 3 - Eigenvector centrality
 ```{r}
 g1_evcent = eigen_centrality(g1)$vector
 V(g1)$Eigen = g1_evcent
 which.max(g1_evcent) #ZNF718
 ```
-
 
 ## 4 - Betweenness centrality
 ```{r}
@@ -450,7 +448,6 @@ V(g1)$Alpha = g1_ac
 which.max(g1_ac) #VENTX
 ```
 
-
 ##Convert iGraph object into dataframe 
 ```{r}
 g1_df = as_long_data_frame(g1)
@@ -461,10 +458,9 @@ write.csv(g1_df,"Results/Graph_data_info.csv", row.names = TRUE, quote = FALSE)
 
 **Graph optimization**
 
-Remove zinc finger (with high gene degree) and look at the connectivity of the network
+Remove zinc finger (with high gene degree) and look at the connectivity of the network.
  
 ```{r}
-
 which.max(g1_deg) #ZNF718
 log_degree_g1 = as.data.frame(log(degree(g1)))
 
@@ -501,11 +497,11 @@ g = igraph::as_data_frame(giant_comp_selected_leaffree)
 names(g)[names(g) == "from"] <- "Regulatory Gene"
 names(g)[names(g) == "to"] <- "Target Gene"
 write.csv(g,"Results/Giant_comp_0.01_selected.csv", row.names = TRUE, quote = FALSE)
-
 ```
 
 Removing nodes post inference can cause the graph to become disconnected if the nodes are central, creating many isolated components. In general, it is not appropriate to delete nodes after inferring the network.
 This first step was an exploratory phase to explore the network and identify nodes to possibly remove (zinc fingers) from the normalized counts matrix.
+
 
 
 **Re-format the data a second time (post graph exploration):**
@@ -526,6 +522,7 @@ df_conditions_2$p2_rep1 = as.matrix(df_conditions_2$p2_rep1)
 df_conditions_2$p2_rep2 = as.matrix(df_conditions_2$p2_rep2)
 normalized_counts_list_2 <- list(df_conditions_2$p1_rep1[1:nrow(df_conditions_2$p1_rep1),], df_conditions_2$p1_rep2[1:nrow(df_conditions_2$p1_rep2),], df_conditions_2$p2_rep1[1:nrow(df_conditions_2$p2_rep1),], df_conditions_2$p2_rep2[1:nrow(df_conditions_2$p2_rep2),])
 ```
+
 
 
 **Network inference**
@@ -568,8 +565,8 @@ g <- graph.data.frame(links_filtered_TF_2, directed = TRUE) #create graph from d
 ```
 
 
-
 ##Giant component extraction
+
 ```{r}
 g2 = giant_component_extract(g, directed = TRUE) #extract the largest connected component of the Graph
 g1 = g2[[1]]
@@ -607,11 +604,10 @@ ggplot() + aes(clu1$csize) +
 
 
 
-
 **Network mining**
 
-
 #Macro-characteristics of the graph
+
 ```{r}
 is.connected(g1)
 graph.density(g1)
@@ -620,6 +616,7 @@ transitivity(g1) #The transitivity of the graph is much larger than its density,
 
 
 #Individual characteristics
+
 ```{r}
 g1.degrees <- degree(g1)
 summary(g1.degrees)
@@ -637,7 +634,6 @@ xlab="Betweenness", ylab="Density",
 col="darkred")
 ```
 
-
 ```{r}
 par(mfrow=c(1,1))
 #par(mar=rep(1,4))
@@ -647,7 +643,7 @@ labels=FALSE)
 V(g1)$color <- heat.colors(10)[11-bet.col]
 plot(g1, main="Degree and betweenness",
 vertex.frame.color=heat.colors(10)[bet.col],
-vertex.label=NA, edge.color="grey")
+vertex.label=NA, edge.color="lightgrey")
 ```
 
 
@@ -657,36 +653,32 @@ vertex.label=NA, edge.color="grey")
 g1.clusters <- spinglass.community(g1)
 g1.clusters
 table(g1.clusters$membership)
+nb_cluster = length(table(g1.clusters$membership))
 
 V(g1)$community <- g1.clusters$membership
 V(g1)
 ```
 
-
 ```{r}
 par(mfrow=c(1,1))
-#par(mar=rep(1,4))
 plot(g1, main="Communities",
 vertex.frame.color=
-rainbow(9)[g1.clusters$membership],
+rainbow(nb_cluster)[g1.clusters$membership],
 vertex.color=
-rainbow(9)[g1.clusters$membership],
-vertex.label=NA, edge.color="grey")
+rainbow(nb_cluster)[g1.clusters$membership],
+vertex.label=NA, edge.color="lightgrey")
 ```
 
 
 
 **Network characteristics**
 
-
 #Graph exploration
-
 
 ##Dataframe to graph
 ```{r}
 g1 = graph.data.frame(g, directed = TRUE)
 ```
-
 
 ## 1 - Degree centrality (Local Centrality Measures)
 ```{r}
@@ -698,7 +690,6 @@ V(g1)$Degree = g1_deg
 which.max(g1_deg) #VENTX
 ```
 
-
 ## 2 - Closeness centrality (Global Centrality Measures)
 ```{r}
 g1_closeness = closeness(g1, mode="all")
@@ -706,14 +697,12 @@ V(g1)$Closeness = g1_closeness
 which.max(g1_closeness) #ZXDC
 ```
 
-
 ## 3 - Eigenvector centrality
 ```{r}
 g1_evcent = eigen_centrality(g1)$vector
 V(g1)$Eigen = g1_evcent
 which.max(g1_evcent) #VENTX
 ```
-
 
 ## 4 - Betweenness centrality
 ```{r}
@@ -745,32 +734,29 @@ V(g1)$Alpha = g1_ac
 which.max(g1_ac) #VENTX
 ```
 
-
 ##Convert iGraph object into dataframe 
 ```{r}
 g1_df = as_long_data_frame(g1)
 write.csv(g1_df,"Results/Graph_data_info_2.csv", row.names = TRUE, quote = FALSE)
-
-gg = read.csv("Results/Graph_data_info_2.csv")
 ```
-
 
 ##Centality Measures df for Cytoscape
 ```{r}
 #Separate source node and target node attributes and remove prefix from columns name
-g1_df_1 <- g1_df[,1:11]
-g1_df_1 <- g1_df_1[, -c(1:3)]
+g1_df_1 <- g1_df[,1:14]
+g1_df_1 <- g1_df_1[, -c(1:3, 5:7)]
 g1_df_1 = g1_df_1 %>% rename_all(~stringr::str_replace(.,"^from_",""))
-g1_df_2 <- g1_df[,12:19]
+g1_df_2 <- g1_df[,15:25]
+g1_df_2 <- g1_df_2[, -c(2:4)]
 g1_df_2 = g1_df_2 %>% rename_all(~stringr::str_replace(.,"^to_",""))
 
 #df merging
 attributes_df = bind_rows(g1_df_1, g1_df_2)
 #Remove duplicate genes
-attributes_df = attributes_df [!duplicated(attributes_df$name)]
+#attributes_df = attributes_df [!duplicated(attributes_df$name)]
 attributes_df = distinct(attributes_df,name, .keep_all= TRUE)
 #create TF list for gene enrichment analysis
-TF_list = attributes$`Gene name`
+TF_list = attributes_df$name
 
 write.csv(TF_list,"Results/TF_list.csv", row.names = TRUE, quote = FALSE)
 write.csv(attributes_df,"Results/attributes.csv", row.names = TRUE, quote = FALSE)

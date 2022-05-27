@@ -31,6 +31,7 @@ library(gridExtra)
 source("dynGENIE3.R")
 ```
 
+
 **2. Load the data**
 In our case, we have the time-course transcriptomics from 2 patients and 2 replicates per patient. the inference method will be applied in different ways:
 \item patient 1 and 2 taken separately. The average between replicates will be calculated per patient.
@@ -185,13 +186,11 @@ decay_rates = 0.2
 
 
 
-
 **Run `dynGENIE3` with default parameters or by tuning the parameters:**
 
 ```{r eval=FALSE, include=FALSE}
 run_analysis <- dynGENIE3(normalized_counts_list, time.points, alpha = decay_rates, tree.method = "RF", SS.data=NULL, K = "sqrt", ntrees = 1000, regulators = NULL, ncores = 12, verbose = FALSE, seed = NULL)
 ```
-
 
 
 
@@ -236,7 +235,6 @@ g = igraph::as_data_frame(giant_comp)
 names(g)[names(g) == "from"] <- "Regulatory.Gene"
 names(g)[names(g) == "to"] <- "Target.Gene"
 ```
-
 
 
 
