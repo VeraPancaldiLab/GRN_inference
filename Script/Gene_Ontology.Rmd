@@ -1,0 +1,200 @@
+---
+title: "Gene Ontology"
+output: html_notebook
+editor_options: 
+  chunk_output_type: console
+---
+
+
+############################# GENE ONTOLOGY #############################
+
+
+### Libraries loading ###
+
+```{r}
+library(biomaRt)
+library(limma)
+library(stringr)
+library(GO.db)
+library(org.Hs.eg.db)
+library(clusterProfiler)
+library(MOMA)
+library(dplyr)
+library(tidyverse)
+library(DOSE)
+library(enrichplot)
+library(clusterProfiler)
+library(ggupset)
+```
+
+
+### Gene list ###
+
+```{r}
+TF_list = read.csv("Results/TF_list.csv")
+mygenes = as.character(TF_list$x)
+length(mygenes) #140
+
+TF_total = read.csv("Data/TF_names_v_1.01.txt", header = FALSE)
+TF_total = as.character(TF_total$V1)
+```
+
+
+### Modify gene list to add first neighbours or targets (facultative) ###
+
+```{r}
+#Explain how to obtain TF and their targets (dynGENIE3)
+TF_and_targets <- read.csv("/home/crct2112/Documents/GRN/Results/TF/Links_filtered_TF.csv")
+TF_and_targets <- dplyr::select(TF_and_targets, -c(X))
+
+TF_list = read.csv("Results/TF_list.csv")
+TF_list = dplyr::select(TF_list, -c(X))
+names(TF_list)[names(TF_list) == "x"] <- "regulatory.gene"
+
+TF_gene_list = merge(TF_list, TF_and_targets, by = "regulatory.gene", all.x=TRUE, all.y=FALSE)
+TF_gene_list = dplyr::select(TF_gene_list, -c(weight))
+
+TF_gene_list = TF_gene_list %>% drop_na()
+
+TF_gene_list2 = as.data.frame(rbind(as.matrix(TF_gene_list$regulatory.gene), as.matrix(TF_gene_list$target.gene)))
+TF_gene_list2 = distinct(TF_gene_list2,V1, .keep_all= TRUE) #remove duplicates
+mygenes = as.character(TF_gene_list2$V1)
+length(mygenes) #4855 genes
+```
+This list contains all the TFs of the network and their targets.
+
+### Format conversion ###
+
+```{r}
+#Convert from hugo gene names to entrez ids
+
+#mapHugo(c("ADNP","ADNP2","AEBP1"))
+TF_total_ID = mapHugo(TF_total)
+```
+
+### Remove version from ensembl id ###
+
+```{r}
+#mygenes=str_split_fixed(mygenes,"\\.",2)[,1]
+```
+
+### ID conversion Ensembl to Entrez ###
+
+```{r}
+# library("TxDb.Hsapiens.UCSC.hg38.knownGene")
+# geneHg38.gr <- genes(TxDb.Hsapiens.UCSC.hg38.knownGene,columns="gene_id")
+# gene_id <- geneHg38.gr$gene_id
+# orgDBgenes <- select(org.Hs.eg.db,keys = gene_id,columns = "SYMBOL",keytype = "ENTREZID")
+# geneHg38.gr$SYMBOL <- orgDBgenes[match(gene_id,orgDBgenes[,1]),2]
+# myentrez=geneHg38.gr$gene_id[which(geneHg38.gr$SYMBOL %in% mygenes)]
+```
+
+
+### BioMart ###
+
+```{r}
+ensembl = useEnsembl(biomart="genes")
+datasets <- listDatasets(ensembl)
+datasets
+ensembl = useEnsembl(biomart="genes", dataset="hsapiens_gene_ensembl")
+
+listAttributes(ensembl)
+genes.with.id=getBM(attributes=c("hgnc_symbol", "entrezgene_id"), values=mygenes, mart=ensembl)
+
+id = genes.with.id[which(genes.with.id$hgnc_symbol %in% mygenes),]
+nrow(id)
+myentrez = unique(id$entrezgene)
+
+length(mygenes) #140 genes
+length(myentrez) #133 genes
+```
+
+
+### Gene Ontology ###
+```{r}
+goana = goana(de=myentrez, geneid=myentrez, FDR=0.95, species="Hs")#, universe = TF_total_ID)
+View(goana)
+```
+
+
+#GO Plot
+```{r}
+compGO <- compareCluster(geneCluster     = list(genes=myentrez),
+                         fun           = "enrichGO",
+                         OrgDb         = 'org.Hs.eg.db',
+                         ont           = 'BP',
+                         pvalueCutoff  = 0.05,
+                         pAdjustMethod = "BH",
+                         universe = TF_total_ID)
+dotplot(compGO, showCategory = 10, title = "Gene Ontology Enrichment Analysis")
+```
+
+
+### KEGG Ontology ###
+```{r}
+kegga = kegga(de=myentrez, geneid=myentrez, FDR=0.95, species="Hs", universe = TF_total_ID)
+View(kegga)
+```
+
+
+#KEGG Plot
+```{r}
+compKEGG <- compareCluster(geneCluster   = list(genes=myentrez),
+                           fun           = "enrichKEGG",
+                           pvalueCutoff  = 0.25,
+                           pAdjustMethod = "BH",
+                           universe = TF_total_ID) 
+dotplot(compKEGG, showCategory = 15, title = "KEGG Pathway Enrichment Analysis")
+```
+
+
+### Keep only "BP" ontology and pvalue < 0.05 then sort by pvalue ###
+```{r}
+goana = goana[which(goana$Ont == "BP" & goana$P.DE < 0.05),]
+goana = goana[order(goana$P.DE),]
+kegga = kegga[order(kegga$P.DE),]
+```
+
+
+## Which genes are concerned by a GO ID
+```{r}
+genes.with.id2 = getBM(attributes=c("ensembl_gene_id","hgnc_symbol","go_id", "description"), values=mygenes, mart=ensembl)
+id2 = genes.with.id2[which(genes.with.id2$hgnc_symbol %in% mygenes),]
+
+id2[which(id2$go_id=="GO:0016779"),c(2,4)]
+```
+
+
+### Export to csv file ###
+```{r}
+write.csv(goana, "Results/Gene_Ontology.csv", quote=F)
+write.csv(kegga, "Results/KEGG_Pathway.csv", quote=F)
+```
+
+
+### cnet plot ### 
+```{r}
+x = enrichGO(myentrez, OrgDb = "org.Hs.eg.db", ont = "BP", pvalueCutoff = 0.05, pAdjustMethod = "BH", universe = TF_total_ID)
+edox <- setReadable(x, 'org.Hs.eg.db', 'ENTREZID')
+
+cnetplot(edox, categorySize="pvalue", foldChange=myentrez)
+cnetplot(edox, foldChange=myentrez, circular = TRUE, colorEdge = TRUE) 
+#cowplot::plot_grid(p1, p2, ncol=2, labels=LETTERS[1:2])
+upsetplot(edox)
+#heatplot(edox)
+```
+
+
+### Tree plot ###
+```{r}
+edoxT <- pairwise_termsim(edox)
+treeplot(edoxT)
+```
+
+
+### Enrichment Map ###
+```{r}
+edoxE <- pairwise_termsim(edox)
+emapplot(edoxE, cex_category=1.7)
+```
+
