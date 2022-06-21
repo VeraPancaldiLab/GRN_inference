@@ -1,38 +1,13 @@
 #load files
-all_samples_rep1=read.table("/Users/fla./Desktop/CLL_RNA-Seq/Data/outputs_201215_NB551452_0199_AHCHGFBGXH/all_sample_quantified_TPM_201215.txt",header=T)
-#gc_rep1=read.table("/Users/fla./Desktop/CLL_RNA-Seq/outputs_201215_NB551452_0199_AHCHGFBGXH/gene_counts.txt",header=T)
+p1_rep1 <- read.expr.matrix("Data/Gene_counts_Patient1_rep1_TPM.txt",form = "rows.are.genes")
 
-all_samples_rep2=read.table("/Users/fla./Desktop/CLL_RNA-Seq/Data/outputs_210106_NB551452_0201_AHCFY7BGXH/all_sample_quantified_TPM_210106.txt",header=T)
-#gc_rep2=read.table("/Users/fla./Desktop/CLL_RNA-Seq/outputs_210106_NB551452_0201_AHCFY7BGXH/gene_counts.txt",header=T)
+p1_rep2 <- read.expr.matrix("Data/Gene_counts_Patient1_rep2_TPM.txt", form = "rows.are.genes")
 
-#reparse tables
-#rep1
-col=grep(".15",colnames(all_samples_rep1))
-p1_rep1=all_samples_rep1[,c(1,col)]
-p1_rep1=p1_rep1[,c("Gene","X1.15","X2.15","X3.15","X4.15","X5.15","X6.15","X7.15","X8.15","X9.15","X11.15","X13.15")]
-colnames(p1_rep1)=c("Gene","J1_p1_rep1","J2_p1_rep1","J3_p1_rep1","J4_p1_rep1","J5_p1_rep1","J6_p1_rep1","J7_p1_rep1","J8_p1_rep1","J9_p1_rep1","J11_p1_rep1","J13_p1_rep1")
+p2_rep1 <- read.expr.matrix("Data/Gene_counts_Patient2_rep1_TPM.txt", form = "rows.are.genes")
 
-col=grep(".28",colnames(all_samples_rep1))
-p2_rep1=all_samples_rep1[,c(1,col)]
-p2_rep1=p2_rep1[,c("Gene","X1.28","X2.28","X3.28","X4.28","X5.28","X6.28","X7.28","X8.28","X9.28","X10.28","X11.28","X12.28","X13.28")]
-colnames(p2_rep1)=c("Gene","J1_p2_rep1","J2_p2_rep1","J3_p2_rep1","J4_p2_rep1","J5_p2_rep1","J6_p2_rep1","J7_p2_rep1","J8_p2_rep1","J9_p2_rep1","J10_p2_rep1","J11_p2_rep1","J12_p2_rep1","J13_p2_rep1")
-
-#rep2
-col=grep(".15",colnames(all_samples_rep2))
-p1_rep2=all_samples_rep2[,c(1,col)]
-p1_rep2=p1_rep2[,c("Gene","X1.15","X2.15","X3.15","X4.15","X5.15","X6.15","X7.15","X8.15","X9.15","X11.15","X13.15")]
-colnames(p1_rep2)=c("Gene","J1_p1_rep2","J2_p1_rep2","J3_p1_rep2","J4_p1_rep2","J5_p1_rep2","J6_p1_rep2","J7_p1_rep2","J8_p1_rep2","J9_p1_rep2","J11_p1_rep2","J13_p1_rep2")
-
-col=grep(".28",colnames(all_samples_rep2))
-p2_rep2=all_samples_rep2[,c(1,col)]
-p2_rep2=p2_rep2[,c("Gene","X1.28","X2.28","X3.28","X4.28","X5.28","X6.28","X7.28","X8.28","X9.28","X10.28","X11.28","X12.28","X13.28")]
-colnames(p2_rep2)=c("Gene","J1_p2_rep2","J2_p2_rep2","J3_p2_rep2","J4_p2_rep2","J5_p2_rep2","J6_p2_rep2","J7_p2_rep2","J8_p2_rep2","J9_p2_rep2","J10_p2_rep2","J11_p2_rep2","J12_p2_rep2","J13_p2_rep2")
+p2_rep2 <- read.expr.matrix("Data/Gene_counts_Patient2_rep2_TPM.txt", form = "rows.are.genes")
 
 
-write.table(p1_rep1,"/Volumes/CRCT21/Private/CLL_dec2020/RNAseqBulk_Eq21_Eq9/Gene_counts_tables/Gene_counts_Patient1_rep1_TPM.txt",col.names=T,row.names=F,quote=F,sep="\t")
-write.table(p1_rep2,"/Volumes/CRCT21/Private/CLL_dec2020/RNAseqBulk_Eq21_Eq9/Gene_counts_tables/Gene_counts_Patient1_rep2_TPM.txt",col.names=T,row.names=F,quote=F,sep="\t")
-write.table(p2_rep1,"/Volumes/CRCT21/Private/CLL_dec2020/RNAseqBulk_Eq21_Eq9/Gene_counts_tables/Gene_counts_Patient2_rep1_TPM.txt",col.names=T,row.names=F,quote=F,sep="\t")
-write.table(p2_rep2,"/Volumes/CRCT21/Private/CLL_dec2020/RNAseqBulk_Eq21_Eq9/Gene_counts_tables/Gene_counts_Patient2_rep2_TPM.txt",col.names=T,row.names=F,quote=F,sep="\t")
 
 for (i in 1:ncol(p2_rep1)){
   print(table(is.infinite(p2_rep1[,i])))
@@ -55,34 +30,66 @@ corrplot(cor(p2_rep2[,2:ncol(p2_rep2)]),method="color",addCoef.col=T,cl.lim = c(
          is.corr = F)
 
 
+
 #PCA
 library(ggplot2)
 library(RColorBrewer)
-display.brewer.all()
 
-J_rep1=c("J1","J2","J3","J4","J5","J6","J7","J8","J9","J11","J13")
-J_rep1=factor(J_rep1,levels=c("J1","J2","J3","J4","J5","J6","J7","J8","J9","J11","J13"))
-
-J_rep2=c("J1","J2","J3","J4","J5","J6","J7","J8","J9","J10","J11","J12","J13")
-J_rep2=factor(J_rep2,levels=c("J1","J2","J3","J4","J5","J6","J7","J8","J9","J10","J11","J12","J13"))
-
-PCA <- prcomp(t(p2_rep1[2:ncol(p2_rep1)]), scale = FALSE)
+#Determine batch effect between 2 replicates of patient 1
+PCA <- prcomp(t(cbind(p1_rep1,p1_rep2)), scale = FALSE)
 percentVar <- round(100*PCA$sdev^2/sum(PCA$sdev^2),1)
 sd_ratio <- sqrt(percentVar[2] / percentVar[1])
+dataGG_p1 <- data.frame(PC1 = PCA$x[,1], PC2 = PCA$x[,2])
+ggplot(dataGG_p1 %>% rownames_to_column("Patient"), aes(PC1, PC2,label=Patient)) +
+  geom_point() +
+  geom_text(aes(label=Patient),hjust=-.2, vjust=.4) 
 
+#Determine batch effect between 2 replicates of patient 2
+PCA <- prcomp(t(cbind(p2_rep1,p2_rep2)), scale = FALSE)
+percentVar <- round(100*PCA$sdev^2/sum(PCA$sdev^2),1)
+sd_ratio <- sqrt(percentVar[2] / percentVar[1])
+dataGG_p2 <- data.frame(PC1 = PCA$x[,1], PC2 = PCA$x[,2])
+ggplot(dataGG_p2 %>% rownames_to_column("Patient"), aes(PC1, PC2,label=Patient)) +
+  geom_point() +
+  geom_text(aes(label=Patient),hjust=-.2, vjust=.4) 
+#No batch effect, these results are expected because we are in the case of 2 technical replicates
+
+#Determine batch effect between the 2 patients
+all_data = lapply(list(p1_rep1,p1_rep2,p2_rep1,p2_rep2), cbind) %>% as.data.frame()
+group = str_split_fixed(colnames(all_data),pattern = "_",n = 3)[,2]
+
+PCA <- prcomp(t(all_data), scale = FALSE)
+percentVar <- round(100*PCA$sdev^2/sum(PCA$sdev^2),1)
+sd_ratio <- sqrt(percentVar[2] / percentVar[1])
 dataGG <- data.frame(PC1 = PCA$x[,1], PC2 = PCA$x[,2])
-
-ggplot(dataGG, aes(PC1, PC2)) +
-  geom_point(aes(colour = J_rep2)) +
-  geom_text(aes(label=J_rep2),hjust=-.2, vjust=.4) +
-  ggtitle("PCA - Patient 2 rep 1") +
-  xlab(paste0("PC1, VarExp: ", percentVar[1], "%")) +
+ggplot(dataGG %>% rownames_to_column("Patient") %>% mutate(P=str_split_fixed(colnames(all_data),pattern = "_",n = 3)[,2],
+                                                           J=str_split_fixed(colnames(all_data),pattern = "_",n = 3)[,1]), aes(PC1, PC2,label=Patient,col=P)) +
+  geom_point() +
+  geom_text(aes(label=Patient),hjust=-.2, vjust=.4) +
+  ggtitle("PCA - Patient 1 and Patient 2") + 
+  xlab(paste0("PC1, VarExp: ", percentVar[1], "%")) + 
   ylab(paste0("PC2, VarExp: ", percentVar[2], "%")) +
-  theme(plot.title = element_text(hjust = 0.5)) +
-  coord_fixed(ratio = sd_ratio) +
-  scale_shape_manual(values = c(4,15)) + 
-  scale_color_manual(values = rainbow(length(percentVar)))
+  theme(plot.title = element_text(hjust = 0.5, size = 12, face = "bold"))
+#Batch effect is present between patients
 
+#Batch effect correction
+batch_corrected_data = sva::ComBat_seq(counts = as.matrix(all_data),batch = group)
+
+PCA <- prcomp(t(batch_corrected_data), scale = FALSE)
+percentVar <- round(100*PCA$sdev^2/sum(PCA$sdev^2),1)
+sd_ratio <- sqrt(percentVar[2] / percentVar[1])
+dataGG <- data.frame(PC1 = PCA$x[,1], PC2 = PCA$x[,2])
+ggplot(dataGG %>% rownames_to_column("Patient") %>% mutate(P=str_split_fixed(colnames(batch_corrected_data),pattern = "_",n = 3)[,2],
+                                                           J=str_split_fixed(colnames(batch_corrected_data),pattern = "_",n = 3)[,1]), aes(PC1, PC2,label=Patient,col=P)) +
+  geom_point() +
+  geom_text(aes(label=Patient),hjust=-.2, vjust=.4) +
+  ggtitle("PCA - Patient 1 and Patient 2 - Batch effect correction") + 
+  xlab(paste0("PC1, VarExp: ", percentVar[1], "%")) + 
+  ylab(paste0("PC2, VarExp: ", percentVar[2], "%")) +
+  theme(plot.title = element_text(hjust = 0.5, size = 12, face = "bold"))
+#No more batch effect between patients
+
+write.table(batch_corrected_data, file="Results/batch_corrected_data.txt", sep="\t", quote=F, col.names=NA)
 
 #########
 # TCseq #
