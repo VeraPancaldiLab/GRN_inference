@@ -1,0 +1,641 @@
+,Term,Ont,N,DE,P.DE
+GO:0006366,transcription by RNA polymerase II,BP,2628,181,2.87899378790161e-145
+GO:0006357,regulation of transcription by RNA polymerase II,BP,2551,178,7.39698695426344e-142
+GO:0006351,transcription, DNA-templated,BP,3518,182,9.22754849904032e-124
+GO:0097659,nucleic acid-templated transcription,BP,3520,182,1.02459672772777e-123
+GO:0032774,RNA biosynthetic process,BP,3538,182,2.62145526783496e-123
+GO:0006355,regulation of transcription, DNA-templated,BP,3397,180,6.61718476355199e-123
+GO:1903506,regulation of nucleic acid-templated transcription,BP,3398,180,6.98130542746822e-123
+GO:2001141,regulation of RNA biosynthetic process,BP,3407,180,1.12975683668684e-122
+GO:0051252,regulation of RNA metabolic process,BP,3692,180,2.45287445343074e-116
+GO:0034654,nucleobase-containing compound biosynthetic process,BP,3923,182,4.58198264749038e-115
+GO:0018130,heterocycle biosynthetic process,BP,3996,182,1.34361720357073e-113
+GO:0019438,aromatic compound biosynthetic process,BP,4009,182,2.43569037633253e-113
+GO:0010556,regulation of macromolecule biosynthetic process,BP,3932,180,2.19029136489074e-111
+GO:1901362,organic cyclic compound biosynthetic process,BP,4160,182,2.11275812230644e-110
+GO:0019219,regulation of nucleobase-containing compound metabolic process,BP,3995,180,3.86971148364603e-110
+GO:0031326,regulation of cellular biosynthetic process,BP,4102,180,4.56446064887846e-108
+GO:0009889,regulation of biosynthetic process,BP,4165,180,7.1260039299161e-107
+GO:0009059,macromolecule biosynthetic process,BP,4704,182,1.13746918626691e-100
+GO:0044271,cellular nitrogen compound biosynthetic process,BP,4714,182,1.67339452949767e-100
+GO:0016070,RNA metabolic process,BP,5003,182,8.20940372501582e-96
+GO:0010468,regulation of gene expression,BP,5312,181,1.64736566607697e-89
+GO:0090304,nucleic acid metabolic process,BP,5556,183,3.51984713520079e-89
+GO:0044249,cellular biosynthetic process,BP,5648,182,2.69907671422861e-86
+GO:1901576,organic substance biosynthetic process,BP,5715,182,2.25693473267675e-85
+GO:0009058,biosynthetic process,BP,5801,182,3.31743138235965e-84
+GO:0051171,regulation of nitrogen compound metabolic process,BP,5667,180,5.84296504004866e-83
+GO:0006139,nucleobase-containing compound metabolic process,BP,6015,183,6.2732513723801e-83
+GO:0080090,regulation of primary metabolic process,BP,5825,180,7.62499685263673e-81
+GO:0046483,heterocycle metabolic process,BP,6180,183,8.36770925676327e-81
+GO:0006725,cellular aromatic compound metabolic process,BP,6240,183,4.79257422903385e-80
+GO:0031323,regulation of cellular metabolic process,BP,6023,180,2.81186914597085e-78
+GO:1901360,organic cyclic compound metabolic process,BP,6481,183,4.46014083372684e-77
+GO:0034641,cellular nitrogen compound metabolic process,BP,6864,183,1.36401936465659e-72
+GO:0060255,regulation of macromolecule metabolic process,BP,6636,181,2.74647908816289e-72
+GO:0010467,gene expression,BP,6981,183,2.83272654881108e-71
+GO:0019222,regulation of metabolic process,BP,7162,181,1.92691998962177e-66
+GO:0045944,positive regulation of transcription by RNA polymerase II,BP,1203,95,1.19894726674357e-64
+GO:0045893,positive regulation of transcription, DNA-templated,BP,1611,105,2.64664596502524e-64
+GO:1903508,positive regulation of nucleic acid-templated transcription,BP,1611,105,2.64664596502524e-64
+GO:1902680,positive regulation of RNA biosynthetic process,BP,1617,105,3.85256118360869e-64
+GO:0051254,positive regulation of RNA metabolic process,BP,1747,105,9.14288791334499e-61
+GO:0010557,positive regulation of macromolecule biosynthetic process,BP,1832,105,1.04467416955854e-58
+GO:0031328,positive regulation of cellular biosynthetic process,BP,1945,105,3.92522940671367e-56
+GO:0045935,positive regulation of nucleobase-containing compound metabolic process,BP,1952,105,5.59458614763793e-56
+GO:0009891,positive regulation of biosynthetic process,BP,1984,105,2.77611115993019e-55
+GO:0006807,nitrogen compound metabolic process,BP,10152,185,5.26192578137889e-45
+GO:0043170,macromolecule metabolic process,BP,10327,185,1.0838782443382e-43
+GO:0044238,primary metabolic process,BP,10677,185,3.88412088039847e-41
+GO:0045892,negative regulation of transcription, DNA-templated,BP,1278,75,2.97021250613003e-40
+GO:1903507,negative regulation of nucleic acid-templated transcription,BP,1280,75,3.31098214350833e-40
+GO:1902679,negative regulation of RNA biosynthetic process,BP,1282,75,3.69012627840041e-40
+GO:0044237,cellular metabolic process,BP,10860,185,7.71687711098559e-40
+GO:0051173,positive regulation of nitrogen compound metabolic process,BP,3058,107,4.1257739174906e-39
+GO:0051253,negative regulation of RNA metabolic process,BP,1391,75,1.0279114924964e-37
+GO:0010604,positive regulation of macromolecule metabolic process,BP,3444,110,9.14983630540956e-37
+GO:0031325,positive regulation of cellular metabolic process,BP,3256,107,1.42652848878913e-36
+GO:0000122,negative regulation of transcription by RNA polymerase II,BP,936,62,1.09445100286004e-35
+GO:0045934,negative regulation of nucleobase-containing compound metabolic process,BP,1520,75,4.28679596256664e-35
+GO:0010558,negative regulation of macromolecule biosynthetic process,BP,1572,75,4.12409519899862e-34
+GO:0050794,regulation of cellular process,BP,11305,182,1.95845887819269e-33
+GO:0071704,organic substance metabolic process,BP,11835,185,2.53765632473678e-33
+GO:0009893,positive regulation of metabolic process,BP,3762,110,3.68646947632046e-33
+GO:0031327,negative regulation of cellular biosynthetic process,BP,1639,75,6.71085672386238e-33
+GO:0009890,negative regulation of biosynthetic process,BP,1667,75,2.06871522940991e-32
+GO:0008152,metabolic process,BP,12337,185,3.29729018948943e-30
+GO:0050789,regulation of biological process,BP,12147,182,3.10163830636665e-28
+GO:0065007,biological regulation,BP,12871,182,4.06861275102636e-24
+GO:0051172,negative regulation of nitrogen compound metabolic process,BP,2453,76,1.92141950621901e-22
+GO:0031324,negative regulation of cellular metabolic process,BP,2593,76,5.64434354841829e-21
+GO:0048522,positive regulation of cellular process,BP,5706,113,3.99144057428316e-19
+GO:0048518,positive regulation of biological process,BP,6245,115,5.55659338472016e-17
+GO:0010605,negative regulation of macromolecule metabolic process,BP,3297,78,4.68477323324078e-16
+GO:0009892,negative regulation of metabolic process,BP,3505,78,1.46868270153288e-14
+GO:0048523,negative regulation of cellular process,BP,4990,88,9.21292896031211e-11
+GO:0048534,hematopoietic or lymphoid organ development,BP,900,31,3.84712578602079e-10
+GO:0002521,leukocyte differentiation,BP,552,24,4.88273089293848e-10
+GO:0035914,skeletal muscle cell differentiation,BP,65,10,4.96546213791806e-10
+GO:0030097,hemopoiesis,BP,860,30,5.67962695874985e-10
+GO:0002520,immune system development,BP,961,31,1.86737259185635e-09
+GO:0048511,rhythmic process,BP,297,17,3.43196772464817e-09
+GO:0030522,intracellular receptor signaling pathway,BP,264,16,4.4820116448788e-09
+GO:0048519,negative regulation of biological process,BP,5801,92,8.77563459715825e-09
+GO:0030098,lymphocyte differentiation,BP,382,18,2.42364938441597e-08
+GO:1903131,mononuclear cell differentiation,BP,433,19,3.03400713327561e-08
+GO:0045444,fat cell differentiation,BP,237,14,5.89397021272735e-08
+GO:1902893,regulation of miRNA transcription,BP,59,8,7.87003441750263e-08
+GO:0061614,miRNA transcription,BP,60,8,9.00812215792793e-08
+GO:1903706,regulation of hemopoiesis,BP,371,17,9.02716813933382e-08
+GO:0045595,regulation of cell differentiation,BP,1563,37,1.59706969767591e-07
+GO:1902895,positive regulation of miRNA transcription,BP,45,7,1.97552887038161e-07
+GO:0007519,skeletal muscle tissue development,BP,155,11,2.58650309115572e-07
+GO:0009987,cellular process,BP,17325,186,3.57761308995917e-07
+GO:1902105,regulation of leukocyte differentiation,BP,283,14,5.16600490709433e-07
+GO:0060538,skeletal muscle organ development,BP,167,11,5.47019437882497e-07
+GO:0007623,circadian rhythm,BP,205,12,5.88492463713995e-07
+GO:0030099,myeloid cell differentiation,BP,391,16,9.87031057633053e-07
+GO:0030154,cell differentiation,BP,4174,68,1.08295198487235e-06
+GO:0048869,cellular developmental process,BP,4200,68,1.36495613164618e-06
+GO:0048513,animal organ development,BP,3475,59,2.12991154255991e-06
+GO:0032870,cellular response to hormone stimulus,BP,583,19,2.80378043709121e-06
+GO:0010628,positive regulation of gene expression,BP,1146,28,3.50228729462991e-06
+GO:0007517,muscle organ development,BP,334,14,3.63843997774406e-06
+GO:0009725,response to hormone,BP,842,23,4.74086223399795e-06
+GO:0042127,regulation of cell population proliferation,BP,1735,36,5.2917832424342e-06
+GO:0046632,alpha-beta T cell differentiation,BP,111,8,1.03252745013407e-05
+GO:0061061,muscle structure development,BP,643,19,1.13318374888254e-05
+GO:0050793,regulation of developmental process,BP,2452,44,1.6808246056029e-05
+GO:0045637,regulation of myeloid cell differentiation,BP,208,10,2.90958289869157e-05
+GO:0030217,T cell differentiation,BP,263,11,4.18832574240618e-05
+GO:2000026,regulation of multicellular organismal development,BP,1391,29,4.57267203213267e-05
+GO:0071310,cellular response to organic substance,BP,2415,42,5.71484363639371e-05
+GO:0046649,lymphocyte activation,BP,797,20,6.73119999954539e-05
+GO:1901652,response to peptide,BP,491,15,6.773544751728e-05
+GO:0016570,histone modification,BP,494,15,7.25081399001844e-05
+GO:0032502,developmental process,BP,6355,85,9.14673004557323e-05
+GO:0018205,peptidyl-lysine modification,BP,392,13,9.26771838967168e-05
+GO:0001865,NK T cell differentiation,BP,10,3,9.39662484947043e-05
+GO:0048856,anatomical structure development,BP,5785,79,9.69335251956911e-05
+GO:0002761,regulation of myeloid leukocyte differentiation,BP,117,7,0.000122039280642474
+GO:0043434,response to peptide hormone,BP,404,13,0.000125093877965752
+GO:0046631,alpha-beta T cell activation,BP,158,8,0.000129217682882008
+GO:0008283,cell population proliferation,BP,2019,36,0.000132065198240452
+GO:0043620,regulation of DNA-templated transcription in response to stress,BP,53,5,0.000139843174511275
+GO:0051239,regulation of multicellular organismal process,BP,2767,45,0.000144158897281665
+GO:0016925,protein sumoylation,BP,54,5,0.000152944950450699
+GO:1901700,response to oxygen-containing compound,BP,1651,31,0.00016815427879285
+GO:0071495,cellular response to endogenous stimulus,BP,1349,27,0.000168255203547016
+GO:0002573,myeloid leukocyte differentiation,BP,210,9,0.000175196161530074
+GO:0030218,erythrocyte differentiation,BP,124,7,0.000175277994832682
+GO:0009719,response to endogenous stimulus,BP,1592,30,0.000203916380607412
+GO:0009888,tissue development,BP,1925,34,0.000250050939960309
+GO:0051240,positive regulation of multicellular organismal process,BP,1461,28,0.000258442217751974
+GO:0010243,response to organonitrogen compound,BP,1022,22,0.000262757040702491
+GO:0051176,positive regulation of sulfur metabolic process,BP,3,2,0.000262998532906465
+GO:0021571,rhombomere 5 development,BP,3,2,0.000262998532906465
+GO:0035283,central nervous system segmentation,BP,3,2,0.000262998532906465
+GO:0035284,brain segmentation,BP,3,2,0.000262998532906465
+GO:0034101,erythrocyte homeostasis,BP,133,7,0.000269819930812423
+GO:0045321,leukocyte activation,BP,957,21,0.000282545308006288
+GO:0030316,osteoclast differentiation,BP,96,6,0.000296264580178853
+GO:1901698,response to nitrogen compound,BP,1108,23,0.000318047641447865
+GO:0042093,T-helper cell differentiation,BP,65,5,0.000367434124809164
+GO:0002294,CD4-positive, alpha-beta T cell differentiation involved in immune response,BP,67,5,0.000423141708976778
+GO:0007275,multicellular organism development,BP,4804,66,0.000446659548057278
+GO:1901654,response to ketone,BP,190,8,0.000451576081908913
+GO:0002287,alpha-beta T cell activation involved in immune response,BP,68,5,0.000453272932469772
+GO:0002293,alpha-beta T cell differentiation involved in immune response,BP,68,5,0.000453272932469772
+GO:0048731,system development,BP,4345,61,0.000462296535471413
+GO:0032570,response to progesterone,BP,39,4,0.000484465694094847
+GO:0032728,positive regulation of interferon-beta production,BP,39,4,0.000484465694094847
+GO:0032922,circadian regulation of gene expression,BP,69,5,0.00048499266527747
+GO:1990086,lens fiber cell apoptotic process,BP,4,2,0.000522731124933164
+GO:0034124,regulation of MyD88-dependent toll-like receptor signaling pathway,BP,4,2,0.000522731124933164
+GO:0009299,mRNA transcription,BP,41,4,0.000587804408806855
+GO:0001819,positive regulation of cytokine production,BP,475,13,0.000591951413176206
+GO:0002376,immune system process,BP,2786,43,0.000646947917667533
+GO:0070887,cellular response to chemical stimulus,BP,3051,46,0.000667373950235113
+GO:0001775,cell activation,BP,1098,22,0.000692445427473987
+GO:0002292,T cell differentiation involved in immune response,BP,76,5,0.000756084068177225
+GO:0002262,myeloid cell homeostasis,BP,160,7,0.000817765407451781
+GO:0007622,rhythmic behavior,BP,45,4,0.00083983765864845
+GO:0001816,cytokine production,BP,826,18,0.000842026724957153
+GO:0043435,response to corticotropin-releasing hormone,BP,5,2,0.000865813145549868
+GO:0071376,cellular response to corticotropin-releasing hormone stimulus,BP,5,2,0.000865813145549868
+GO:1901699,cellular response to nitrogen compound,BP,695,16,0.000927103458296294
+GO:0000083,regulation of transcription involved in G1/S transition of mitotic cell cycle,BP,21,3,0.000964887698545475
+GO:0032727,positive regulation of interferon-alpha production,BP,21,3,0.000964887698545475
+GO:0045646,regulation of erythrocyte differentiation,BP,47,4,0.000990774344775172
+GO:0043618,regulation of transcription from RNA polymerase II promoter in response to stress,BP,47,4,0.000990774344775172
+GO:0043367,CD4-positive, alpha-beta T cell differentiation,BP,82,5,0.00106708688923893
+GO:0071417,cellular response to organonitrogen compound,BP,639,15,0.00110217782061701
+GO:0031065,positive regulation of histone deacetylation,BP,22,3,0.00110952941831741
+GO:0002682,regulation of immune system process,BP,1447,26,0.00112906474933282
+GO:0010033,response to organic substance,BP,3042,45,0.00115648589207269
+GO:0048545,response to steroid hormone,BP,330,10,0.00119105430326517
+GO:0008285,negative regulation of cell population proliferation,BP,784,17,0.00123747593946583
+GO:0098586,cellular response to virus,BP,85,5,0.00125404868136704
+GO:0070345,negative regulation of fat cell proliferation,BP,6,2,0.00129066796375343
+GO:0006325,chromatin organization,BP,586,14,0.00136466744620138
+GO:0009791,post-embryonic development,BP,87,5,0.00139145793100764
+GO:1904996,positive regulation of leukocyte adhesion to vascular endothelial cell,BP,24,3,0.00143819772591783
+GO:1901522,positive regulation of transcription from RNA polymerase II promoter involved in cellular response to chemical stimulus,BP,24,3,0.00143819772591783
+GO:0034599,cellular response to oxidative stress,BP,284,9,0.00153356319144558
+GO:0070301,cellular response to hydrogen peroxide,BP,90,5,0.00161796663204592
+GO:0033233,regulation of protein sumoylation,BP,25,3,0.00162305391635742
+GO:0060537,muscle tissue development,BP,405,11,0.00164772105104388
+GO:0045619,regulation of lymphocyte differentiation,BP,181,7,0.00167024911533122
+GO:0048289,isotype switching to IgE isotypes,BP,7,2,0.00179574098629249
+GO:0048293,regulation of isotype switching to IgE isotypes,BP,7,2,0.00179574098629249
+GO:0021546,rhombomere development,BP,7,2,0.00179574098629249
+GO:1904385,cellular response to angiotensin,BP,26,3,0.00182211941197723
+GO:0001944,vasculature development,BP,818,17,0.00194077193505567
+GO:0071375,cellular response to peptide hormone stimulus,BP,294,9,0.00194166858489149
+GO:0032607,interferon-alpha production,BP,27,3,0.0020357717831665
+GO:0032647,regulation of interferon-alpha production,BP,27,3,0.0020357717831665
+GO:0032608,interferon-beta production,BP,57,4,0.00203956550866332
+GO:0032648,regulation of interferon-beta production,BP,57,4,0.00203956550866332
+GO:1901701,cellular response to oxygen-containing compound,BP,1195,22,0.00204233793807827
+GO:0032481,positive regulation of type I interferon production,BP,58,4,0.00217472136025852
+GO:0090312,positive regulation of protein deacetylation,BP,28,3,0.00226437424194812
+GO:0071248,cellular response to metal ion,BP,191,7,0.00226445429487918
+GO:0030183,B cell differentiation,BP,142,6,0.0022909285565661
+GO:1901653,cellular response to peptide,BP,361,10,0.00230550215971049
+GO:0031668,cellular response to extracellular stimulus,BP,245,8,0.00230791098683314
+GO:0045647,negative regulation of erythrocyte differentiation,BP,8,2,0.00237949938592195
+GO:0042796,snRNA transcription by RNA polymerase III,BP,8,2,0.00237949938592195
+GO:0045639,positive regulation of myeloid cell differentiation,BP,99,5,0.00246028236113153
+GO:0033554,cellular response to stress,BP,1866,30,0.00263419057509874
+GO:0071496,cellular response to external stimulus,BP,309,9,0.00271214874088595
+GO:0034614,cellular response to reactive oxygen species,BP,147,6,0.00272310417827305
+GO:0006979,response to oxidative stress,BP,433,11,0.00276623698452356
+GO:1990776,response to angiotensin,BP,30,3,0.00276781220995616
+GO:0070498,interleukin-1-mediated signaling pathway,BP,30,3,0.00276781220995616
+GO:0035710,CD4-positive, alpha-beta T cell activation,BP,102,5,0.00280108585932165
+GO:1902106,negative regulation of leukocyte differentiation,BP,102,5,0.00280108585932165
+GO:0032615,interleukin-12 production,BP,63,4,0.00294399164042846
+GO:0032655,regulation of interleukin-12 production,BP,63,4,0.00294399164042846
+GO:0046886,positive regulation of hormone biosynthetic process,BP,9,2,0.00304043183277964
+GO:0045580,regulation of T cell differentiation,BP,151,6,0.00311069759732178
+GO:0045670,regulation of osteoclast differentiation,BP,64,4,0.00311747413795784
+GO:0046634,regulation of alpha-beta T cell activation,BP,105,5,0.00317481250265493
+GO:1903707,negative regulation of hemopoiesis,BP,106,5,0.00330700661442677
+GO:0046637,regulation of alpha-beta T cell differentiation,BP,67,4,0.00367952241757573
+GO:0070344,regulation of fat cell proliferation,BP,10,2,0.00377704822885087
+GO:0070544,histone H3-K36 demethylation,BP,10,2,0.00377704822885087
+GO:0051090,regulation of DNA-binding transcription factor activity,BP,452,11,0.00382674677484222
+GO:0009615,response to virus,BP,392,10,0.00413861812394184
+GO:0062197,cellular response to chemical stress,BP,332,9,0.00434414706723869
+GO:0033993,response to lipid,BP,886,17,0.00437496335633789
+GO:0042762,regulation of sulfur metabolic process,BP,11,2,0.00458787944548703
+GO:0043619,regulation of transcription from RNA polymerase II promoter in response to oxidative stress,BP,11,2,0.00458787944548703
+GO:0039530,MDA-5 signaling pathway,BP,11,2,0.00458787944548703
+GO:0032350,regulation of hormone metabolic process,BP,36,3,0.00467046918721791
+GO:0042789,mRNA transcription by RNA polymerase II,BP,36,3,0.00467046918721791
+GO:0002286,T cell activation involved in immune response,BP,116,5,0.00485503030531795
+GO:0071345,cellular response to cytokine stimulus,BP,822,16,0.00493476603354683
+GO:0071241,cellular response to inorganic substance,BP,221,7,0.0050507868654319
+GO:0016573,histone acetylation,BP,167,6,0.00508331537650016
+GO:0008150,biological_process,BP,18800,187,0.00518540659302732
+GO:1904019,epithelial cell apoptotic process,BP,118,5,0.00521729554592695
+GO:0006305,DNA alkylation,BP,74,4,0.00524971881714816
+GO:0006306,DNA methylation,BP,74,4,0.00524971881714816
+GO:0061515,myeloid cell development,BP,74,4,0.00524971881714816
+GO:0006304,DNA modification,BP,119,5,0.00540542349220311
+GO:0045622,regulation of T-helper cell differentiation,BP,38,3,0.00544285966833247
+GO:0070341,fat cell proliferation,BP,12,2,0.00547147706394469
+GO:0045596,negative regulation of cell differentiation,BP,685,14,0.00553816157560278
+GO:1904994,regulation of leukocyte adhesion to vascular endothelial cell,BP,39,3,0.0058560591661856
+GO:0009991,response to extracellular stimulus,BP,479,11,0.00586879791643903
+GO:0018393,internal peptidyl-lysine acetylation,BP,173,6,0.00601906363171192
+GO:0034097,response to cytokine,BP,916,17,0.00605722137716218
+GO:0006475,internal protein amino acid acetylation,BP,175,6,0.00635719332522343
+GO:0061418,regulation of transcription from RNA polymerase II promoter in response to hypoxia,BP,13,2,0.00642641311891215
+GO:0032494,response to peptidoglycan,BP,13,2,0.00642641311891215
+GO:0071888,macrophage apoptotic process,BP,13,2,0.00642641311891215
+GO:1905064,negative regulation of vascular associated smooth muscle cell differentiation,BP,13,2,0.00642641311891215
+GO:0031056,regulation of histone modification,BP,176,6,0.00653134533774178
+GO:0001659,temperature homeostasis,BP,177,6,0.00670893962641376
+GO:0050777,negative regulation of immune response,BP,179,6,0.0070746071410457
+GO:0002683,negative regulation of immune system process,BP,425,10,0.00719546382434265
+GO:0060338,regulation of type I interferon-mediated signaling pathway,BP,42,3,0.00720618903795981
+GO:0032735,positive regulation of interleukin-12 production,BP,42,3,0.00720618903795981
+GO:0001568,blood vessel development,BP,782,15,0.00730328260795403
+GO:0042542,response to hydrogen peroxide,BP,128,5,0.00731962367807791
+GO:0002467,germinal center formation,BP,14,2,0.00745127984499033
+GO:0002903,negative regulation of B cell apoptotic process,BP,14,2,0.00745127984499033
+GO:0032352,positive regulation of hormone metabolic process,BP,14,2,0.00745127984499033
+GO:0002829,negative regulation of type 2 immune response,BP,14,2,0.00745127984499033
+GO:0043374,CD8-positive, alpha-beta T cell differentiation,BP,14,2,0.00745127984499033
+GO:0010867,positive regulation of triglyceride biosynthetic process,BP,14,2,0.00745127984499033
+GO:0002756,MyD88-independent toll-like receptor signaling pathway,BP,14,2,0.00745127984499033
+GO:0048512,circadian behavior,BP,43,3,0.00769371155322188
+GO:0031063,regulation of histone deacetylation,BP,43,3,0.00769371155322188
+GO:0051150,regulation of smooth muscle cell differentiation,BP,43,3,0.00769371155322188
+GO:0045597,positive regulation of cell differentiation,BP,866,16,0.00799113548731495
+GO:0018394,peptidyl-lysine acetylation,BP,184,6,0.00805166941902623
+GO:0071277,cellular response to calcium ion,BP,84,4,0.00818797501400332
+GO:0033173,calcineurin-NFAT signaling cascade,BP,44,3,0.00820026532131918
+GO:0051276,chromosome organization,BP,1025,18,0.00829906570611094
+GO:0032933,SREBP signaling pathway,BP,15,2,0.00854468942609602
+GO:0045475,locomotor rhythm,BP,15,2,0.00854468942609602
+GO:0060766,negative regulation of androgen receptor signaling pathway,BP,15,2,0.00854468942609602
+GO:0042110,T cell activation,BP,506,11,0.00868763349959897
+GO:0006984,ER-nucleus signaling pathway,BP,45,3,0.0087260101543671
+GO:0002819,regulation of adaptive immune response,BP,188,6,0.00890048908394847
+GO:0043401,steroid hormone mediated signaling pathway,BP,135,5,0.00910275947582245
+GO:0071396,cellular response to lipid,BP,581,12,0.00918728375985863
+GO:1901216,positive regulation of neuron death,BP,87,4,0.00924303978056107
+GO:0001892,embryonic placenta development,BP,87,4,0.00924303978056107
+GO:0045581,negative regulation of T cell differentiation,BP,46,3,0.00927109605817133
+GO:0043433,negative regulation of DNA-binding transcription factor activity,BP,190,6,0.009348107341738
+GO:0009755,hormone-mediated signaling pathway,BP,190,6,0.009348107341738
+GO:1902576,negative regulation of nuclear cell cycle DNA replication,BP,1,1,0.00941619585687381
+GO:1903464,negative regulation of mitotic cell cycle DNA replication,BP,1,1,0.00941619585687381
+GO:0021742,abducens nucleus development,BP,1,1,0.00941619585687381
+GO:0021743,hypoglossal nucleus development,BP,1,1,0.00941619585687381
+GO:0072303,positive regulation of glomerular metanephric mesangial cell proliferation,BP,1,1,0.00941619585687381
+GO:0021594,rhombomere formation,BP,1,1,0.00941619585687381
+GO:0021595,rhombomere structural organization,BP,1,1,0.00941619585687381
+GO:0021659,rhombomere 3 structural organization,BP,1,1,0.00941619585687381
+GO:0021660,rhombomere 3 formation,BP,1,1,0.00941619585687381
+GO:0021664,rhombomere 5 morphogenesis,BP,1,1,0.00941619585687381
+GO:0021665,rhombomere 5 structural organization,BP,1,1,0.00941619585687381
+GO:0021666,rhombomere 5 formation,BP,1,1,0.00941619585687381
+GO:0043402,glucocorticoid mediated signaling pathway,BP,1,1,0.00941619585687381
+GO:0014860,neurotransmitter secretion involved in regulation of skeletal muscle contraction,BP,1,1,0.00941619585687381
+GO:0061408,positive regulation of transcription from RNA polymerase II promoter in response to heat stress,BP,1,1,0.00941619585687381
+GO:1904843,cellular response to nitroglycerin,BP,1,1,0.00941619585687381
+GO:1903788,positive regulation of glutathione biosynthetic process,BP,1,1,0.00941619585687381
+GO:1904828,positive regulation of hydrogen sulfide biosynthetic process,BP,1,1,0.00941619585687381
+GO:0090340,positive regulation of secretion of lysosomal enzymes,BP,1,1,0.00941619585687381
+GO:0021572,rhombomere 6 development,BP,1,1,0.00941619585687381
+GO:0051141,negative regulation of NK T cell proliferation,BP,1,1,0.00941619585687381
+GO:1904799,regulation of neuron remodeling,BP,1,1,0.00941619585687381
+GO:1904800,negative regulation of neuron remodeling,BP,1,1,0.00941619585687381
+GO:2000173,negative regulation of branching morphogenesis of a nerve,BP,1,1,0.00941619585687381
+GO:0021592,fourth ventricle development,BP,1,1,0.00941619585687381
+GO:0021993,initiation of neural tube closure,BP,1,1,0.00941619585687381
+GO:0071501,cellular response to sterol depletion,BP,16,2,0.00970527374775486
+GO:0090336,positive regulation of brown fat cell differentiation,BP,16,2,0.00970527374775486
+GO:0042795,snRNA transcription by RNA polymerase II,BP,16,2,0.00970527374775486
+GO:0051591,response to cAMP,BP,89,4,0.00999340529711374
+GO:0001817,regulation of cytokine production,BP,812,15,0.0101091488929091
+GO:0097720,calcineurin-mediated signaling,BP,48,3,0.0104198433591117
+GO:0051412,response to corticosterone,BP,17,2,0.0109316841522527
+GO:0045623,negative regulation of T-helper cell differentiation,BP,17,2,0.0109316841522527
+GO:0043923,positive regulation by host of viral transcription,BP,17,2,0.0109316841522527
+GO:0002295,T-helper cell lineage commitment,BP,17,2,0.0109316841522527
+GO:0014070,response to organic cyclic compound,BP,900,16,0.0112689068966079
+GO:2000107,negative regulation of leukocyte apoptotic process,BP,50,3,0.0116475192442813
+GO:0043370,regulation of CD4-positive, alpha-beta T cell differentiation,BP,50,3,0.0116475192442813
+GO:0051094,positive regulation of developmental process,BP,1307,21,0.011727409494317
+GO:0002285,lymphocyte activation involved in immune response,BP,201,6,0.0121013364041675
+GO:0006991,response to sterol depletion,BP,18,2,0.0122225911966135
+GO:0019083,viral transcription,BP,51,3,0.0122912322541214
+GO:0106106,cold-induced thermogenesis,BP,146,5,0.0124765932480569
+GO:0120161,regulation of cold-induced thermogenesis,BP,146,5,0.0124765932480569
+GO:0006259,DNA metabolic process,BP,991,17,0.0126363737006668
+GO:0000302,response to reactive oxygen species,BP,203,6,0.0126572088559124
+GO:0071383,cellular response to steroid hormone stimulus,BP,203,6,0.0126572088559124
+GO:0010035,response to inorganic substance,BP,539,11,0.0134466779028754
+GO:1902894,negative regulation of miRNA transcription,BP,19,2,0.013576684413373
+GO:2001185,regulation of CD8-positive, alpha-beta T cell activation,BP,19,2,0.013576684413373
+GO:0009301,snRNA transcription,BP,19,2,0.013576684413373
+GO:0060340,positive regulation of type I interferon-mediated signaling pathway,BP,19,2,0.013576684413373
+GO:0120162,positive regulation of cold-induced thermogenesis,BP,98,4,0.013855614591537
+GO:0044728,DNA methylation or demethylation,BP,98,4,0.013855614591537
+GO:0016575,histone deacetylation,BP,98,4,0.013855614591537
+GO:0032479,regulation of type I interferon production,BP,98,4,0.013855614591537
+GO:0032606,type I interferon production,BP,98,4,0.013855614591537
+GO:0030902,hindbrain development,BP,150,5,0.013888588215565
+GO:0002823,negative regulation of adaptive immune response based on somatic recombination of immune receptors built from immunoglobulin superfamily domains,BP,54,3,0.0143429938620973
+GO:0042113,B cell activation,BP,336,8,0.0145590825424691
+GO:1902004,positive regulation of amyloid-beta formation,BP,20,2,0.0149926720741176
+GO:0032495,response to muramyl dipeptide,BP,20,2,0.0149926720741176
+GO:0045655,regulation of monocyte differentiation,BP,20,2,0.0149926720741176
+GO:0043373,CD4-positive, alpha-beta T cell lineage commitment,BP,20,2,0.0149926720741176
+GO:0045620,negative regulation of lymphocyte differentiation,BP,55,3,0.0150673855110343
+GO:0002763,positive regulation of myeloid leukocyte differentiation,BP,55,3,0.0150673855110343
+GO:0031669,cellular response to nutrient levels,BP,213,6,0.0157075572751743
+GO:0048016,inositol phosphate-mediated signaling,BP,56,3,0.0158121246228608
+GO:0060337,type I interferon signaling pathway,BP,56,3,0.0158121246228608
+GO:0061756,leukocyte adhesion to vascular endothelial cell,BP,56,3,0.0158121246228608
+GO:0051093,negative regulation of developmental process,BP,940,16,0.0163978857470658
+GO:2000773,negative regulation of cellular senescence,BP,21,2,0.0164692809557568
+GO:0002902,regulation of B cell apoptotic process,BP,21,2,0.0164692809557568
+GO:0043371,negative regulation of CD4-positive, alpha-beta T cell differentiation,BP,21,2,0.0164692809557568
+GO:1902107,positive regulation of leukocyte differentiation,BP,157,5,0.0166112913474958
+GO:1903708,positive regulation of hemopoiesis,BP,157,5,0.0166112913474958
+GO:0006473,protein acetylation,BP,216,6,0.0167139423163037
+GO:0016571,histone methylation,BP,158,5,0.0170271440664227
+GO:0019221,cytokine-mediated signaling pathway,BP,486,10,0.0171417580139257
+GO:0071357,cellular response to type I interferon,BP,58,3,0.0173628601832689
+GO:1990845,adaptive thermogenesis,BP,159,5,0.0174498536129583
+GO:0048872,homeostasis of number of cells,BP,282,7,0.0176972090694432
+GO:0009267,cellular response to starvation,BP,160,5,0.017879462671094
+GO:0046885,regulation of hormone biosynthetic process,BP,22,2,0.0180052561095008
+GO:0006925,inflammatory cell apoptotic process,BP,22,2,0.0180052561095008
+GO:0002363,alpha-beta T cell lineage commitment,BP,22,2,0.0180052561095008
+GO:0043369,CD4-positive or CD8-positive, alpha-beta T cell lineage commitment,BP,22,2,0.0180052561095008
+GO:0006268,DNA unwinding involved in DNA replication,BP,22,2,0.0180052561095008
+GO:0090335,regulation of brown fat cell differentiation,BP,22,2,0.0180052561095008
+GO:0007398,ectoderm development,BP,22,2,0.0180052561095008
+GO:0010866,regulation of triglyceride biosynthetic process,BP,22,2,0.0180052561095008
+GO:0051151,negative regulation of smooth muscle cell differentiation,BP,22,2,0.0180052561095008
+GO:0002820,negative regulation of adaptive immune response,BP,59,3,0.018168945669046
+GO:0046686,response to cadmium ion,BP,59,3,0.018168945669046
+GO:0035065,regulation of histone acetylation,BP,59,3,0.018168945669046
+GO:0002831,regulation of response to biotic stimulus,BP,351,8,0.0184281257904641
+GO:0090108,positive regulation of high-density lipoprotein particle assembly,BP,2,1,0.0187441774006205
+GO:0002841,negative regulation of T cell mediated immune response to tumor cell,BP,2,1,0.0187441774006205
+GO:1904613,cellular response to 2,3,7,8-tetrachlorodibenzodioxine,BP,2,1,0.0187441774006205
+GO:0002268,follicular dendritic cell differentiation,BP,2,1,0.0187441774006205
+GO:0032764,negative regulation of mast cell cytokine production,BP,2,1,0.0187441774006205
+GO:1903463,regulation of mitotic cell cycle DNA replication,BP,2,1,0.0187441774006205
+GO:0033082,regulation of extrathymic T cell differentiation,BP,2,1,0.0187441774006205
+GO:1990654,sebum secreting cell proliferation,BP,2,1,0.0187441774006205
+GO:0071387,cellular response to cortisol stimulus,BP,2,1,0.0187441774006205
+GO:0021754,facial nucleus development,BP,2,1,0.0187441774006205
+GO:0044334,canonical Wnt signaling pathway involved in positive regulation of epithelial to mesenchymal transition,BP,2,1,0.0187441774006205
+GO:0072737,response to diamide,BP,2,1,0.0187441774006205
+GO:0072738,cellular response to diamide,BP,2,1,0.0187441774006205
+GO:0014852,regulation of skeletal muscle contraction by neural stimulation via neuromuscular junction,BP,2,1,0.0187441774006205
+GO:0071505,response to mycophenolic acid,BP,2,1,0.0187441774006205
+GO:0071506,cellular response to mycophenolic acid,BP,2,1,0.0187441774006205
+GO:0072301,regulation of metanephric glomerular mesangial cell proliferation,BP,2,1,0.0187441774006205
+GO:0014040,positive regulation of Schwann cell differentiation,BP,2,1,0.0187441774006205
+GO:0021593,rhombomere morphogenesis,BP,2,1,0.0187441774006205
+GO:0021658,rhombomere 3 morphogenesis,BP,2,1,0.0187441774006205
+GO:0001712,ectodermal cell fate commitment,BP,2,1,0.0187441774006205
+GO:0021560,abducens nerve development,BP,2,1,0.0187441774006205
+GO:0021598,abducens nerve morphogenesis,BP,2,1,0.0187441774006205
+GO:0021599,abducens nerve formation,BP,2,1,0.0187441774006205
+GO:1904842,response to nitroglycerin,BP,2,1,0.0187441774006205
+GO:1990910,response to hypobaric hypoxia,BP,2,1,0.0187441774006205
+GO:0032745,positive regulation of interleukin-21 production,BP,2,1,0.0187441774006205
+GO:0019043,establishment of viral latency,BP,2,1,0.0187441774006205
+GO:0034127,regulation of MyD88-independent toll-like receptor signaling pathway,BP,2,1,0.0187441774006205
+GO:0009407,toxin catabolic process,BP,2,1,0.0187441774006205
+GO:0043387,mycotoxin catabolic process,BP,2,1,0.0187441774006205
+GO:0046223,aflatoxin catabolic process,BP,2,1,0.0187441774006205
+GO:1901377,organic heteropentacyclic compound catabolic process,BP,2,1,0.0187441774006205
+GO:1903786,regulation of glutathione biosynthetic process,BP,2,1,0.0187441774006205
+GO:0051866,general adaptation syndrome,BP,2,1,0.0187441774006205
+GO:0002157,positive regulation of thyroid hormone mediated signaling pathway,BP,2,1,0.0187441774006205
+GO:1904826,regulation of hydrogen sulfide biosynthetic process,BP,2,1,0.0187441774006205
+GO:0090182,regulation of secretion of lysosomal enzymes,BP,2,1,0.0187441774006205
+GO:0043377,negative regulation of CD8-positive, alpha-beta T cell differentiation,BP,2,1,0.0187441774006205
+GO:0051134,negative regulation of NK T cell activation,BP,2,1,0.0187441774006205
+GO:2000640,positive regulation of SREBP signaling pathway,BP,2,1,0.0187441774006205
+GO:0044727,DNA demethylation of male pronucleus,BP,2,1,0.0187441774006205
+GO:0001666,response to hypoxia,BP,286,7,0.0189570682160549
+GO:0090311,regulation of protein deacetylation,BP,60,3,0.0189955570408771
+GO:0002753,cytoplasmic pattern recognition receptor signaling pathway,BP,60,3,0.0189955570408771
+GO:0002237,response to molecule of bacterial origin,BP,354,8,0.0192826622911481
+GO:0006915,apoptotic process,BP,1892,27,0.0192914238241779
+GO:0090208,positive regulation of triglyceride metabolic process,BP,23,2,0.0195993606325121
+GO:0080182,histone H3-K4 trimethylation,BP,23,2,0.0195993606325121
+GO:0071887,leukocyte apoptotic process,BP,109,4,0.0197166760481771
+GO:0051607,defense response to virus,BP,290,7,0.0202786312399247
+GO:0001959,regulation of cytokine-mediated signaling pathway,BP,166,5,0.0206043108150959
+GO:0140546,defense response to symbiont,BP,291,7,0.0206188251682331
+GO:0006974,cellular response to DNA damage stimulus,BP,807,14,0.0208149928709982
+GO:0036003,positive regulation of transcription from RNA polymerase II promoter in response to stress,BP,24,2,0.0212503754422025
+GO:0001779,natural killer cell differentiation,BP,24,2,0.0212503754422025
+GO:0002755,MyD88-dependent toll-like receptor signaling pathway,BP,24,2,0.0212503754422025
+GO:0035994,response to muscle stretch,BP,24,2,0.0212503754422025
+GO:0045672,positive regulation of osteoclast differentiation,BP,24,2,0.0212503754422025
+GO:0045088,regulation of innate immune response,BP,231,6,0.0224167913734869
+GO:0030888,regulation of B cell proliferation,BP,64,3,0.0225076982060774
+GO:0034340,response to type I interferon,BP,64,3,0.0225076982060774
+GO:1902993,positive regulation of amyloid precursor protein catabolic process,BP,25,2,0.0229570990531455
+GO:0046639,negative regulation of alpha-beta T cell differentiation,BP,25,2,0.0229570990531455
+GO:0060333,interferon-gamma-mediated signaling pathway,BP,25,2,0.0229570990531455
+GO:0030518,intracellular steroid hormone receptor signaling pathway,BP,115,4,0.0234701912326148
+GO:0036293,response to decreased oxygen levels,BP,299,7,0.0234848054999833
+GO:0050854,regulation of antigen receptor-mediated signaling pathway,BP,66,3,0.0243873090691793
+GO:2000514,regulation of CD4-positive, alpha-beta T cell activation,BP,66,3,0.0243873090691793
+GO:0006303,double-strand break repair via nonhomologous end joining,BP,66,3,0.0243873090691793
+GO:0010634,positive regulation of epithelial cell migration,BP,174,5,0.0246406929420316
+GO:0001783,B cell apoptotic process,BP,26,2,0.0247183473565762
+GO:0050857,positive regulation of antigen receptor-mediated signaling pathway,BP,26,2,0.0247183473565762
+GO:0048596,embryonic camera-type eye morphogenesis,BP,26,2,0.0247183473565762
+GO:0033598,mammary gland epithelial cell proliferation,BP,26,2,0.0247183473565762
+GO:1905063,regulation of vascular associated smooth muscle cell differentiation,BP,26,2,0.0247183473565762
+GO:0042752,regulation of circadian rhythm,BP,117,4,0.0248111658876634
+GO:0050673,epithelial cell proliferation,BP,443,9,0.0248651173273292
+GO:0006476,protein deacetylation,BP,118,4,0.0254986701101804
+GO:0002221,pattern recognition receptor signaling pathway,BP,176,5,0.025723679702487
+GO:0031667,response to nutrient levels,BP,446,9,0.025820060253547
+GO:2000756,regulation of peptidyl-lysine acetylation,BP,68,3,0.0263492245788461
+GO:0051148,negative regulation of muscle cell differentiation,BP,68,3,0.0263492245788461
+GO:0032259,methylation,BP,376,8,0.0264328268491159
+GO:0010875,positive regulation of cholesterol efflux,BP,27,2,0.026532953402449
+GO:0071280,cellular response to copper ion,BP,27,2,0.026532953402449
+GO:0036037,CD8-positive, alpha-beta T cell activation,BP,27,2,0.026532953402449
+GO:0012501,programmed cell death,BP,1946,27,0.0265564425756997
+GO:0060759,regulation of response to cytokine stimulus,BP,178,5,0.0268367349171903
+GO:0051101,regulation of DNA binding,BP,121,4,0.0276296596182977
+GO:2000182,regulation of progesterone biosynthetic process,BP,3,1,0.0279847668344779
+GO:1904612,response to 2,3,7,8-tetrachlorodibenzodioxine,BP,3,1,0.0279847668344779
+GO:0021550,medulla oblongata development,BP,3,1,0.0279847668344779
+GO:0002266,follicular dendritic cell activation,BP,3,1,0.0279847668344779
+GO:0048294,negative regulation of isotype switching to IgE isotypes,BP,3,1,0.0279847668344779
+GO:0033078,extrathymic T cell differentiation,BP,3,1,0.0279847668344779
+GO:0032915,positive regulation of transforming growth factor beta2 production,BP,3,1,0.0279847668344779
+GO:0014038,regulation of Schwann cell differentiation,BP,3,1,0.0279847668344779
+GO:0072740,cellular response to anisomycin,BP,3,1,0.0279847668344779
+GO:0010909,positive regulation of heparan sulfate proteoglycan biosynthetic process,BP,3,1,0.0279847668344779
+GO:1904845,cellular response to L-glutamine,BP,3,1,0.0279847668344779
+GO:0001661,conditioned taste aversion,BP,3,1,0.0279847668344779
+GO:0071930,negative regulation of transcription involved in G1/S transition of mitotic cell cycle,BP,3,1,0.0279847668344779
+GO:0014043,negative regulation of neuron maturation,BP,3,1,0.0279847668344779
+GO:0060086,circadian temperature homeostasis,BP,3,1,0.0279847668344779
+GO:0072262,metanephric glomerular mesangial cell proliferation involved in metanephros development,BP,3,1,0.0279847668344779
+GO:0098758,response to interleukin-8,BP,3,1,0.0279847668344779
+GO:0098759,cellular response to interleukin-8,BP,3,1,0.0279847668344779
+GO:0021569,rhombomere 3 development,BP,3,1,0.0279847668344779
+GO:0001705,ectoderm formation,BP,3,1,0.0279847668344779
+GO:0021555,midbrain-hindbrain boundary morphogenesis,BP,3,1,0.0279847668344779
+GO:1990428,miRNA transport,BP,3,1,0.0279847668344779
+GO:1904017,cellular response to Thyroglobulin triiodothyronine,BP,3,1,0.0279847668344779
+GO:0010499,proteasomal ubiquitin-independent protein catabolic process,BP,3,1,0.0279847668344779
+GO:0021538,epithalamus development,BP,3,1,0.0279847668344779
+GO:0021986,habenula development,BP,3,1,0.0279847668344779
+GO:0090187,positive regulation of pancreatic juice secretion,BP,3,1,0.0279847668344779
+GO:1903860,negative regulation of dendrite extension,BP,3,1,0.0279847668344779
+GO:0006211,5-methylcytosine catabolic process,BP,3,1,0.0279847668344779
+GO:0019857,5-methylcytosine metabolic process,BP,3,1,0.0279847668344779
+GO:0044725,chromatin reprogramming in the zygote,BP,3,1,0.0279847668344779
+GO:0002360,T cell lineage commitment,BP,28,2,0.028399767184026
+GO:0060765,regulation of androgen receptor signaling pathway,BP,28,2,0.028399767184026
+GO:0070076,histone lysine demethylation,BP,28,2,0.028399767184026
+GO:0072539,T-helper 17 cell differentiation,BP,28,2,0.028399767184026
+GO:0002224,toll-like receptor signaling pathway,BP,123,4,0.0291076872651472
+GO:1901214,regulation of neuron death,BP,313,7,0.0291414297506912
+GO:0031507,heterochromatin assembly,BP,71,3,0.0294460464759997
+GO:0046683,response to organophosphorus,BP,124,4,0.0298639930134648
+GO:0021602,cranial nerve morphogenesis,BP,29,2,0.0303176554249674
+GO:0010667,negative regulation of cardiac muscle cell apoptotic process,BP,29,2,0.0303176554249674
+GO:0051145,smooth muscle cell differentiation,BP,73,3,0.0316128349216993
+GO:0001975,response to amphetamine,BP,30,2,0.0322855013688968
+GO:0060325,face morphogenesis,BP,30,2,0.0322855013688968
+GO:0071480,cellular response to gamma radiation,BP,30,2,0.0322855013688968
+GO:0045671,negative regulation of osteoclast differentiation,BP,30,2,0.0322855013688968
+GO:0070988,demethylation,BP,74,3,0.0327267694049901
+GO:0035601,protein deacylation,BP,129,4,0.033819328713198
+GO:0001101,response to acid chemical,BP,129,4,0.033819328713198
+GO:0043536,positive regulation of blood vessel endothelial cell migration,BP,75,3,0.0338609939126375
+GO:0071230,cellular response to amino acid stimulus,BP,75,3,0.0338609939126375
+GO:0072359,circulatory system development,BP,1197,18,0.0338669753834293
+GO:0070482,response to oxygen levels,BP,324,7,0.0341858494620992
+GO:0048384,retinoic acid receptor signaling pathway,BP,31,2,0.0343022045714129
+GO:2000515,negative regulation of CD4-positive, alpha-beta T cell activation,BP,31,2,0.0343022045714129
+GO:0140718,facultative heterochromatin assembly,BP,31,2,0.0343022045714129
+GO:0010664,negative regulation of striated muscle cell apoptotic process,BP,31,2,0.0343022045714129
+GO:0034121,regulation of toll-like receptor signaling pathway,BP,76,3,0.0350154499201443
+GO:0010595,positive regulation of endothelial cell migration,BP,131,4,0.0354829039692713
+GO:0048839,inner ear development,BP,192,5,0.0354882715006956
+GO:0043543,protein acylation,BP,258,6,0.0357268271427752
+GO:0051385,response to mineralocorticoid,BP,32,2,0.0363666806945226
+GO:0071353,cellular response to interleukin-4,BP,32,2,0.0363666806945226
+GO:0002828,regulation of type 2 immune response,BP,32,2,0.0363666806945226
+GO:0033028,myeloid cell apoptotic process,BP,32,2,0.0363666806945226
+GO:0016577,histone demethylation,BP,32,2,0.0363666806945226
+GO:0061448,connective tissue development,BP,260,6,0.0368781211017607
+GO:0090107,regulation of high-density lipoprotein particle assembly,BP,4,1,0.0371387787376593
+GO:1990911,response to psychosocial stress,BP,4,1,0.0371387787376593
+GO:0002835,negative regulation of response to tumor cell,BP,4,1,0.0371387787376593
+GO:0002838,negative regulation of immune response to tumor cell,BP,4,1,0.0371387787376593
+GO:0045629,negative regulation of T-helper 2 cell differentiation,BP,4,1,0.0371387787376593
+GO:0021678,third ventricle development,BP,4,1,0.0371387787376593
+GO:1990079,cartilage homeostasis,BP,4,1,0.0371387787376593
+GO:0003419,growth plate cartilage chondrocyte proliferation,BP,4,1,0.0371387787376593
+GO:0043969,histone H2B acetylation,BP,4,1,0.0371387787376593
+GO:0072739,response to anisomycin,BP,4,1,0.0371387787376593
+GO:0110024,positive regulation of cardiac muscle myoblast proliferation,BP,4,1,0.0371387787376593
+GO:0010908,regulation of heparan sulfate proteoglycan biosynthetic process,BP,4,1,0.0371387787376593
+GO:0070602,regulation of centromeric sister chromatid cohesion,BP,4,1,0.0371387787376593
+GO:1902730,positive regulation of proteoglycan biosynthetic process,BP,4,1,0.0371387787376593
+GO:1904844,response to L-glutamine,BP,4,1,0.0371387787376593
+GO:0002296,T-helper 1 cell lineage commitment,BP,4,1,0.0371387787376593
+GO:1905232,cellular response to L-glutamate,BP,4,1,0.0371387787376593
+GO:0019042,viral latency,BP,4,1,0.0371387787376593
+GO:0090402,oncogene-induced cell senescence,BP,4,1,0.0371387787376593
+GO:0098961,dendritic transport of ribonucleoprotein complex,BP,4,1,0.0371387787376593
+GO:0098963,dendritic transport of messenger ribonucleoprotein complex,BP,4,1,0.0371387787376593
+GO:1900365,positive regulation of mRNA polyadenylation,BP,4,1,0.0371387787376593
+GO:1902037,negative regulation of hematopoietic stem cell differentiation,BP,4,1,0.0371387787376593
+GO:0048295,positive regulation of isotype switching to IgE isotypes,BP,4,1,0.0371387787376593
+GO:0098732,macromolecule deacylation,BP,133,4,0.0371931771482921
+GO:0043414,macromolecule methylation,BP,331,7,0.0376816534757638
+GO:0014074,response to purine-containing compound,BP,134,4,0.0380658480572323
+GO:0042594,response to starvation,BP,196,5,0.0382421273249034
+GO:0045648,positive regulation of erythrocyte differentiation,BP,33,2,0.0384778613034662
+GO:0070229,negative regulation of lymphocyte apoptotic process,BP,33,2,0.0384778613034662
+GO:0001893,maternal placenta development,BP,33,2,0.0384778613034662
+GO:0045589,regulation of regulatory T cell differentiation,BP,33,2,0.0384778613034662
+GO:0008219,cell death,BP,2105,28,0.0385287931608422
+GO:0070828,heterochromatin organization,BP,79,3,0.0385995538129202
+GO:0032496,response to lipopolysaccharide,BP,333,7,0.0387221294734966
+GO:0045814,negative regulation of gene expression, epigenetic,BP,80,3,0.039834260933466
+GO:0051091,positive regulation of DNA-binding transcription factor activity,BP,265,6,0.0398597349093717
+GO:0006479,protein methylation,BP,199,5,0.0403911318822157
+GO:0008213,protein alkylation,BP,199,5,0.0403911318822157
+GO:0043276,anoikis,BP,34,2,0.0406346936659104
+GO:0070670,response to interleukin-4,BP,34,2,0.0406346936659104
+GO:0039528,cytoplasmic pattern recognition receptor signaling pathway in response to virus,BP,34,2,0.0406346936659104
+GO:0060323,head morphogenesis,BP,34,2,0.0406346936659104
+GO:0006482,protein demethylation,BP,34,2,0.0406346936659104
+GO:0008214,protein dealkylation,BP,34,2,0.0406346936659104
+GO:0009612,response to mechanical stimulus,BP,201,5,0.0418638303040757
+GO:1901983,regulation of protein acetylation,BP,82,3,0.0423632092104483
+GO:0051384,response to glucocorticoid,BP,139,4,0.0426047389653396
+GO:0048048,embryonic eye morphogenesis,BP,35,2,0.0428361405534818
+GO:0098751,bone cell development,BP,35,2,0.0428361405534818
+GO:0071398,cellular response to fatty acid,BP,35,2,0.0428361405534818
+GO:0050776,regulation of immune response,BP,892,14,0.0430131490537286
+GO:0031347,regulation of defense response,BP,648,11,0.0434621404791867
+GO:0038061,NIK/NF-kappaB signaling,BP,141,4,0.044502225462331
+GO:0044703,multi-organism reproductive process,BP,205,5,0.0449057190418417
+GO:0030224,monocyte differentiation,BP,36,2,0.045081180045615
+GO:0043368,positive T cell selection,BP,36,2,0.045081180045615
+GO:0045066,regulatory T cell differentiation,BP,36,2,0.045081180045615
+GO:0071504,cellular response to heparin,BP,5,1,0.0462070201356869
+GO:2000171,negative regulation of dendrite development,BP,5,1,0.0462070201356869
+GO:0036091,positive regulation of transcription from RNA polymerase II promoter in response to oxidative stress,BP,5,1,0.0462070201356869
+GO:1902512,positive regulation of apoptotic DNA fragmentation,BP,5,1,0.0462070201356869
+GO:0032762,mast cell cytokine production,BP,5,1,0.0462070201356869
+GO:0032763,regulation of mast cell cytokine production,BP,5,1,0.0462070201356869
+GO:0045829,negative regulation of isotype switching,BP,5,1,0.0462070201356869
+GO:0051414,response to cortisol,BP,5,1,0.0462070201356869
+GO:0048550,negative regulation of pinocytosis,BP,5,1,0.0462070201356869
+GO:0072223,metanephric glomerular mesangium development,BP,5,1,0.0462070201356869
+GO:0090261,positive regulation of inclusion body assembly,BP,5,1,0.0462070201356869
+GO:0070564,positive regulation of vitamin D receptor signaling pathway,BP,5,1,0.0462070201356869
+GO:1903936,cellular response to sodium arsenite,BP,5,1,0.0462070201356869
+GO:0048625,myoblast fate commitment,BP,5,1,0.0462070201356869
+GO:1903691,positive regulation of wound healing, spreading of epidermal cells,BP,5,1,0.0462070201356869
+GO:1904016,response to Thyroglobulin triiodothyronine,BP,5,1,0.0462070201356869
+GO:2000172,regulation of branching morphogenesis of a nerve,BP,5,1,0.0462070201356869
+GO:2000106,regulation of leukocyte apoptotic process,BP,85,3,0.046304147540901
+GO:0071229,cellular response to acid chemical,BP,85,3,0.046304147540901
+GO:0071456,cellular response to hypoxia,BP,143,4,0.0464464892226501
+GO:0071407,cellular response to organic cyclic compound,BP,576,10,0.0466268570057934
+GO:0033144,negative regulation of intracellular steroid hormone receptor signaling pathway,BP,37,2,0.0473688053356896
+GO:0071276,cellular response to cadmium ion,BP,37,2,0.0473688053356896
+GO:0048821,erythrocyte development,BP,37,2,0.0473688053356896
+GO:0031076,embryonic camera-type eye development,BP,37,2,0.0473688053356896
+GO:0042092,type 2 immune response,BP,37,2,0.0473688053356896
+GO:0072529,pyrimidine-containing compound catabolic process,BP,37,2,0.0473688053356896
+GO:0046640,regulation of alpha-beta T cell proliferation,BP,37,2,0.0473688053356896
+GO:0051592,response to calcium ion,BP,144,4,0.0474361443752092
+GO:0002312,B cell activation involved in immune response,BP,86,3,0.0476567535660558
+GO:0010038,response to metal ion,BP,351,7,0.0489395404160538
+GO:0001960,negative regulation of cytokine-mediated signaling pathway,BP,87,3,0.0490286719155378
+GO:0035886,vascular associated smooth muscle cell differentiation,BP,38,2,0.0496980245394317
+GO:0045746,negative regulation of Notch signaling pathway,BP,38,2,0.0496980245394317
+GO:0045191,regulation of isotype switching,BP,38,2,0.0496980245394317
+GO:0050679,positive regulation of epithelial cell proliferation,BP,211,5,0.0497108536088739

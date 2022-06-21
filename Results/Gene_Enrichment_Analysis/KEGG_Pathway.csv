@@ -1,0 +1,187 @@
+,Pathway,N,DE,P.DE
+path:hsa05167,Kaposi sarcoma-associated herpesvirus infection,25,11,4.15714392244932e-05
+path:hsa04625,C-type lectin receptor signaling pathway,15,8,9.21700619213148e-05
+path:hsa05160,Hepatitis C,16,8,0.000166074370932056
+path:hsa04380,Osteoclast differentiation,20,9,0.000176008717885637
+path:hsa05164,Influenza A,7,5,0.000352996223717312
+path:hsa05161,Hepatitis B,37,12,0.000588565062689792
+path:hsa05417,Lipid and atherosclerosis,23,9,0.000625027469268246
+path:hsa04620,Toll-like receptor signaling pathway,8,5,0.000852479187898859
+path:hsa05135,Yersinia infection,8,5,0.000852479187898859
+path:hsa05169,Epstein-Barr virus infection,20,8,0.00107211573887096
+path:hsa04010,MAPK signaling pathway,21,8,0.00156123425728591
+path:hsa04218,Cellular senescence,21,8,0.00156123425728591
+path:hsa04621,NOD-like receptor signaling pathway,9,5,0.00173752257630148
+path:hsa05170,Human immunodeficiency virus 1 infection,9,5,0.00173752257630148
+path:hsa05171,Coronavirus disease - COVID-19,9,5,0.00173752257630148
+path:hsa05208,Chemical carcinogenesis - reactive oxygen species,9,5,0.00173752257630148
+path:hsa05162,Measles,14,6,0.00311384022476683
+path:hsa05166,Human T-cell leukemia virus 1 infection,45,12,0.00390831024022131
+path:hsa04934,Cushing syndrome,24,8,0.00413713210985483
+path:hsa04660,T cell receptor signaling pathway,7,4,0.00471212027475627
+path:hsa04662,B cell receptor signaling pathway,7,4,0.00471212027475627
+path:hsa05133,Pertussis,7,4,0.00471212027475627
+path:hsa05163,Human cytomegalovirus infection,25,8,0.0054876327701636
+path:hsa04623,Cytosolic DNA-sensing pathway,4,3,0.00570459906776635
+path:hsa05134,Legionellosis,4,3,0.00570459906776635
+path:hsa04659,Th17 cell differentiation,26,8,0.00715065635279286
+path:hsa04928,Parathyroid hormone synthesis, secretion and action,26,8,0.00715065635279286
+path:hsa04657,IL-17 signaling pathway,8,4,0.00857176136161368
+path:hsa04658,Th1 and Th2 cell differentiation,18,6,0.0128944658088284
+path:hsa04622,RIG-I-like receptor signaling pathway,5,3,0.0130395046701301
+path:hsa01522,Endocrine resistance,10,4,0.0212993780835117
+path:hsa05200,Pathways in cancer,62,13,0.0225130347863757
+path:hsa04932,Non-alcoholic fatty liver disease,16,5,0.0304022246920943
+path:hsa04137,Mitophagy - animal,11,4,0.0304805106365598
+path:hsa04936,Alcoholic liver disease,11,4,0.0304805106365598
+path:hsa05207,Chemical carcinogenesis - receptor activation,33,8,0.0310398651750136
+path:hsa04014,Ras signaling pathway,7,3,0.0382170897096036
+path:hsa04668,TNF signaling pathway,17,5,0.0391120716153728
+path:hsa04110,Cell cycle,12,4,0.041654507265734
+path:hsa05224,Breast cancer,23,6,0.0427333469727921
+path:hsa04350,TGF-beta signaling pathway,13,4,0.0548407847875623
+path:hsa05222,Small cell lung cancer,13,4,0.0548407847875623
+path:hsa05235,PD-L1 expression and PD-1 checkpoint pathway in cancer,13,4,0.0548407847875623
+path:hsa04921,Oxytocin signaling pathway,8,3,0.0560042867183976
+path:hsa04064,NF-kappa B signaling pathway,4,2,0.0691573538818654
+path:hsa05130,Pathogenic Escherichia coli infection,4,2,0.0691573538818654
+path:hsa05142,Chagas disease,4,2,0.0691573538818654
+path:hsa05214,Glioma,4,2,0.0691573538818654
+path:hsa05231,Choline metabolism in cancer,4,2,0.0691573538818654
+path:hsa05203,Viral carcinogenesis,32,7,0.0697382584583129
+path:hsa05321,Inflammatory bowel disease,14,4,0.0700114916510827
+path:hsa04217,Necroptosis,9,3,0.0769868538826645
+path:hsa04630,JAK-STAT signaling pathway,9,3,0.0769868538826645
+path:hsa05132,Salmonella infection,9,3,0.0769868538826645
+path:hsa05418,Fluid shear stress and atherosclerosis,9,3,0.0769868538826645
+path:hsa04371,Apelin signaling pathway,10,3,0.100852914939444
+path:hsa05212,Pancreatic cancer,10,3,0.100852914939444
+path:hsa05165,Human papillomavirus infection,35,7,0.103553845646752
+path:hsa05206,MicroRNAs in cancer,16,4,0.105996243710709
+path:hsa05225,Hepatocellular carcinoma,16,4,0.105996243710709
+path:hsa05226,Gastric cancer,16,4,0.105996243710709
+path:hsa04066,HIF-1 signaling pathway,5,2,0.106569253356356
+path:hsa05218,Melanoma,5,2,0.106569253356356
+path:hsa05219,Bladder cancer,5,2,0.106569253356356
+path:hsa05415,Diabetic cardiomyopathy,5,2,0.106569253356356
+path:hsa03410,Base excision repair,1,1,0.11653447223917
+path:hsa04022,cGMP-PKG signaling pathway,23,5,0.120181553581264
+path:hsa05215,Prostate cancer,24,5,0.13821681534685
+path:hsa05140,Leishmaniasis,6,2,0.147924971487199
+path:hsa04151,PI3K-Akt signaling pathway,18,4,0.148684624060659
+path:hsa04931,Insulin resistance,18,4,0.148684624060659
+path:hsa04917,Prolactin signaling pathway,12,3,0.15577191964879
+path:hsa04933,AGE-RAGE signaling pathway in diabetic complications,12,3,0.15577191964879
+path:hsa05223,Non-small cell lung cancer,12,3,0.15577191964879
+path:hsa05031,Amphetamine addiction,13,3,0.186051260107159
+path:hsa05220,Chronic myeloid leukemia,13,3,0.186051260107159
+path:hsa04062,Chemokine signaling pathway,7,2,0.191808124198237
+path:hsa04210,Apoptosis,7,2,0.191808124198237
+path:hsa04920,Adipocytokine signaling pathway,7,2,0.191808124198237
+path:hsa05211,Renal cell carcinoma,7,2,0.191808124198237
+path:hsa04915,Estrogen signaling pathway,20,4,0.196807665968893
+path:hsa04926,Relaxin signaling pathway,14,3,0.217698469686089
+path:hsa05030,Cocaine addiction,14,3,0.217698469686089
+path:hsa01523,Antifolate resistance,2,1,0.219551514853528
+path:hsa04613,Neutrophil extracellular trap formation,2,1,0.219551514853528
+path:hsa04650,Natural killer cell mediated cytotoxicity,2,1,0.219551514853528
+path:hsa04713,Circadian entrainment,2,1,0.219551514853528
+path:hsa04976,Bile secretion,2,1,0.219551514853528
+path:hsa05146,Amoebiasis,2,1,0.219551514853528
+path:hsa05323,Rheumatoid arthritis,2,1,0.219551514853528
+path:hsa04927,Cortisol synthesis and secretion,15,3,0.250348652368597
+path:hsa04024,cAMP signaling pathway,16,3,0.283660746674263
+path:hsa04071,Sphingolipid signaling pathway,3,1,0.310611784042885
+path:hsa04080,Neuroactive ligand-receptor interaction,3,1,0.310611784042885
+path:hsa04360,Axon guidance,3,1,0.310611784042885
+path:hsa04910,Insulin signaling pathway,3,1,0.310611784042885
+path:hsa05120,Epithelial cell signaling in Helicobacter pylori infection,3,1,0.310611784042885
+path:hsa04310,Wnt signaling pathway,17,3,0.317321766182145
+path:hsa04935,Growth hormone synthesis, secretion and action,17,3,0.317321766182145
+path:hsa05131,Shigellosis,10,2,0.328306578846983
+path:hsa05210,Colorectal cancer,10,2,0.328306578846983
+path:hsa05034,Alcoholism,11,2,0.372987470467862
+path:hsa05216,Thyroid cancer,11,2,0.372987470467862
+path:hsa04912,GnRH signaling pathway,4,1,0.391096594096558
+path:hsa05145,Toxoplasmosis,4,1,0.391096594096558
+path:hsa05412,Arrhythmogenic right ventricular cardiomyopathy,4,1,0.391096594096558
+path:hsa00310,Lysine degradation,12,2,0.416430580631676
+path:hsa04925,Aldosterone synthesis and secretion,12,2,0.416430580631676
+path:hsa05017,Spinocerebellar ataxia,12,2,0.416430580631676
+path:hsa05020,Prion disease,12,2,0.416430580631676
+path:hsa05152,Tuberculosis,12,2,0.416430580631676
+path:hsa04728,Dopaminergic synapse,13,2,0.458317729817951
+path:hsa04612,Antigen processing and presentation,5,1,0.462228429281608
+path:hsa05202,Transcriptional misregulation in cancer,64,8,0.47441057741706
+path:hsa01100,Metabolic pathways,14,2,0.498420939839929
+path:hsa05010,Alzheimer disease,6,1,0.52508912084049
+path:hsa05012,Parkinson disease,6,1,0.52508912084049
+path:hsa05022,Pathways of neurodegeneration - multiple diseases,6,1,0.52508912084049
+path:hsa04919,Thyroid hormone signaling pathway,15,2,0.536585907143211
+path:hsa04211,Longevity regulating pathway,16,2,0.572718072924489
+path:hsa05168,Herpes simplex virus 1 infection,322,37,0.572908562768746
+path:hsa03320,PPAR signaling pathway,7,1,0.580635953614199
+path:hsa04141,Protein processing in endoplasmic reticulum,7,1,0.580635953614199
+path:hsa05221,Acute myeloid leukemia,17,2,0.606770913823468
+path:hsa04520,Adherens junction,8,1,0.629715936984106
+path:hsa05213,Endometrial cancer,8,1,0.629715936984106
+path:hsa05217,Basal cell carcinoma,8,1,0.629715936984106
+path:hsa04710,Circadian rhythm,9,1,0.673078448348934
+path:hsa04722,Neurotrophin signaling pathway,9,1,0.673078448348934
+path:hsa04725,Cholinergic synapse,9,1,0.673078448348934
+path:hsa04068,FoxO signaling pathway,11,1,0.74522633018728
+path:hsa04261,Adrenergic signaling in cardiomyocytes,11,1,0.74522633018728
+path:hsa04911,Insulin secretion,11,1,0.74522633018728
+path:hsa04916,Melanogenesis,11,1,0.74522633018728
+path:hsa04922,Glucagon signaling pathway,11,1,0.74522633018728
+path:hsa04152,AMPK signaling pathway,12,1,0.775116852874153
+path:hsa04918,Thyroid hormone synthesis,12,1,0.775116852874153
+path:hsa04714,Thermogenesis,13,1,0.801516779795503
+path:hsa05016,Huntington disease,15,1,0.845420839926347
+path:hsa04390,Hippo signaling pathway,16,1,0.863601024393137
+path:hsa04550,Signaling pathways regulating pluripotency of stem cells,39,1,0.992500112022095
+path:hsa00230,Purine metabolism,1,0,1
+path:hsa00240,Pyrimidine metabolism,1,0,1
+path:hsa00270,Cysteine and methionine metabolism,1,0,1
+path:hsa00983,Drug metabolism - other enzymes,1,0,1
+path:hsa01232,Nucleotide metabolism,1,0,1
+path:hsa01240,Biosynthesis of cofactors,1,0,1
+path:hsa01521,EGFR tyrosine kinase inhibitor resistance,2,0,1
+path:hsa01524,Platinum drug resistance,2,0,1
+path:hsa03013,Nucleocytoplasmic transport,1,0,1
+path:hsa03022,Basal transcription factors,6,0,1
+path:hsa03040,Spliceosome,1,0,1
+path:hsa03250,Viral life cycle - HIV-1,1,0,1
+path:hsa03420,Nucleotide excision repair,1,0,1
+path:hsa03460,Fanconi anemia pathway,3,0,1
+path:hsa04012,ErbB signaling pathway,5,0,1
+path:hsa04114,Oocyte meiosis,3,0,1
+path:hsa04115,p53 signaling pathway,2,0,1
+path:hsa04120,Ubiquitin mediated proteolysis,1,0,1
+path:hsa04140,Autophagy - animal,1,0,1
+path:hsa04144,Endocytosis,3,0,1
+path:hsa04145,Phagosome,1,0,1
+path:hsa04213,Longevity regulating pathway - multiple species,3,0,1
+path:hsa04216,Ferroptosis,1,0,1
+path:hsa04330,Notch signaling pathway,7,0,1
+path:hsa04340,Hedgehog signaling pathway,3,0,1
+path:hsa04370,VEGF signaling pathway,1,0,1
+path:hsa04392,Hippo signaling pathway - multiple species,4,0,1
+path:hsa04510,Focal adhesion,3,0,1
+path:hsa04530,Tight junction,4,0,1
+path:hsa04611,Platelet activation,1,0,1
+path:hsa04670,Leukocyte transendothelial migration,1,0,1
+path:hsa04720,Long-term potentiation,1,0,1
+path:hsa04810,Regulation of actin cytoskeleton,1,0,1
+path:hsa04914,Progesterone-mediated oocyte maturation,2,0,1
+path:hsa04924,Renin secretion,1,0,1
+path:hsa04929,GnRH secretion,1,0,1
+path:hsa04930,Type II diabetes mellitus,2,0,1
+path:hsa04950,Maturity onset diabetes of the young,21,0,1
+path:hsa04961,Endocrine and other factor-regulated calcium reabsorption,2,0,1
+path:hsa04962,Vasopressin-regulated water reabsorption,7,0,1
+path:hsa04978,Mineral absorption,1,0,1
+path:hsa05014,Amyotrophic lateral sclerosis,5,0,1
+path:hsa05205,Proteoglycans in cancer,12,0,1
+path:hsa05230,Central carbon metabolism in cancer,3,0,1
+path:hsa05340,Primary immunodeficiency,3,0,1

@@ -23,8 +23,8 @@ library(dplyr)
 library(tidyverse)
 library(DOSE)
 library(enrichplot)
-library(clusterProfiler)
 library(ggupset)
+library(ggnewscale)
 ```
 
 
@@ -33,7 +33,7 @@ library(ggupset)
 ```{r}
 TF_list = read.csv("Results/TF_list.csv")
 mygenes = as.character(TF_list$x)
-length(mygenes) #140
+length(mygenes) #210
 
 TF_total = read.csv("Data/TF_names_v_1.01.txt", header = FALSE)
 TF_total = as.character(TF_total$V1)
@@ -105,8 +105,8 @@ id = genes.with.id[which(genes.with.id$hgnc_symbol %in% mygenes),]
 nrow(id)
 myentrez = unique(id$entrezgene)
 
-length(mygenes) #140 genes
-length(myentrez) #133 genes
+length(mygenes) #210 genes
+length(myentrez) #196 genes
 ```
 
 
@@ -182,6 +182,9 @@ cnetplot(edox, foldChange=myentrez, circular = TRUE, colorEdge = TRUE)
 #cowplot::plot_grid(p1, p2, ncol=2, labels=LETTERS[1:2])
 upsetplot(edox)
 #heatplot(edox)
+
+edox@result$Description[1:30] #top 30 GO terms
+cnetplot(edox, categorySize="pvalue", foldChange=myentrez, showCategory = edox@result$Description[c(2,8,14,15)]) #cnet plot for specific terms
 ```
 
 
